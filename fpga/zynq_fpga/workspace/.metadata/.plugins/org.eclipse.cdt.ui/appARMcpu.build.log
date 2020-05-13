@@ -1,0 +1,10 @@
+20:31:17 **** Incremental Build of configuration Debug for project appARMcpu ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+make[1]: Nothing to be done for 'main-build'.
+
+20:31:17 Build Finished (took 334ms)
+

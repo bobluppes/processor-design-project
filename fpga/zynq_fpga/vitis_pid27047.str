@@ -1,0 +1,111 @@
+/*
+
+Xilinx Vitis v2019.2.1 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2729669 on Thu Dec 5 04:48:51 MST 2019
+
+Process ID (PID): 27047
+License: Customer
+
+Current time: 	Wed Apr 22 00:54:27 CEST 2020
+Time zone: 	Central European Standard Time (Europe/Amsterdam)
+
+OS: Ubuntu
+OS Version: 5.3.0-46-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 53 GB
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx/Vitis/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx/Vitis/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 4 GB
+
+Java library paths: /tools/Xilinx/Vitis/2019.2/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2019.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2019.2/lib/lnx64.o:/tools/Xilinx/Vitis/2019.2/tps/lnx64/jre9.0.4/lib/:/tools/Xilinx/Vitis/2019.2/tps/lnx64/jre9.0.4/lib//server:/tools/Xilinx/Vitis/2019.2/lib/lnx64.o:/tools/Xilinx/Vitis/2019.2/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2019.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2019.2/lib/lnx64.o:/tools/Xilinx/Vitis/2019.2/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2019.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2019.2/lib/lnx64.o:/tools/Xilinx/Vitis/2019.2/runtime/lib/x86_64:/tools/Xilinx/Vitis/2019.2/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2019.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2019.2/lib/lnx64.o:/tools/Xilinx/Vitis/2019.2/runtime/lib/x86_64:/tools/Xilinx/Vivado/2019.2/bin/../lnx64/tools/dot/lib:/tools/Xilinx/Vitis/2019.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /tools/Xilinx/Vitis/2019.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.0.v20180512-1130.jar
+LD_LIBRARY_PATH: /tools/Xilinx/Vitis
+
+User name: 	pdp
+User home directory: /home/pdp
+User working directory: /home/pdp/PDP/fpga/zynq_fpga
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vitis
+HDI_APPROOT: /tools/Xilinx/Vitis/2019.2
+RDI_DATADIR: /tools/Xilinx/Vitis/2019.2/data
+RDI_BINDIR: /tools/Xilinx/Vitis/2019.2/bin
+
+Vitis preferences directory: /home/pdp/.Xilinx/Vitis/2019.2/
+Vitis workspace directory: /home/pdp/PDP/fpga/zynq_fpga/zynq_fpga.vitis
+Vitis workspace log file location: /home/pdp/PDP/fpga/zynq_fpga/zynq_fpga.vitis/.metadata/.log
+Engine tmp dir: 	./.Xil/sdx-27047-pdp3050
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_ENABLE_SCOUT_HLS: 0
+XILINX_HLS: /tools/Xilinx/Vivado/2019.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vitis/2019.2
+XILINX_SDK: /tools/Xilinx/Vitis/2019.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2019.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2019.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+setTextField("appARMcpu", "New Application Project (Create a New Application Project)", "ApplicationProjectWizard", "Text.PROJECT_NAME");
+selectButton("Next", "New Application Project (Create a New Application Project)", "ApplicationProjectWizard", "Button.NEXT");
+selectTab("Create a new platform from hardware", "New Application Project (Platform)", "ApplicationProjectWizard", "CTabItem.CREATE_A_NEW_PLATFORM");
+selectTab("Select a platform from repository", "New Application Project (Platform)", "ApplicationProjectWizard", "CTabItem.SELECT_A_PLATFORM");
+selectButton("Next", "New Application Project (Platform)", "ApplicationProjectWizard", "Button.NEXT");
+selectButton("Back", "New Application Project (Domain)", "ApplicationProjectWizard", "Button.BACK");
+selectTab("Create a new platform from hardware", "New Application Project (Platform)", "ApplicationProjectWizard", "CTabItem.CREATE_A_NEW_PLATFORM");
+setTextField("fpga_platform", "New Application Project (Platform)", "ApplicationProjectWizard", "Text.PLATFORM_NAME");
+selectButton("Next", "New Application Project (Platform)", "ApplicationProjectWizard", "Button.NEXT");
+selectCheckBox("Generate boot components", Boolean.FALSE, "New Application Project (Domain)", "ApplicationProjectWizard", "Button.GENERATE_BOOT_COMPONENTS");
+selectButton("Next", "New Application Project (Domain)", "ApplicationProjectWizard", "Button.NEXT");
+selectTreeTable("Empty Application", "New Application Project (Templates)", "ApplicationProjectWizard", "TreeViewer.TemplateContentProvider");
+selectButton("Finish", "New Application Project (Templates)", "ApplicationProjectWizard", "Button.FINISH");
+selectTree("fpga_platform", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Update Hardware Specification", "Explorer", "ProjectExplorer", "MenuItem.UPDATE_HARDWARE");
+selectButton("Browse", "Update Hardware Specification", "ScwSyncHwSpecDialog", "Button.BROWSE");
+setFileDialog("/home/pdp/PDP/fpga/zynq_fpga/design_2_wrapper.xsa", "Locate Hardware Specification File", "SDXFileDialog", "Button.OK");
+selectButton("OK", "Update Hardware Specification", "ScwSyncHwSpecDialog", "Button.OK");
+selectTreeTable("fpga_platform", "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectTreeTable("appARMcpu_system", "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectButton("OK", "Update Hardware Specification", "MessageDialog", "Button.OK");
+selectTree("lscript.ld", "appARMcpu_system > appARMcpu > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectTable("ps7_ddr_0", "lscript.ld", "LscriptEditor", "TableViewer.MemoryRangeContentProvider");
+setTextField("0xB00000", "lscript.ld", "LscriptEditor", "Text");
+selectTable("ps7_qspi_linear_0", "lscript.ld", "LscriptEditor", "TableViewer.MemoryRangeContentProvider");
+selectTable("ps7_ram_0", "lscript.ld", "LscriptEditor", "TableViewer.MemoryRangeContentProvider");
+selectTable("ps7_qspi_linear_0", "lscript.ld", "LscriptEditor", "TableViewer.MemoryRangeContentProvider");
+selectTree("README.txt", "appARMcpu_system > appARMcpu > src", "Explorer", "ProjectExplorer", "Tree");
+selectTree("Xilinx.spec", "appARMcpu_system > appARMcpu > src", "Explorer", "ProjectExplorer", "Tree");
+selectTree("README.txt", "appARMcpu_system > appARMcpu > src", "Explorer", "ProjectExplorer", "Tree");
+selectTree("lscript.ld", "appARMcpu_system > appARMcpu > src", "Explorer", "ProjectExplorer", "Tree");
+selectTree("fpga_platform", "appARMcpu_system > appARMcpu > src", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Update Hardware Specification", "Explorer", "ProjectExplorer", "MenuItem.UPDATE_HARDWARE");
+selectButton("Browse", "Update Hardware Specification", "ScwSyncHwSpecDialog", "Button.BROWSE");
+setFileDialog("/home/pdp/PDP/fpga/zynq_fpga/zynq_fpga.vitis/design_2_wrapper.xsa", "Locate Hardware Specification File", "SDXFileDialog", "Button.OK");
+selectButton("OK", "Update Hardware Specification", "ScwSyncHwSpecDialog", "Button.OK");
+selectButton("OK", "Update Hardware Specification", "MessageDialog", "Button.OK");
+selectTree("fpga_platform", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "Tree");
+selectMenuItem("Update Hardware Specification", "Explorer", "ProjectExplorer", "MenuItem.UPDATE_HARDWARE");
+selectButton("Browse", "Update Hardware Specification", "ScwSyncHwSpecDialog", "Button.BROWSE");
+setFileDialog("/home/pdp/PDP/fpga/zynq_fpga/zynq_fpga.vitis/design_2_wrapper.xsa", "Locate Hardware Specification File", "SDXFileDialog", "Button.OK");
+selectButton("Browse", "Update Hardware Specification", "ScwSyncHwSpecDialog", "Button.BROWSE");
+setFileDialog("/home/pdp/PDP/fpga/zynq_fpga/design_2_wrapper.xsa", "Locate Hardware Specification File", "SDXFileDialog", "Button.OK");
+selectButton("OK", "Update Hardware Specification", "ScwSyncHwSpecDialog", "Button.OK");

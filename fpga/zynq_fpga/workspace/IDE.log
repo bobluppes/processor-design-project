@@ -1,0 +1,370 @@
+03:03:08 INFO  : Launching XSCT server: xsct -n  -interactive /home/pdp/PDP/fpga/zynq_fpga/workspace/temp_xsdb_launch_script.tcl
+03:03:14 INFO  : XSCT server has started successfully.
+03:03:14 INFO  : Successfully done setting XSCT server connection channel  
+03:03:14 INFO  : plnx-install-location is set to ''
+03:03:14 INFO  : Successfully done query RDI_DATADIR 
+03:03:14 INFO  : Successfully done setting workspace for the tool. 
+03:03:15 INFO  : Registering command handlers for Vitis TCF services
+03:05:36 INFO  : Successfully done sdx_reload_mss "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+03:05:41 INFO  : (SwPlatform)  Successfully done add_library 
+03:05:45 INFO  : (SwPlatform) Successfully done update_mss 
+03:05:45 INFO  : Successfully done sdx_reload_mss "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+03:06:10 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+03:06:13 INFO  : Updating application flags with new BSP settings...
+03:06:13 INFO  : Successfully updated application flags for project appARMcpu.
+03:06:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:06:56 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4D038A' is selected.
+03:06:56 INFO  : 'jtag frequency' command is executed.
+03:06:56 INFO  : Context for 'APU' is selected.
+03:06:56 INFO  : System reset is completed.
+03:06:59 INFO  : 'after 3000' command is executed.
+03:06:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D038A" && level==0} -index 1' command is executed.
+03:07:01 INFO  : FPGA configured successfully with bitstream "/home/pdp/PDP/fpga/zynq_fpga/workspace/appARMcpu/_ide/bitstream/design_2_wrapper.bit"
+03:07:01 INFO  : Context for 'APU' is selected.
+03:07:01 INFO  : Hardware design information is loaded from '/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa'.
+03:07:01 INFO  : 'configparams force-mem-access 1' command is executed.
+03:07:01 INFO  : Context for 'APU' is selected.
+03:07:01 INFO  : Sourcing of '/home/pdp/PDP/fpga/zynq_fpga/workspace/appARMcpu/_ide/psinit/ps7_init.tcl' is done.
+03:07:02 INFO  : 'ps7_init' command is executed.
+03:07:02 INFO  : 'ps7_post_config' command is executed.
+03:07:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:07:02 INFO  : The application '/home/pdp/PDP/fpga/zynq_fpga/workspace/appARMcpu/Debug/appARMcpu.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:07:02 INFO  : 'configparams force-mem-access 0' command is executed.
+03:07:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D038A" && level==0} -index 1
+fpga -file /home/pdp/PDP/fpga/zynq_fpga/workspace/appARMcpu/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/pdp/PDP/fpga/zynq_fpga/workspace/appARMcpu/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/pdp/PDP/fpga/zynq_fpga/workspace/appARMcpu/Debug/appARMcpu.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+03:07:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:07:02 INFO  : 'con' command is executed.
+03:07:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+03:07:02 INFO  : Disconnected from the channel tcfchan#2.
+03:08:01 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+03:08:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:08:20 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4D038A' is selected.
+03:08:20 INFO  : 'jtag frequency' command is executed.
+03:08:20 INFO  : Context for 'APU' is selected.
+03:08:20 INFO  : System reset is completed.
+03:08:23 INFO  : 'after 3000' command is executed.
+03:08:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D038A" && level==0} -index 1' command is executed.
+03:08:25 INFO  : FPGA configured successfully with bitstream "/home/pdp/PDP/fpga/zynq_fpga/workspace/appARMcpu/_ide/bitstream/design_2_wrapper.bit"
+03:08:25 INFO  : Context for 'APU' is selected.
+03:08:25 INFO  : Hardware design information is loaded from '/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa'.
+03:08:25 INFO  : 'configparams force-mem-access 1' command is executed.
+03:08:25 INFO  : Context for 'APU' is selected.
+03:08:25 INFO  : Sourcing of '/home/pdp/PDP/fpga/zynq_fpga/workspace/appARMcpu/_ide/psinit/ps7_init.tcl' is done.
+03:08:26 INFO  : 'ps7_init' command is executed.
+03:08:26 INFO  : 'ps7_post_config' command is executed.
+03:08:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:08:26 INFO  : The application '/home/pdp/PDP/fpga/zynq_fpga/workspace/appARMcpu/Debug/appARMcpu.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:08:26 INFO  : 'configparams force-mem-access 0' command is executed.
+03:08:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D038A" && level==0} -index 1
+fpga -file /home/pdp/PDP/fpga/zynq_fpga/workspace/appARMcpu/_ide/bitstream/design_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/pdp/PDP/fpga/zynq_fpga/workspace/appARMcpu/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/pdp/PDP/fpga/zynq_fpga/workspace/appARMcpu/Debug/appARMcpu.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+03:08:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:08:26 INFO  : 'con' command is executed.
+03:08:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+03:08:26 INFO  : Disconnected from the channel tcfchan#3.
+03:11:15 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+03:12:00 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+03:18:43 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+03:27:03 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+03:27:40 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+03:33:41 INFO  : Launching XSCT server: xsct -n  -interactive /home/pdp/PDP/fpga/zynq_fpga/workspace/temp_xsdb_launch_script.tcl
+03:33:45 INFO  : XSCT server has started successfully.
+03:33:45 INFO  : plnx-install-location is set to ''
+03:33:45 INFO  : Successfully done setting XSCT server connection channel  
+03:33:46 INFO  : Registering command handlers for Vitis TCF services
+03:33:46 INFO  : Successfully done setting workspace for the tool. 
+03:33:46 INFO  : Successfully done query RDI_DATADIR 
+04:03:00 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+04:05:30 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+04:05:58 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+04:09:23 INFO  : Successfully done sdx_reload_mss "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+15:47:58 INFO  : Launching XSCT server: xsct -n  -interactive /home/pdp/PDP/fpga/zynq_fpga/workspace/temp_xsdb_launch_script.tcl
+15:48:03 INFO  : XSCT server has started successfully.
+15:48:03 INFO  : Successfully done setting XSCT server connection channel  
+15:48:03 INFO  : plnx-install-location is set to ''
+15:48:03 INFO  : Successfully done setting workspace for the tool. 
+15:48:04 INFO  : Registering command handlers for Vitis TCF services
+15:48:05 INFO  : Successfully done query RDI_DATADIR 
+19:50:48 ERROR : Failed to compute checksum of hardware specification file used by project 'appARMcpu'
+19:50:55 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:50:55 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:51:14 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+20:01:10 INFO  : Successfully done sdx_reload_mss "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+20:01:16 INFO  : Successfully done sdx_reload_mss "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+20:01:16 INFO  : No changes in MSS file content so sources will not be generated.
+20:01:47 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+20:02:00 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
+20:02:06 INFO  : Successfully done sdx_reload_mss "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+21:20:34 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+21:20:34 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+21:20:52 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:20:52 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:21:03 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:21:03 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:21:23 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+21:21:23 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+21:23:10 INFO  : Successfully done sdx_reload_mss "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+21:23:10 INFO  : No changes in MSS file content so sources will not be generated.
+21:23:39 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:23:39 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:23:52 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:23:52 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:23:58 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:23:58 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:24:23 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+21:24:23 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+21:25:15 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:25:15 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:26:54 INFO  : Successfully done sdx_reload_mss "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+21:26:54 INFO  : No changes in MSS file content so sources will not be generated.
+21:26:56 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:26:56 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:27:19 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:27:19 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:31:23 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:31:23 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:31:40 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+21:31:40 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+21:33:13 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+21:33:13 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+21:33:35 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:33:35 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:36:13 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+21:36:13 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+21:38:01 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:38:01 ERROR : Failed to openhw "/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/hw/design_2_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+21:40:43 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+21:40:43 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+21:43:07 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+21:43:07 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+21:46:11 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+21:46:11 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+21:47:02 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+21:47:02 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+21:49:11 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+21:49:11 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+21:51:12 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+21:51:12 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+21:57:23 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+21:57:23 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+21:59:41 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+21:59:41 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+22:08:50 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+22:08:50 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+22:11:17 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+22:11:17 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+22:36:32 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+22:36:32 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+22:37:11 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+22:37:11 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+15:22:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc Computer Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+15:22:04 ERROR : (XSDB Server)invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:\Users\boblu\Documents\TuD\MSc" line 1)
+15:22:04 ERROR : (XSDB Server)
+
+15:22:07 ERROR : Workspace location C:\Users\boblu\Documents\TuD\MSc Computer Engineering\PDP\fpga\zynq_fpga\workspace contains spaces. Please switch to a workspace without spaces in its path.
+15:22:09 INFO  : Registering command handlers for Vitis TCF services
+15:25:02 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+15:25:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc Computer Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+15:25:03 ERROR : (XSDB Server)invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:\Users\boblu\Documents\TuD\MSc" line 1)
+
+15:28:02 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+15:28:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc Computer Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+15:28:02 ERROR : Failed to read platform from project 'design_2_wrapper'.
+Reason: Failed to execute command 'platform read {C:/Users/boblu/Documents/TuD/MSc Computer Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/platform.spr}'. Click on details for more information.
+15:28:04 ERROR : (XSDB Server)invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:\Users\boblu\Documents\TuD\MSc" line 1)
+
+15:31:02 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+15:31:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc Computer Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+15:31:02 ERROR : Failed to call init_repo
+Reason: xsct server communication channel is not established.
+15:31:02 ERROR : Exception raised in executing the command =Failed to call init_repo
+Reason: xsct server communication channel is not established. 
+15:31:04 ERROR : (XSDB Server)invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:\Users\boblu\Documents\TuD\MSc" line 1)
+
+15:34:02 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+15:34:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc Computer Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+15:34:02 ERROR : Failed to enable logging of info messages in xsct server.
+15:34:04 ERROR : (XSDB Server)invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:\Users\boblu\Documents\TuD\MSc" line 1)
+
+15:37:02 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+15:37:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc Computer Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+15:37:02 ERROR : xsct server communication channel is not established.
+15:37:04 ERROR : (XSDB Server)invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:\Users\boblu\Documents\TuD\MSc" line 1)
+
+15:40:02 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+15:40:02 ERROR : Failed to query RDI_DATADIR
+Reason: xsct server communication channel is not established.
+15:40:02 ERROR : Exception raised in executing the command =Failed to query RDI_DATADIR
+Reason: xsct server communication channel is not established. 
+15:46:58 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+15:47:03 INFO  : Registering command handlers for Vitis TCF services
+15:47:03 INFO  : XSCT server has started successfully.
+15:47:03 INFO  : Successfully done setting XSCT server connection channel  
+15:47:10 INFO  : plnx-install-location is set to ''
+15:47:10 INFO  : Successfully done setting workspace for the tool. 
+15:47:10 INFO  : Successfully done query RDI_DATADIR 
+16:01:08 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+16:01:12 INFO  : XSCT server has started successfully.
+16:01:12 INFO  : plnx-install-location is set to ''
+16:01:12 INFO  : Successfully done setting XSCT server connection channel  
+16:01:12 INFO  : Successfully done setting workspace for the tool. 
+16:01:13 INFO  : Registering command handlers for Vitis TCF services
+16:01:13 INFO  : Successfully done query RDI_DATADIR 
+16:01:45 ERROR : Failed to update hardware specification for project 'design_2_wrapper'.
+Reason: Failed to execute command 'platform config -updatehw {/home/pdp/PDP/fpga/zynq_fpga/design_2_wrapper.xsa}'. Click on details for more information.
+16:02:48 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+16:02:52 INFO  : XSCT server has started successfully.
+16:02:52 INFO  : plnx-install-location is set to ''
+16:02:52 INFO  : Successfully done setting XSCT server connection channel  
+16:02:52 INFO  : Successfully done setting workspace for the tool. 
+16:02:52 INFO  : Registering command handlers for Vitis TCF services
+16:02:53 INFO  : Successfully done query RDI_DATADIR 
+16:03:08 ERROR : Failed to update hardware specification for project 'design_2_wrapper'.
+Reason: Failed to execute command 'platform config -updatehw {/home/pdp/PDP/fpga/zynq_fpga/design_2_wrapper.xsa}'. Click on details for more information.
+16:05:09 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
+16:07:01 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+16:07:04 INFO  : Updating application flags with new BSP settings...
+16:07:05 INFO  : Successfully updated application flags for project appARMcpu.
+14:19:25 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+14:19:35 INFO  : XSCT server has started successfully.
+14:19:35 INFO  : Successfully done setting XSCT server connection channel  
+14:19:35 INFO  : plnx-install-location is set to ''
+14:19:35 INFO  : Successfully done setting workspace for the tool. 
+14:19:36 INFO  : Registering command handlers for Vitis TCF services
+14:19:41 INFO  : Successfully done query RDI_DATADIR 
+14:20:34 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
+14:20:53 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+14:53:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+14:53:39 INFO  : Registering command handlers for Vitis TCF services
+14:53:39 INFO  : XSCT server has started successfully.
+14:53:39 INFO  : Successfully done setting XSCT server connection channel  
+14:53:39 INFO  : plnx-install-location is set to ''
+14:53:39 INFO  : Successfully done query RDI_DATADIR 
+14:53:39 INFO  : Successfully done setting workspace for the tool. 
+14:54:02 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
+14:54:18 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+15:57:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+15:57:38 INFO  : Registering command handlers for Vitis TCF services
+15:57:39 INFO  : XSCT server has started successfully.
+15:57:39 INFO  : plnx-install-location is set to ''
+15:57:39 INFO  : Successfully done setting XSCT server connection channel  
+15:57:39 INFO  : Successfully done setting workspace for the tool. 
+15:57:39 INFO  : Successfully done query RDI_DATADIR 
+15:58:08 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
+15:58:18 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+20:30:22 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+20:30:26 INFO  : Registering command handlers for Vitis TCF services
+20:30:27 INFO  : XSCT server has started successfully.
+20:30:27 INFO  : Successfully done setting XSCT server connection channel  
+20:30:27 INFO  : plnx-install-location is set to ''
+20:30:27 INFO  : Successfully done query RDI_DATADIR 
+20:30:27 INFO  : Successfully done setting workspace for the tool. 
+20:30:48 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
+20:31:14 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...

@@ -1,0 +1,14 @@
+Wed Apr 22 15:48:07 2020: Server was asked to start on port: '41853'
+Wed Apr 22 15:48:07 2020: Server is using token UUID: '50b92a37-5639-47cc-8657-532149b12c17'
+Wed Apr 22 15:48:07 2020: Attempting to start server on port '41853'
+Wed Apr 22 15:48:07 2020: XRC main fifo: created main fifo '/tmp/xrcmain50b92a37-5639-47cc-8657-532149b12c17', fd read = 11
+Wed Apr 22 15:48:07 2020: Running Rule Check Server
+Wed Apr 22 15:48:07 2020: Version 1.5.1
+Wed Apr 22 15:48:07 2020: Rule Check Server: Accepted socket connection from client
+Wed Apr 22 15:48:07 2020: EXCHANGE_TOKEN received, server token: 50b92a37-5639-47cc-8657-532149b12c17, passed token: 50b92a37-5639-47cc-8657-532149b12c17
+Wed Apr 22 22:39:43 2020: STOP_SERVER received, server token: 50b92a37-5639-47cc-8657-532149b12c17, passed token: 50b92a37-5639-47cc-8657-532149b12c17
+Wed Apr 22 22:39:43 2020: Socket received request to stop server.
+Wed Apr 22 22:39:43 2020: SERVER: destructor for server bound to port 41853
+Wed Apr 22 22:39:43 2020: XRC main fifo: Good unlink of /tmp/xrcmain50b92a37-5639-47cc-8657-532149b12c17
+Wed Apr 22 22:39:43 2020: Server exiting with status 0.
+Wed Apr 22 22:39:43 2020: Closing log file.

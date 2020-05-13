@@ -1,0 +1,15 @@
+Change the absolute path (lines 12-17) in benchmarks/Makefile.common
+
+To re-compile benchmark pi:
+	cd pi
+	make clean image
+
+To compile benchmark custom:
+	cd custom
+	make clean image
+
+To re-compile all benchmarks:
+	cd pi
+	make images
+	cd _all
+	make clean image_all

@@ -1,0 +1,7 @@
+/* Generated automatically. */
+static const char configuration_arguments[] = "/home/pdp/toolchain-ctng/.build/src/gcc-5.2.0/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=mips-pdp-elf --prefix=/home/pdp/toolchain-ctng/mips-pdp-elf --with-local-prefix=/home/pdp/toolchain-ctng/mips-pdp-elf/mips-pdp-elf/sysroot --with-sysroot=/home/pdp/toolchain-ctng/mips-pdp-elf/mips-pdp-elf/sysroot --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG crosstool-ng-1.22.0' --with-arch=r2000 --with-abi=32 --with-tune=r2000 --with-float=soft --disable-__cxa_atexit --with-gmp=/home/pdp/toolchain-ctng/.build/mips-pdp-elf/buildtools --with-mpfr=/home/pdp/toolchain-ctng/.build/mips-pdp-elf/buildtools --with-mpc=/home/pdp/toolchain-ctng/.build/mips-pdp-elf/buildtools --with-isl=/home/pdp/toolchain-ctng/.build/mips-pdp-elf/buildtools --with-cloog=/home/pdp/toolchain-ctng/.build/mips-pdp-elf/buildtools --with-libelf=/home/pdp/toolchain-ctng/.build/mips-pdp-elf/buildtools --enable-lto --enable-target-optspace --disable-libgomp --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-nls --disable-multilib --enable-languages=c,c++";
+static const char thread_model[] = "single";
+
+static const struct {
+  const char *name, *value;
+} configure_default_options[] = { { "abi", "32" }, { "arch", "r2000" }, { "tune", "r2000" }, { "float", "soft" } };

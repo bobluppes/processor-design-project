@@ -1,0 +1,8 @@
+15:20:28 ERROR : Workspace location C:\Users\boblu\Documents\TuD\MSc Computer Engineering\PDP\fpga contains spaces. Please switch to a workspace without spaces in its path.
+15:20:30 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc Computer Engineering\PDP\fpga\temp_xsdb_launch_script.tcl
+15:20:32 ERROR : (XSDB Server)invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:\Users\boblu\Documents\TuD\MSc" line 1)
+
+15:20:34 INFO  : Registering command handlers for Vitis TCF services

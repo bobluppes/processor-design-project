@@ -1,0 +1,116 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Wed Apr 22 04:10:09 2020
+# Process ID: 19558
+# Current directory: /home/pdp/PDP/fpga/zynq_fpga
+# Command line: vivado
+# Log file: /home/pdp/PDP/fpga/zynq_fpga/vivado.log
+# Journal file: /home/pdp/PDP/fpga/zynq_fpga/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/pdp/PDP/fpga/zynq_fpga/zynq_fpga.xpr
+open_bd_design {/home/pdp/PDP/fpga/zynq_fpga/zynq_fpga.srcs/sources_1/bd/design_2/design_2.bd}
+update_compile_order -fileset sources_1
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {50}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.clock_frequency {50000000}] [get_bd_cells uart_0]
+endgroup
+update_module_reference design_2_uart_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {51.6}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.clock_frequency {51600000}] [get_bd_cells uart_0]
+endgroup
+update_module_reference design_2_uart_0_0
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+report_utilization -name utilization_1
+open_bd_design {/home/pdp/PDP/fpga/zynq_fpga/zynq_fpga.srcs/sources_1/bd/design_2/design_2.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {52.1}] [get_bd_cells processing_system7_0]
+endgroup
+update_module_reference design_2_uart_0_0
+startgroup
+set_property -dict [list CONFIG.clock_frequency {52100000}] [get_bd_cells uart_0]
+endgroup
+startgroup
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+report_utilization -name utilization_1
+open_bd_design {/home/pdp/PDP/fpga/zynq_fpga/zynq_fpga.srcs/sources_1/bd/design_2/design_2.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {53.3}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.clock_frequency {53300000}] [get_bd_cells uart_0]
+endgroup
+update_module_reference design_2_uart_0_0
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+report_utilization -name utilization_1
+open_bd_design {/home/pdp/PDP/fpga/zynq_fpga/zynq_fpga.srcs/sources_1/bd/design_2/design_2.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {50}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.clock_frequency {50000000}] [get_bd_cells uart_0]
+endgroup
+update_module_reference design_2_uart_0_0
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {54.5}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.clock_frequency {54500000}] [get_bd_cells uart_0]
+endgroup
+update_module_reference design_2_uart_0_0
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+report_utilization -name utilization_1
+write_hw_platform -fixed -force  -include_bit -file /home/pdp/PDP/fpga/zynq_fpga/design_2_wrapper.xsa
+open_bd_design {/home/pdp/PDP/fpga/zynq_fpga/zynq_fpga.srcs/sources_1/bd/design_2/design_2.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {60}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.clock_frequency {60000000}] [get_bd_cells uart_0]
+endgroup
+update_module_reference design_2_uart_0_0
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_bd_design {/home/pdp/PDP/fpga/zynq_fpga/zynq_fpga.srcs/sources_1/bd/design_2/design_2.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {57.1}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.clock_frequency {57100000}] [get_bd_cells uart_0]
+endgroup
+update_module_reference design_2_uart_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+refresh_design
+report_utilization -name utilization_1
+write_hw_platform -fixed -force  -include_bit -file /home/pdp/PDP/fpga/zynq_fpga/design_2_wrapper.xsa
+open_bd_design {/home/pdp/PDP/fpga/zynq_fpga/zynq_fpga.srcs/sources_1/bd/design_2/design_2.bd}

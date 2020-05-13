@@ -1,0 +1,10 @@
+2020-05-03T20:31:17.073516200255-20:31:17 **** Incremental Build of configuration Debug for project appARMcpu ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-make[1]: Nothing to be done for 'main-build'.
+00255-
+20:31:17 Build Finished (took 334ms)
+

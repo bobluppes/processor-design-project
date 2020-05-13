@@ -1,0 +1,121 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
+| Date         : Tue Apr 21 22:21:50 2020
+| Host         : pdp3050 running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_2_xadc_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_2_xadc_wiz_0_0 (xilinx.com:ip:xadc_wiz:3.3) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
+| Date         : Tue Apr 21 22:21:50 2020
+| Host         : pdp3050 running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_2_axi_smc_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_2_axi_smc_0 (xilinx.com:ip:smartconnect:1.0) from (Rev. 10) to (Rev. 12)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_2_axi_smc_0'.
+
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_2_axi_smc_0'. These changes may impact your design.
+
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
+| Date         : Tue Apr 21 22:21:50 2020
+| Host         : pdp3050 running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_2_axi_interconnect_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_2_axi_interconnect_0_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 19) to (Rev. 21)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
+| Date         : Tue Apr 21 22:21:50 2020
+| Host         : pdp3050 running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_2_axi_gpio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_2_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 20) to (Rev. 22)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
+| Date         : Tue Apr 21 22:21:50 2020
+| Host         : pdp3050 running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_2_axi_bram_ctrl_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_2_axi_bram_ctrl_0_0 (xilinx.com:ip:axi_bram_ctrl:4.1) to (Rev. 2)
+
+2. Upgrade messages
+-------------------
+
+Removed parameter C_SELECT_XPM
+

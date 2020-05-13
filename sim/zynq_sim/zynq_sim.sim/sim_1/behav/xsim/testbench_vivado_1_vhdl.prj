@@ -1,0 +1,55 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../rtl/mlite/mlite_pack.vhd" \
+"../../../../../../rtl/mlite/alu.vhd" \
+"../../../../../../rtl/mlite/bus_mux.vhd" \
+"../../../../../../rtl/platform/cpu_pack.vhd" \
+"../../../../../../rtl/platform/cache_cntrl.vhd" \
+"../../../../../../rtl/mlite/control.vhd" \
+"../../../../../../rtl/platform/cpu_axi_rd_cntrl.vhd" \
+"../../../../../../rtl/platform/cpu_axi_wr_cntrl.vhd" \
+"../../../../../../rtl/platform/mem_cntrl.vhd" \
+"../../../../../../rtl/mlite/mem_ctrl.vhd" \
+"../../../../../../rtl/mlite/mlite_cpu.vhd" \
+"../../../../../../rtl/mlite/mult.vhd" \
+"../../../../../../rtl/mlite/pc_next.vhd" \
+"../../../../../../rtl/mlite/pipeline.vhd" \
+"../../../../../../rtl/mlite/reg_bank.vhd" \
+"../../../../../../rtl/mlite/shifter.vhd" \
+"../../../../../../rtl/platform/cpu.vhd" \
+"../../../../../../rtl/platform/crossbar_pack.vhd" \
+"../../../../../../rtl/platform/crossbar.vhd" \
+"../../../../../../rtl/platform/crossbar_axi_rd_cntrl.vhd" \
+"../../../../../../rtl/platform/crossbar_axi_wr_cntrl.vhd" \
+"../../../../../../rtl/platform/crossbar_base.vhd" \
+"../../../../../../rtl/platform/crossbar_wrap_pack.vhd" \
+"../../../../../../rtl/platform/crossbar_wrap.vhd" \
+"../../../../../../rtl/platform/axi_full2lite_converter_pack.vhd" \
+"../../../../../../rtl/platform/axi_full2lite_rd_cntrl.vhd" \
+"../../../../../../rtl/platform/axi_full2lite_wr_cntrl.vhd" \
+"../../../../../../rtl/platform/axi_full2lite_converter.vhd" \
+"../../../../../../rtl/platform/uart_pack.vhd" \
+"../../../../../../rtl/platform/uart_axi_rd_cntrl.vhd" \
+"../../../../../../rtl/platform/uart_axi_wr_cntrl.vhd" \
+"../../../../../../rtl/platform/uart_core.vhd" \
+"../../../../../../rtl/platform/uart_fifo.vhd" \
+"../../../../../../rtl/platform/uart.vhd" \
+"../../../../../boot_pack_zynq.vhd" \
+"../../../../../boot_pack_zynq_sim.vhd" \
+"../../../../../main_pack_opcodes.vhd" \
+"../../../../../../rtl/platform/bram.vhd" \
+"../../../../zynq_sim.ip_user_files/bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" \
+"../../../../zynq_sim.ip_user_files/bd/design_1/ip/design_1_cpu_0_0/sim/design_1_cpu_0_0.vhd" \
+"../../../../zynq_sim.ip_user_files/bd/design_1/ip/design_1_crossbar_wrap_0_0/sim/design_1_crossbar_wrap_0_0.vhd" \
+"../../../../zynq_sim.ip_user_files/bd/design_1/ip/design_1_axi_full2lite_conver_0_0/sim/design_1_axi_full2lite_conver_0_0.vhd" \
+"../../../../zynq_sim.ip_user_files/bd/design_1/ip/design_1_uart_0_0/sim/design_1_uart_0_0.vhd" \
+"../../../../zynq_sim.ip_user_files/bd/design_1/ip/design_1_bram_0_0/sim/design_1_bram_0_0.vhd" \
+"../../../../zynq_sim.ip_user_files/bd/design_1/ip/design_1_bram_1_0/sim/design_1_bram_1_0.vhd" \
+"../../../../zynq_sim.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/sim/design_1_axi_bram_ctrl_0_1.vhd" \
+"../../../../zynq_sim.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_1_1/sim/design_1_axi_bram_ctrl_1_1.vhd" \
+"../../../../zynq_sim.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../zynq_sim.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+"../../../../../testbench_vivado_1.vhd" \
+
+# Do not sort compile order
+nosort

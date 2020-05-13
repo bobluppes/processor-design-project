@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Wed Apr 22 00:33:11 2020
+# Process ID: 24009
+# Current directory: /home/pdp/PDP/fpga/zynq_fpga
+# Command line: vivado
+# Log file: /home/pdp/PDP/fpga/zynq_fpga/vivado.log
+# Journal file: /home/pdp/PDP/fpga/zynq_fpga/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/pdp/PDP/fpga/zynq_fpga/zynq_fpga.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 6544.258 ; gain = 126.820 ; free physical = 2252 ; free virtual = 6668
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 6838.465 ; gain = 0.000 ; free physical = 1954 ; free virtual = 6363
+INFO: [Netlist 29-17] Analyzing 392 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.64 . Memory (MB): peak = 7443.402 ; gain = 5.004 ; free physical = 1370 ; free virtual = 5788
+Restored from archive | CPU: 0.660000 secs | Memory: 11.353249 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.64 . Memory (MB): peak = 7443.402 ; gain = 5.004 ; free physical = 1370 ; free virtual = 5788
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 7443.402 ; gain = 0.000 ; free physical = 1372 ; free virtual = 5790
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 264 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 20 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 52 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 160 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 32 instances
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:26 . Memory (MB): peak = 7631.945 ; gain = 833.551 ; free physical = 1262 ; free virtual = 5688
+update_compile_order -fileset sources_1
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 22 00:39:38 2020...

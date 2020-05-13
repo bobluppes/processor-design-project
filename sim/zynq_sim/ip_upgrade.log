@@ -1,0 +1,110 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
+| Date         : Wed Apr 22 22:45:44 2020
+| Host         : pdp3050 running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_uart_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_uart_0_0 (xilinx.com:module_ref:uart:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
+| Date         : Wed Apr 22 22:45:44 2020
+| Host         : pdp3050 running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_cpu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_cpu_0_0 (xilinx.com:module_ref:cpu:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
+| Date         : Wed Apr 22 22:45:44 2020
+| Host         : pdp3050 running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0) from (Rev. 2) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
+| Date         : Wed Apr 22 22:45:44 2020
+| Host         : pdp3050 running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_bram_ctrl_1_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_bram_ctrl_1_1 (xilinx.com:ip:axi_bram_ctrl:4.1) to (Rev. 2)
+
+2. Upgrade messages
+-------------------
+
+Removed parameter C_SELECT_XPM
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
+| Date         : Wed Apr 22 22:45:44 2020
+| Host         : pdp3050 running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_bram_ctrl_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_bram_ctrl_0_1 (xilinx.com:ip:axi_bram_ctrl:4.1) to (Rev. 2)
+
+2. Upgrade messages
+-------------------
+
+Removed parameter C_SELECT_XPM
+

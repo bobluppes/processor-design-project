@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Wed Apr 22 00:44:24 2020
+# Process ID: 25116
+# Current directory: /home/pdp/PDP/fpga/zynq_fpga
+# Command line: vivado
+# Log file: /home/pdp/PDP/fpga/zynq_fpga/vivado.log
+# Journal file: /home/pdp/PDP/fpga/zynq_fpga/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/pdp/PDP/fpga/zynq_fpga/zynq_fpga.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 6557.160 ; gain = 147.207 ; free physical = 2114 ; free virtual = 6640
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+update_compile_order -fileset sources_1
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+write_hw_platform -fixed -force  -include_bit -file /home/pdp/PDP/fpga/zynq_fpga/design_2_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: /home/pdp/PDP/fpga/zynq_fpga/design_2_wrapper.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (/tools/Xilinx/Vivado/2019.2/data/embeddedsw) loading 0 seconds
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/pdp/PDP/fpga/zynq_fpga/design_2_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 6655.016 ; gain = 0.809 ; free physical = 1472 ; free virtual = 6420
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.

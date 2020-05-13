@@ -1,0 +1,122 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 031034dadac84d16b9a98eedefd0beab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L axi_bram_ctrl_v4_1_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_vivado_1_behav xil_defaultlib.testbench_vivado_1 xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package xpm.vcomponents
+Compiling package axi_bram_ctrl_v4_1_2.axi_bram_ctrl_funcs
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xil_defaultlib.axi_full2lite_converter_pack
+Compiling package ieee.std_logic_unsigned
+Compiling package xil_defaultlib.boot_pack_zynq
+Compiling package xil_defaultlib.boot_pack_zynq_sim
+Compiling package xil_defaultlib.main_pack_opcodes
+Compiling package xil_defaultlib.mlite_pack
+Compiling package xil_defaultlib.cpu_pack
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package xil_defaultlib.crossbar_pack
+Compiling package xil_defaultlib.crossbar_wrap_pack
+Compiling package xil_defaultlib.uart_pack
+Compiling package ieee.std_logic_textio
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.sng_port_arb [\sng_port_arb(c_s_axi_addr_width...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.ua_narrow [\ua_narrow(c_bram_addr_adjust_fa...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.wrap_brst [\wrap_brst(c_axi_addr_width=13,c...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture muxcy_l_v of entity unisim.MUXCY_L [muxcy_l_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture imp of entity axi_bram_ctrl_v4_1_2.SRL_FIFO [\SRL_FIFO(c_data_bits=1,c_depth=...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.wr_chnl [\wr_chnl(c_axi_addr_width=13,c_a...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.rd_chnl [\rd_chnl(c_axi_addr_width=13,c_a...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.full_axi [\full_axi(c_s_axi_addr_width=13,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.axi_bram_ctrl_top [\axi_bram_ctrl_top(c_bram_addr_w...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.axi_bram_ctrl [\axi_bram_ctrl(c_memory_depth=20...]
+Compiling architecture design_1_axi_bram_ctrl_0_1_arch of entity xil_defaultlib.design_1_axi_bram_ctrl_0_1 [design_1_axi_bram_ctrl_0_1_defau...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.sng_port_arb [\sng_port_arb(c_s_axi_addr_width...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.wrap_brst [\wrap_brst(c_axi_addr_width=25,c...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.wr_chnl [\wr_chnl(c_axi_addr_width=25,c_a...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.rd_chnl [\rd_chnl(c_axi_addr_width=25,c_a...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.full_axi [\full_axi(c_s_axi_addr_width=25,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.axi_bram_ctrl_top [\axi_bram_ctrl_top(c_bram_addr_w...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.axi_bram_ctrl [\axi_bram_ctrl(c_memory_depth=83...]
+Compiling architecture design_1_axi_bram_ctrl_1_1_arch of entity xil_defaultlib.design_1_axi_bram_ctrl_1_1 [design_1_axi_bram_ctrl_1_1_defau...]
+Compiling architecture behavioral of entity xil_defaultlib.axi_full2lite_wr_cntrl [axi_full2lite_wr_cntrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.axi_full2lite_rd_cntrl [axi_full2lite_rd_cntrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.axi_full2lite_converter [axi_full2lite_converter_default]
+Compiling architecture design_1_axi_full2lite_conver_0_0_arch of entity xil_defaultlib.design_1_axi_full2lite_conver_0_0 [design_1_axi_full2lite_conver_0_...]
+Compiling architecture behavioral of entity xil_defaultlib.bram [\bram(select_app="simb")(1,4)\]
+Compiling architecture design_1_bram_0_0_arch of entity xil_defaultlib.design_1_bram_0_0 [design_1_bram_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.bram [\bram(select_app="main")(1,4)\]
+Compiling architecture design_1_bram_1_0_arch of entity xil_defaultlib.design_1_bram_1_0 [design_1_bram_1_0_default]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=30.87...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling architecture behavioral of entity xil_defaultlib.cache_cntrl [\cache_cntrl(cache_way_width=0,c...]
+Compiling architecture logic of entity xil_defaultlib.pc_next [pc_next_default]
+Compiling architecture logic of entity xil_defaultlib.mem_ctrl [mem_ctrl_default]
+Compiling architecture logic of entity xil_defaultlib.control [control_default]
+Compiling architecture ram_block of entity xil_defaultlib.reg_bank [\reg_bank(memory_type="DUAL_PORT...]
+Compiling architecture logic of entity xil_defaultlib.bus_mux [bus_mux_default]
+Compiling architecture logic of entity xil_defaultlib.alu [\alu(1,7)\]
+Compiling architecture logic of entity xil_defaultlib.shifter [\shifter(1,7)\]
+Compiling architecture logic of entity xil_defaultlib.mult [\mult(1,7)\]
+Compiling architecture logic of entity xil_defaultlib.pipeline [pipeline_default]
+Compiling architecture logic of entity xil_defaultlib.mlite_cpu [\mlite_cpu(memory_type="DUAL_POR...]
+Compiling architecture behavioral of entity xil_defaultlib.cpu_axi_wr_cntrl [\cpu_axi_wr_cntrl(cache_offset_w...]
+Compiling architecture behavioral of entity xil_defaultlib.cpu_axi_rd_cntrl [\cpu_axi_rd_cntrl(cache_offset_w...]
+Compiling architecture behavioral of entity xil_defaultlib.cpu [\cpu(shifter_type="DEFAULT",alu_...]
+Compiling architecture design_1_cpu_0_0_arch of entity xil_defaultlib.design_1_cpu_0_0 [design_1_cpu_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.crossbar_axi_wr_cntrl [\crossbar_axi_wr_cntrl(axi_slave...]
+Compiling architecture behavioral of entity xil_defaultlib.crossbar_axi_rd_cntrl [\crossbar_axi_rd_cntrl(axi_slave...]
+Compiling architecture behavioral of entity xil_defaultlib.crossbar_base [\crossbar_base(width=1,input_no=...]
+Compiling architecture behavioral of entity xil_defaultlib.crossbar_base [\crossbar_base(width=32,input_no...]
+Compiling architecture behavioral of entity xil_defaultlib.crossbar_base [\crossbar_base(width=8,input_no=...]
+Compiling architecture behavioral of entity xil_defaultlib.crossbar_base [\crossbar_base(width=3,input_no=...]
+Compiling architecture behavioral of entity xil_defaultlib.crossbar_base [\crossbar_base(width=2,input_no=...]
+Compiling architecture behavioral of entity xil_defaultlib.crossbar_base [\crossbar_base(width=4,input_no=...]
+Compiling architecture behavioral of entity xil_defaultlib.crossbar_base [\crossbar_base(width=1,input_no=...]
+Compiling architecture behavioral of entity xil_defaultlib.crossbar_base [\crossbar_base(width=0,input_no=...]
+Compiling architecture behavioral of entity xil_defaultlib.crossbar_base [\crossbar_base(width=2,input_no=...]
+Compiling architecture behavioral of entity xil_defaultlib.crossbar_base [\crossbar_base(width=32,input_no...]
+Compiling architecture behavioral of entity xil_defaultlib.crossbar [\crossbar(axi_address_width=32,a...]
+Compiling architecture behavioral of entity xil_defaultlib.crossbar_wrap [\crossbar_wrap(0,95)(0,95)\]
+Compiling architecture design_1_crossbar_wrap_0_0_arch of entity xil_defaultlib.design_1_crossbar_wrap_0_0 [design_1_crossbar_wrap_0_0_defau...]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture design_1_proc_sys_reset_0_0_arch of entity xil_defaultlib.design_1_proc_sys_reset_0_0 [design_1_proc_sys_reset_0_0_defa...]
+Compiling architecture rtl of entity xil_defaultlib.uart_core [\uart_core(clock_frequency=49400...]
+Compiling architecture rtl of entity xil_defaultlib.uart_fifo [\uart_fifo(fifo_width=8,fifo_dep...]
+Compiling architecture behavioral of entity xil_defaultlib.uart_axi_wr_cntrl [\uart_axi_wr_cntrl(log_file="uar...]
+Compiling architecture behavioral of entity xil_defaultlib.uart_axi_rd_cntrl [\uart_axi_rd_cntrl(axi_address_w...]
+Compiling architecture behavioral of entity xil_defaultlib.uart [\uart(log_file="uart_output.txt"...]
+Compiling architecture design_1_uart_0_0_arch of entity xil_defaultlib.design_1_uart_0_0 [design_1_uart_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper [design_1_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_vivado_1
+Built simulation snapshot testbench_vivado_1_behav
