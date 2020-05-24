@@ -42,6 +42,8 @@ architecture Behavioral of select_adder is
        
     signal b_lo : std_logic_vector(a'length/2-1 downto 0);
     signal b_hi : std_logic_vector(a'length/2-1 downto 0);    
+	
+	signal bb : std_logic(a'length-1 downto 0);
 
     signal result_lo : std_logic_vector(a'length/2 downto 0);
     signal result_hi_0 : std_logic_vector(a'length/2 downto 0);
@@ -49,11 +51,6 @@ architecture Behavioral of select_adder is
 
     --signal result_total : STD_LOGIC_VECTOR (32 downto 0);    
 begin
-    a_lo <= a(a'length/2-1 downto 0);
-    a_hi <= a(a'length-1 downto a'length/2);
-    b_lo <= b(a'length/2-1 downto 0);
-    b_hi <= b(a'length-1 downto a'length/2);
-
     process (do_add,a,b)
     variable carry_lo : std_logic;
     variable carry_hi_0 : std_logic;
@@ -63,11 +60,19 @@ begin
             carry_lo := '0';
             carry_hi_0 := '0';
             carry_hi_1 := '1';
+			bb <= b;
         else
             carry_lo := '1';
             carry_hi_0 := '0';
             carry_hi_1 := '1';            
+			bb <= not b;
         end if;
+		
+	a_lo <= a(a'length/2-1 downto 0);
+    a_hi <= a(a'length-1 downto a'length/2);
+    b_lo <= b(a'length/2-1 downto 0);
+    b_hi <= b(a'length-1 downto a'length/2);	
+	
         
         -- Lower k/2 bits
         for index in 0 to a'length/2-1 loop
