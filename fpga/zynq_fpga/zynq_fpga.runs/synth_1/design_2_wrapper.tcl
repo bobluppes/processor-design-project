@@ -37,6 +37,7 @@ read_vhdl -library xil_defaultlib {
   C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/bus_mux.vhd
   C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/cpu_pack.vhd
   C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/cache_cntrl.vhd
+  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd
   C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/control.vhd
   C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/cpu_axi_rd_cntrl.vhd
   C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/cpu_axi_wr_cntrl.vhd

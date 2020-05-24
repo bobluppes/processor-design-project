@@ -41,6 +41,7 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use IEEE.std_logic_arith.all;
 use work.mlite_pack.all;
+use work.cla.all;
 
 entity mult is
    generic(mult_type  : string := "DEFAULT");
@@ -86,7 +87,8 @@ begin
    -- ABS and remainder signals
    a_neg <= bv_negate(a);
    b_neg <= bv_negate(b);
-   sum <= bv_adder(upper_reg, aa_reg, mode_reg);
+   -- sum <= bv_adder(upper_reg, aa_reg, mode_reg);
+   sum <= cla_adder(upper_reg, aa_reg, mode_reg);
     
    --multiplication/division unit
    mult_proc: process(clk, reset_in, a, b, mult_func,

@@ -197,3 +197,22 @@ if {$rc} {
   unset ACTIVE_STEP 
 }
 
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
+  catch { write_mem_info -force design_2_wrapper.mmi }
+  write_bitstream -force design_2_wrapper.bit 
+  catch {write_debug_probes -quiet -force design_2_wrapper}
+  catch {file copy -force design_2_wrapper.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
+  unset ACTIVE_STEP 
+}
+
