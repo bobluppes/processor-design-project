@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:49:17 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Sat May 23 12:26:38 2020
+# Process ID: 8992
+# Current directory: D:/PDP Test/pdp_test/pdp_test.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/PDP Test/pdp_test/pdp_test.sim/sim_1/behav/xsim/xsim.dir/tb_select_adder_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/PDP Test/pdp_test/pdp_test.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/PDP Test/pdp_test/pdp_test.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/PDP -notrace
+couldn't read file "D:/PDP": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Sat May 23 12:26:38 2020...
