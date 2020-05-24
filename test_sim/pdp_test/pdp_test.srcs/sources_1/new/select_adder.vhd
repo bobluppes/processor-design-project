@@ -31,23 +31,28 @@ entity select_adder is
           );
 end select_adder;
 
-architecture Behavioral of select_adder is
-    signal a_lo : std_logic_vector(15 downto 0);
-    signal a_hi : std_logic_vector(15 downto 0);    
-       
-    signal b_lo : std_logic_vector(15 downto 0);
-    signal b_hi : std_logic_vector(15 downto 0);    
+-- a'length = 32
+-- a'length-1 = 31
+-- a'length/2 = 16
+-- a'length/2-1 = 15
 
-    signal result_lo : std_logic_vector(16 downto 0);
-    signal result_hi_0 : std_logic_vector(16 downto 0);
-    signal result_hi_1 : std_logic_vector(16 downto 0);
+architecture Behavioral of select_adder is
+    signal a_lo : std_logic_vector(a'length/2-1 downto 0);
+    signal a_hi : std_logic_vector(a'length/2-1 downto 0);    
+       
+    signal b_lo : std_logic_vector(a'length/2-1 downto 0);
+    signal b_hi : std_logic_vector(a'length/2-1 downto 0);    
+
+    signal result_lo : std_logic_vector(a'length/2 downto 0);
+    signal result_hi_0 : std_logic_vector(a'length/2 downto 0);
+    signal result_hi_1 : std_logic_vector(a'length/2 downto 0);
 
     --signal result_total : STD_LOGIC_VECTOR (32 downto 0);    
 begin
-    a_lo <= a(15 downto 0);
-    a_hi <= a(31 downto 16);
-    b_lo <= b(15 downto 0);
-    b_hi <= b(31 downto 16);
+    a_lo <= a(a'length/2-1 downto 0);
+    a_hi <= a(a'length-1 downto a'length/2);
+    b_lo <= b(a'length/2-1 downto 0);
+    b_hi <= b(a'length-1 downto a'length/2);
 
     process (do_add,a,b)
     variable carry_lo : std_logic;
@@ -65,7 +70,7 @@ begin
         end if;
         
         -- Lower k/2 bits
-        for index in 0 to 15 loop
+        for index in 0 to a'length/2-1 loop
             result_lo(index) <= a_lo(index) xor b_lo(index) xor carry_lo;
             carry_lo := (carry_lo and (a_lo(index) or b_lo(index))) or (a_lo(index) and b_lo(index));
 
@@ -77,18 +82,18 @@ begin
         end loop;
 
         
-        result_hi_0(16) <= carry_hi_0 xnor do_add;
-        result_hi_1(16) <= carry_hi_1 xnor do_add;
-        result_lo(16) <= carry_lo xnor do_add;
+        result_hi_0(a'length/2) <= carry_hi_0 xnor do_add;
+        result_hi_1(a'length/2) <= carry_hi_1 xnor do_add;
+        result_lo(a'length/2) <= carry_lo xnor do_add;
     end process; 
 
-    process (result_lo(16))
+    process (result_lo(a'length/2))
     begin
-        s(15 downto 0) <= result_lo(15 downto 0);         
-        case result_lo(16) is
-            when '1' => s(32 downto 16) <= result_hi_1(16 downto 0);
-            when '0' => s(32 downto 16) <= result_hi_0(16 downto 0);
-            when others => s(32 downto 0) <= (others => '0');
+        s(a'length/2-1 downto 0) <= result_lo(a'length/2-1 downto 0);         
+        case result_lo(a'length/2) is
+            when '1' => s(a'length downto a'length/2) <= result_hi_1(a'length/2 downto 0);
+            when '0' => s(a'length downto a'length/2) <= result_hi_0(a'length/2 downto 0);
+            when others => s(a'length downto 0) <= (others => '0');
         end case;
     end process;
 end Behavioral;
