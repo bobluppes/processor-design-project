@@ -71,6 +71,20 @@ architecture logic of mult is
    signal a_neg       : std_logic_vector(31 downto 0);
    signal b_neg       : std_logic_vector(31 downto 0);
    signal sum         : std_logic_vector(32 downto 0);
+
+   COMPONENT CLA
+   GENERIC(
+       bits : integer
+   );
+
+   PORT
+       (
+        a          :  IN   STD_LOGIC_VECTOR((bits-1) DOWNTO 0);
+        b          :  IN   STD_LOGIC_VECTOR((bits-1) DOWNTO 0);
+        cin        :  IN   STD_LOGIC;
+        result     :  OUT  STD_LOGIC_VECTOR(bits DOWNTO 0)
+   );
+   END COMPONENT;
    
 begin
  
@@ -86,7 +100,19 @@ begin
    -- ABS and remainder signals
    a_neg <= bv_negate(a);
    b_neg <= bv_negate(b);
-   sum <= bv_adder(upper_reg, aa_reg, mode_reg);
+   -- sum <= bv_adder(upper_reg, aa_reg, mode_reg);
+   -- sum <= cla_adder(upper_reg, aa_reg, mode_reg);
+
+   CLA_INST: cla
+      GENERIC (
+         bits => 32
+      );
+      PORT MAP (
+         a => upper_reg,
+         b => aa_reg,
+         cin => '0',
+         result => sum
+      );
     
    --multiplication/division unit
    mult_proc: process(clk, reset_in, a, b, mult_func,
