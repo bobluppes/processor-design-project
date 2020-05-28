@@ -1,0 +1,32 @@
+
+==========================================================
+
+
+INFO: Configuring FPGA and ARM cpu ... 
+
+initializing  0%    0MB   0.0MB/s  ??:?? ETA 28%    1MB   2.2MB/s  ??:?? ETA 50%    1MB   1.9MB/s  ??:?? ETA 71%    2MB   1.8MB/s  ??:?? ETA 94%    3MB   1.8MB/s  ??:?? ETA100%    3MB   1.8MB/s  00:02    
+INFO: [Hsi 55-2053] elapsed time for repository (/tools/Xilinx/Vitis/2019.2/data/embeddedsw) loading 0 seconds
+Downloading Program -- /home/pdp/pdp_server/run1/appARMcpu.elf
+	section, .text: 0x00100000 - 0x00113fcf
+	section, .init: 0x00113fd0 - 0x00113fdb
+	section, .fini: 0x00113fdc - 0x00113fe7
+	section, .rodata: 0x00113fe8 - 0x00114887
+	section, .data: 0x00114888 - 0x00115337
+	section, .eh_frame: 0x00115338 - 0x0011533b
+	section, .mmu_tbl: 0x00118000 - 0x0011bfff
+	section, .ARM.exidx: 0x0011c000 - 0x0011c007
+	section, .init_array: 0x0011c008 - 0x0011c00b
+	section, .fini_array: 0x0011c00c - 0x0011c00f
+	section, .bss: 0x0011c020 - 0x00b1e36d
+	section, .heap: 0x00b1e36e - 0x00b2036f
+	section, .stack: 0x00b20370 - 0x00b23b6f
+  0%    0MB   0.0MB/s  ??:?? ETA100%    0MB   0.5MB/s  00:00    
+Setting PC to Program Start Address 0x00100000
+Successfully downloaded /home/pdp/pdp_server/run1/appARMcpu.elf
+
+
+INFO: Reading the results of benchmark execution has completed succesfully.
+
+
+DONE.
+

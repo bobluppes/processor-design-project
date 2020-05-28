@@ -54,6 +54,14 @@ end; --entity mult
 
 architecture logic of mult is
 
+   component select_adder is
+      Port ( a : in STD_LOGIC_VECTOR (31 downto 0);
+             b : in STD_LOGIC_VECTOR (31 downto 0);
+             do_add : in std_logic;
+             s : out STD_LOGIC_VECTOR (32 downto 0)                       
+            );
+  end component;
+
    constant MODE_MULT : std_logic := '1';
    constant MODE_DIV  : std_logic := '0';
 
@@ -86,7 +94,12 @@ begin
    -- ABS and remainder signals
    a_neg <= bv_negate(a);
    b_neg <= bv_negate(b);
-   sum <= bv_adder(upper_reg, aa_reg, mode_reg);
+   
+   -- Baseline
+   --sum <= bv_adder(upper_reg, aa_reg, mode_reg);
+
+    -- Carry Select Adder
+   select_adder_inst : select_adder port map (a=>upper_reg, b=>aa_reg, do_add=>mode_reg, s=>sum);
     
    --multiplication/division unit
    mult_proc: process(clk, reset_in, a, b, mult_func,

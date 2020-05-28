@@ -1,0 +1,16 @@
+===========
+INFO: Sending benchmark (325288 bytes) to DDR memory 
+Checking DDR ....... OK!
+Jumping at address 10000000
+Multiplying 65536-bit number with 65536-bit number 1 times...
+CORRECT!
+
+----------------------------------------------------------
+MULTIPLY took 370.547081 million clock cycles
+----------------------------------------------------------
+þ
+Total energy :   2.576491 J
+Peak power   :   80.867249 mW
+
+DONE
+

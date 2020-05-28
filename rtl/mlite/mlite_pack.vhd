@@ -107,6 +107,9 @@ package mlite_pack is
                          ) return std_logic_vector;
    function bv_inc(a : in std_logic_vector
                   ) return std_logic_vector;
+   function select_adder( a     : in std_logic_vector;
+                        b     : in std_logic_vector;
+                        do_add: in std_logic) return std_logic_vector;
 
    -- For Altera
    COMPONENT lpm_ram_dp
@@ -517,6 +520,73 @@ begin
    return result;
 end; --function
 
+-- function: Carry Select Adder (1-level). Should, in theory, compute the sum and carry in a'length/2 cycles.
+function select_adder(a     : in std_logic_vector;
+                      b     : in std_logic_vector;
+                      do_add: in std_logic) return std_logic_vector is
+   variable a_lo : std_logic_vector(a'length/2-1 downto 0);
+   variable a_hi : std_logic_vector(a'length/2-1 downto 0);    
+      
+   variable b_lo : std_logic_vector(a'length/2-1 downto 0);
+   variable b_hi : std_logic_vector(a'length/2-1 downto 0);
+   
+   variable bb : std_logic_vector(a'length-1 downto 0);
+
+   variable result_lo : std_logic_vector(a'length/2 downto 0);
+   variable result_hi_0 : std_logic_vector(a'length/2 downto 0);
+   variable result_hi_1 : std_logic_vector(a'length/2 downto 0); 
+
+   variable carry_lo : std_logic;
+   variable carry_hi_0 : std_logic;
+   variable carry_hi_1 : std_logic;
+
+   variable s: std_logic_vector(a'length downto 0);
+begin
+   if do_add = '1' then
+      carry_lo := '0';
+      carry_hi_0 := '0';
+      carry_hi_1 := '1';
+      bb := b;
+  else
+      carry_lo := '1';
+      carry_hi_0 := '0';
+      carry_hi_1 := '1';            
+      bb := not b;
+  end if;
+
+   a_lo := a(a'length/2-1 downto 0);
+   a_hi := a(a'length-1 downto a'length/2);
+   b_lo := b(a'length/2-1 downto 0);
+   b_hi := b(a'length-1 downto a'length/2);
+
+  for index in 0 to a'length/2-1 loop
+      -- these statements should be concurrent - however that might not be possible inside a function.
+      -- lower bits
+      result_lo(index) := a_lo(index) xor b_lo(index) xor carry_lo;
+      carry_lo := (carry_lo and (a_lo(index) or b_lo(index))) or (a_lo(index) and b_lo(index));
+
+      -- higher bits with first carry 0
+      result_hi_0(index) := a_hi(index) xor b_hi(index) xor carry_hi_0;
+      carry_hi_0 := (carry_hi_0 and (a_hi(index) or b_hi(index))) or (a_hi(index) and b_hi(index));
+
+      -- higher bits with first carry 1
+      result_hi_1(index) := a_hi(index) xor b_hi(index) xor carry_hi_1;
+      carry_hi_1 := (carry_hi_1 and (a_hi(index) or b_hi(index))) or (a_hi(index) and b_hi(index));
+   end loop;
+
+   result_hi_0(a'length/2) := carry_hi_0 xnor do_add;
+   result_hi_1(a'length/2) := carry_hi_1 xnor do_add;
+   result_lo(a'length/2) := carry_lo xnor do_add;
+
+   s(a'length/2-1 downto 0) := result_lo(a'length/2-1 downto 0);         
+        case result_lo(a'length/2) is
+            when '1' => s(a'length downto a'length/2) := result_hi_1(a'length/2 downto 0);
+            when '0' => s(a'length downto a'length/2) := result_hi_0(a'length/2 downto 0);
+            when others => s(a'length downto 0) := (others => '0');
+   end case;
+   
+   return s;
+end; --function
 
 function bv_negate(a : in std_logic_vector) return std_logic_vector is
    variable carry_in : std_logic;
