@@ -103,17 +103,20 @@ begin
    -- sum <= bv_adder(upper_reg, aa_reg, mode_reg);
    -- sum <= cla_adder(upper_reg, aa_reg, mode_reg);
 
-   CLA_INST: cla
-      GENERIC (
-         bits => 32
-      );
-      PORT MAP (
+CLA_INST: CLA
+    GENERIC MAP(
+        bits => 32
+ 
+    )
+    PORT MAP (
+        
          a => upper_reg,
          b => aa_reg,
          cin => '0',
          result => sum
-      );
+    );
     
+
    --multiplication/division unit
    mult_proc: process(clk, reset_in, a, b, mult_func,
       a_neg, b_neg, sum, sign_reg, mode_reg, negate_reg_LO, 

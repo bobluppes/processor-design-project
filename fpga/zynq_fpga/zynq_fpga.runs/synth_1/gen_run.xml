@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1589372864">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1590677225">
   <File Type="PA-TCL" Name="design_2_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="design_2_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="design_2_wrapper_reports.tcl"/>
@@ -34,6 +34,14 @@
     <File Path="$PPRDIR/../../rtl/platform/cache_cntrl.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mlite/cla.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/mlite/cla.vhd"/>
+        <Attr Name="ImportTime" Val="1590675035"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../../rtl/mlite/control.vhd">

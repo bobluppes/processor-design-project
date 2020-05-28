@@ -17,6 +17,7 @@ COMPONENT CLA
          a          :  IN   STD_LOGIC_VECTOR((bits-1) DOWNTO 0);
          b          :  IN   STD_LOGIC_VECTOR((bits-1) DOWNTO 0);
          cin        :  IN   STD_LOGIC;
+         do_add     :  IN   STD_LOGIC;
          result     :  OUT  STD_LOGIC_VECTOR(bits DOWNTO 0)
     );
 
@@ -25,6 +26,7 @@ END COMPONENT;
 signal a_tb         :  STD_LOGIC_VECTOR(3 DOWNTO 0);
 signal b_tb         :  STD_LOGIC_VECTOR(3 DOWNTO 0);
 signal cin_tb       :  STD_LOGIC;
+signal do_add_tb    :  STD_LOGIC;
 signal result_tb    :  STD_LOGIC_VECTOR(4 DOWNTO 0);
 
 begin
@@ -38,6 +40,7 @@ CLA_INST: CLA
          a => a_tb,
          b => b_tb,
          cin => cin_tb,
+         do_add => do_add_tb,
          result => result_tb
     );
 
@@ -50,18 +53,21 @@ stim: process
         a_tb <= "1111";
         b_tb <= "1010";
         cin_tb <= '0';
+        do_add_tb <= '1';
  
         wait for 10 ns;
  
         a_tb <= "1010";
         b_tb <= "0111";
         cin_tb <= '0';
+        do_add_tb <= '1';
  
         wait for 10 ns;
  
         a_tb <= "1000";
         b_tb <= "1001";
         cin_tb <= '0';
+        do_add_tb <= '1';
  
         wait;
  

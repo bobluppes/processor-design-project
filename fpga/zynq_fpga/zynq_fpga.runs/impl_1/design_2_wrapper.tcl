@@ -69,17 +69,17 @@ set rc [catch {
   create_project -in_memory -part xc7z020clg400-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.cache/wt [current_project]
-  set_property parent.project_path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.xpr [current_project]
-  set_property ip_output_repo C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Xilinx/Projects/PDP_git/processor_design_project/fpga/zynq_fpga/zynq_fpga.cache/wt [current_project]
+  set_property parent.project_path C:/Xilinx/Projects/PDP_git/processor_design_project/fpga/zynq_fpga/zynq_fpga.xpr [current_project]
+  set_property ip_output_repo C:/Xilinx/Projects/PDP_git/processor_design_project/fpga/zynq_fpga/zynq_fpga.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.runs/synth_1/design_2_wrapper.dcp
+  add_files -quiet C:/Xilinx/Projects/PDP_git/processor_design_project/fpga/zynq_fpga/zynq_fpga.runs/synth_1/design_2_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.srcs/sources_1/bd/design_2/design_2.bd
+  add_files C:/Xilinx/Projects/PDP_git/processor_design_project/fpga/zynq_fpga/zynq_fpga.srcs/sources_1/bd/design_2/design_2.bd
   set_param project.isImplRun false
-  read_xdc C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.srcs/constrs_1/new/constraints.xdc
+  read_xdc C:/Xilinx/Projects/PDP_git/processor_design_project/fpga/zynq_fpga/zynq_fpga.srcs/constrs_1/new/constraints.xdc
   set_param project.isImplRun true
   link_design -top design_2_wrapper -part xc7z020clg400-1
   set_param project.isImplRun false
@@ -194,6 +194,25 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step post_route_phys_opt_design
+  unset ACTIVE_STEP 
+}
+
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
+  catch { write_mem_info -force design_2_wrapper.mmi }
+  write_bitstream -force design_2_wrapper.bit 
+  catch {write_debug_probes -quiet -force design_2_wrapper}
+  catch {file copy -force design_2_wrapper.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

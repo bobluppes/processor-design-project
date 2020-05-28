@@ -165,7 +165,7 @@ ARCHITECTURE design_2_cpu_0_0_arch OF design_2_cpu_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_2_cpu_0_0_arch : ARCHITECTURE IS "design_2_cpu_0_0,cpu,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_2_cpu_0_0_arch: ARCHITECTURE IS "design_2_cpu_0_0,cpu,{x_ipProduct=Vivado 2019.2.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=cpu,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,shifter_type=DEFAULT,alu_type=DEFAULT,mult_type=DEFAULT,cache_enable=True,cache_way_width=0,cache_index_width=9,cache_offset_width=1,cache_address_width=21,cache_replace_policy=RR}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_2_cpu_0_0_arch: ARCHITECTURE IS "design_2_cpu_0_0,cpu,{x_ipProduct=Vivado 2019.2.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=cpu,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,shifter_type=DEFAULT,alu_type=DEFAULT,mult_type=DEFAULT,cache_enable=True,cache_way_width=0,cache_index_width=9,cache_offset_width=2,cache_address_width=21,cache_replace_policy=RR}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_2_cpu_0_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -224,7 +224,7 @@ BEGIN
       cache_enable => "True",
       cache_way_width => 0,
       cache_index_width => 9,
-      cache_offset_width => 1,
+      cache_offset_width => 2,
       cache_address_width => 21,
       cache_replace_policy => "RR"
     )

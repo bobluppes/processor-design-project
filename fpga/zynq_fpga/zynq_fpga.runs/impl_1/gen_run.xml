@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1589372864">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1590677698">
   <File Type="BITSTR-BMM" Name="design_2_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="design_2_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="design_2_wrapper_timing_summary_init.rpt"/>
@@ -100,6 +100,14 @@
     <File Path="$PPRDIR/../../rtl/platform/cache_cntrl.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mlite/cla.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/mlite/cla.vhd"/>
+        <Attr Name="ImportTime" Val="1590675035"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../../rtl/mlite/control.vhd">
@@ -317,8 +325,8 @@
       <Option Id="Directive">0</Option>
     </Step>
     <Step Id="route_design">
-      <Option Id="Directive">0</Option>
       <Option Id="MoreOptsStr"><![CDATA[-tns_cleanup]]></Option>
+      <Option Id="Directive">0</Option>
     </Step>
     <Step Id="post_route_phys_opt_design" EnableStepBool="1">
       <Option Id="Directive">0</Option>
