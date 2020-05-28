@@ -1,23 +1,10 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 23.05.2020 11:35:43
--- Design Name: 
--- Module Name: select_adder - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
+-- Carry Select Adder
+-- Quinten van Wingerden
+-- Processor Design Project
+-- Adder to add and subtract numbers. 
+-- input : a, b : arguments to be added
+-- input : do_add: 1 for add, 0 for subtract
+-- output : s with MSB the carry.
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -43,64 +30,55 @@ architecture Behavioral of select_adder is
     signal b_lo : std_logic_vector(a'length/2-1 downto 0);
     signal b_hi : std_logic_vector(a'length/2-1 downto 0);    
 	
-	signal bb : std_logic(a'length-1 downto 0);
-
-    signal result_lo : std_logic_vector(a'length/2 downto 0);
+	signal result_lo : std_logic_vector(a'length/2 downto 0);
     signal result_hi_0 : std_logic_vector(a'length/2 downto 0);
     signal result_hi_1 : std_logic_vector(a'length/2 downto 0);
 
     --signal result_total : STD_LOGIC_VECTOR (32 downto 0);    
 begin
-    process (do_add,a,b)
+    process (do_add,a,b,result_lo, result_hi_0, result_hi_1)
     variable carry_lo : std_logic;
     variable carry_hi_0 : std_logic;
     variable carry_hi_1 : std_logic;
+    
+    variable bb : std_logic_vector(a'length-1 downto 0); -- copy of b
     begin
-        if do_add = '1' then
+        if do_add = '1' then        
+            bb := b;
             carry_lo := '0';
             carry_hi_0 := '0';
             carry_hi_1 := '1';
-			bb <= b;
-        else
+        elsif do_add ='0' then
+            bb := not b;
             carry_lo := '1';
-            carry_hi_0 := '0';
-            carry_hi_1 := '1';            
-			bb <= not b;
-        end if;
-		
-	a_lo <= a(a'length/2-1 downto 0);
-    a_hi <= a(a'length-1 downto a'length/2);
-    b_lo <= b(a'length/2-1 downto 0);
-    b_hi <= b(a'length-1 downto a'length/2);	
-	
+            carry_hi_0 := '1';
+            carry_hi_1 := '0';            
+        end if;	
         
         -- Lower k/2 bits
         for index in 0 to a'length/2-1 loop
-            result_lo(index) <= a_lo(index) xor b_lo(index) xor carry_lo;
-            carry_lo := (carry_lo and (a_lo(index) or b_lo(index))) or (a_lo(index) and b_lo(index));
+            result_lo(index) <= a(index) xor bb(index) xor carry_lo;
+            carry_lo := (carry_lo and (a(index) or bb(index))) or (a(index) and bb(index));
 
-            result_hi_0(index) <= a_hi(index) xor b_hi(index) xor carry_hi_0;
-            carry_hi_0 := (carry_hi_0 and (a_hi(index) or b_hi(index))) or (a_hi(index) and b_hi(index));
+            result_hi_0(index) <= a(index+a'length/2) xor bb(index+a'length/2) xor carry_hi_0;
+            carry_hi_0 := (carry_hi_0 and (a(index+a'length/2) or bb(index+a'length/2))) or (a(index+a'length/2) and bb(index+a'length/2));
 
-            result_hi_1(index) <= a_hi(index) xor b_hi(index) xor carry_hi_1;
-            carry_hi_1 := (carry_hi_1 and (a_hi(index) or b_hi(index))) or (a_hi(index) and b_hi(index));
+            result_hi_1(index) <= a(index+a'length/2) xor bb(index+a'length/2) xor carry_hi_1;
+            carry_hi_1 := (carry_hi_1 and (a(index+a'length/2) or bb(index+a'length/2))) or (a(index+a'length/2) and bb(index+a'length/2));
         end loop;
-
         
         result_hi_0(a'length/2) <= carry_hi_0 xnor do_add;
         result_hi_1(a'length/2) <= carry_hi_1 xnor do_add;
         result_lo(a'length/2) <= carry_lo xnor do_add;
-    end process; 
 
-    process (result_lo(a'length/2))
-    begin
         s(a'length/2-1 downto 0) <= result_lo(a'length/2-1 downto 0);         
         case result_lo(a'length/2) is
-            when '1' => s(a'length downto a'length/2) <= result_hi_1(a'length/2 downto 0);
             when '0' => s(a'length downto a'length/2) <= result_hi_0(a'length/2 downto 0);
+            when '1' => s(a'length downto a'length/2) <= result_hi_1(a'length/2 downto 0);
             when others => s(a'length downto 0) <= (others => '0');
-        end case;
+        end case;    
     end process;
+    
 end Behavioral;
 
 --process (result_lo(16))

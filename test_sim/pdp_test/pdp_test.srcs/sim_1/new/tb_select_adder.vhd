@@ -20,19 +20,9 @@ architecture behavioral of tb_select_adder is
 begin
     adder_inst: select_adder port map(a=>in_a, b=>in_b, s=>sum, do_add=>do_add);
 
-    --in_a <= std_logic_vector(to_unsigned(5,32));
-    --in_b <= std_logic_vector(to_unsigned(3,32));
+    in_a <= std_logic_vector(to_unsigned(32768,32)) after 0ns,  std_logic_vector(to_unsigned(10,32)) after 25ns;
+    in_b <= std_logic_vector(to_unsigned(32768,32)) after 0ns,  std_logic_vector(to_unsigned(3,32)) after 25ns;
 
-    in_a <= std_logic_vector(to_unsigned(32768,32));
-    in_b <= std_logic_vector(to_unsigned(32768,32));
-
-    do_add <= '0' after 0ns, '1' after 10ns;
+    do_add <= '1' after 0ns, '0' after 10ns, '1' after 20ns; --'0' after 20ns, '1' after 30ns;
 
 end behavioral;
-
-
-
-
-
-
-
