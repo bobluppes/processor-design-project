@@ -1,91 +1,95 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/mlite/mlite_pack.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/mlite/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/mlite_pack.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/alu.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'alu'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/mlite/bus_mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/bus_mux.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'bus_mux'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/cpu_pack.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/cache_cntrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/cpu_pack.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/cache_cntrl.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'cache_cntrl'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/mlite/control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cla'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/control.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'control'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/cpu_axi_rd_cntrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/cpu_axi_rd_cntrl.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'cpu_axi_rd_cntrl'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/cpu_axi_wr_cntrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/cpu_axi_wr_cntrl.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'cpu_axi_wr_cntrl'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/mem_cntrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'full_adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/mem_cntrl.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'mem_cntrl'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/mlite/mem_ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/mem_ctrl.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'mem_ctrl'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/mlite/mlite_cpu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/mlite_cpu.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'mlite_cpu'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/mlite/mult.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/mult.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'mult'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/mlite/pc_next.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/pc_next.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'pc_next'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/mlite/pipeline.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/pipeline.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'pipeline'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/mlite/reg_bank.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/reg_bank.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'reg_bank'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/mlite/shifter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/shifter.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'shifter'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/cpu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/cpu.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'cpu'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/crossbar_pack.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/crossbar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/crossbar_pack.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/crossbar.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'crossbar'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/crossbar_axi_rd_cntrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/crossbar_axi_rd_cntrl.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'crossbar_axi_rd_cntrl'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/crossbar_axi_wr_cntrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/crossbar_axi_wr_cntrl.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'crossbar_axi_wr_cntrl'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/crossbar_base.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/crossbar_base.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'crossbar_base'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/crossbar_wrap_pack.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/crossbar_wrap.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/crossbar_wrap_pack.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/crossbar_wrap.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'crossbar_wrap'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/axi_full2lite_converter_pack.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/axi_full2lite_rd_cntrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/axi_full2lite_converter_pack.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/axi_full2lite_rd_cntrl.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'axi_full2lite_rd_cntrl'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/axi_full2lite_wr_cntrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/axi_full2lite_wr_cntrl.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'axi_full2lite_wr_cntrl'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/axi_full2lite_converter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/axi_full2lite_converter.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'axi_full2lite_converter'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/uart_pack.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/uart_axi_rd_cntrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/uart_pack.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/uart_axi_rd_cntrl.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'uart_axi_rd_cntrl'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/uart_axi_wr_cntrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/uart_axi_wr_cntrl.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'uart_axi_wr_cntrl'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/uart_core.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/uart_core.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'uart_core'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/uart_fifo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/uart_fifo.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'uart_fifo'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/uart.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'uart'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/sim/boot_pack_zynq.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/sim/boot_pack_zynq_sim.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/sim/main_pack_opcodes.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/rtl/platform/bram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/sim/boot_pack_zynq.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/sim/boot_pack_zynq_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/sim/main_pack_opcodes.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/platform/bram.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'bram'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'design_1_proc_sys_reset_0_0'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_cpu_0_0/sim/design_1_cpu_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_cpu_0_0/sim/design_1_cpu_0_0.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'design_1_cpu_0_0'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_crossbar_wrap_0_0/sim/design_1_crossbar_wrap_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_crossbar_wrap_0_0/sim/design_1_crossbar_wrap_0_0.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'design_1_crossbar_wrap_0_0'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_axi_full2lite_conver_0_0/sim/design_1_axi_full2lite_conver_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_axi_full2lite_conver_0_0/sim/design_1_axi_full2lite_conver_0_0.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_full2lite_conver_0_0'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_uart_0_0/sim/design_1_uart_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_uart_0_0/sim/design_1_uart_0_0.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'design_1_uart_0_0'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_bram_0_0/sim/design_1_bram_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_bram_0_0/sim/design_1_bram_0_0.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'design_1_bram_0_0'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_bram_1_0/sim/design_1_bram_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_bram_1_0/sim/design_1_bram_1_0.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'design_1_bram_1_0'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/sim/design_1_axi_bram_ctrl_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/sim/design_1_axi_bram_ctrl_0_1.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_bram_ctrl_0_1'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_1_1/sim/design_1_axi_bram_ctrl_1_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_1_1/sim/design_1_axi_bram_ctrl_1_1.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_bram_ctrl_1_1'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/sim/design_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/sim/zynq_sim/zynq_sim.ip_user_files/bd/design_1/sim/design_1.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'design_1'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'design_1_wrapper'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/pdp/PDP/sim/testbench_vivado_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/sim/testbench_vivado_1.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'testbench_vivado_1'

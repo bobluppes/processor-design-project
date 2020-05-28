@@ -73,9 +73,13 @@ architecture logic of mult is
    signal sum         : std_logic_vector(32 downto 0);
 
    component cla is
+      generic (
+         WIDTH : integer
+      );
       port (
          i_add1  : in std_logic_vector(31 downto 0);
          i_add2  : in std_logic_vector(31 downto 0);
+         mode    : in std_logic;
          o_result   : out std_logic_vector(32 downto 0)
       );
    end component cla;
@@ -98,9 +102,13 @@ begin
    -- sum <= cla_adder(upper_reg, aa_reg, mode_reg);
 
    CLA_INST: cla
+      generic map (
+         WIDTH => 32
+      )
       port map (
          i_add1 => upper_reg,
          i_add2 => aa_reg,
+         mode => mode_reg,
          o_result => sum
       );
     

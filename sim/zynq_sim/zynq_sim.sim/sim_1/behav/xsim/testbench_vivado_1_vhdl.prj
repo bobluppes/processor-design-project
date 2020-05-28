@@ -5,9 +5,11 @@ vhdl xil_defaultlib  \
 "../../../../../../rtl/mlite/bus_mux.vhd" \
 "../../../../../../rtl/platform/cpu_pack.vhd" \
 "../../../../../../rtl/platform/cache_cntrl.vhd" \
+"../../../../../../rtl/mlite/cla.vhd" \
 "../../../../../../rtl/mlite/control.vhd" \
 "../../../../../../rtl/platform/cpu_axi_rd_cntrl.vhd" \
 "../../../../../../rtl/platform/cpu_axi_wr_cntrl.vhd" \
+"../../../../../../rtl/mlite/full_adder.vhd" \
 "../../../../../../rtl/platform/mem_cntrl.vhd" \
 "../../../../../../rtl/mlite/mem_ctrl.vhd" \
 "../../../../../../rtl/mlite/mlite_cpu.vhd" \

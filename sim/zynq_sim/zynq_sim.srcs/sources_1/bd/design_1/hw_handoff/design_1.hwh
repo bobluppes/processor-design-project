@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr 22 22:45:57 2020" VIVADOVERSION="2019.2.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu May 28 16:43:26 2020" VIVADOVERSION="2019.2.1">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -2179,8 +2179,8 @@
             <CONNECTION INSTANCE="axi_full2lite_conver_0" PORT="aclk"/>
             <CONNECTION INSTANCE="axi_bram_ctrl_0" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_bram_ctrl_1" PORT="s_axi_aclk"/>
-            <CONNECTION INSTANCE="cpu_0" PORT="aclk"/>
             <CONNECTION INSTANCE="uart_0" PORT="aclk"/>
+            <CONNECTION INSTANCE="cpu_0" PORT="aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="locked" SIGIS="undef" SIGNAME="clk_wiz_0_locked">
@@ -3634,8 +3634,8 @@
             <CONNECTION INSTANCE="axi_full2lite_conver_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="axi_bram_ctrl_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_bram_ctrl_1" PORT="s_axi_aresetn"/>
-            <CONNECTION INSTANCE="cpu_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="uart_0" PORT="aresetn"/>
+            <CONNECTION INSTANCE="cpu_0" PORT="aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

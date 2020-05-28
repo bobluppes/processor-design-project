@@ -56,16 +56,16 @@ INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIA
 INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 351.855 ; gain = 45.117
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 350.777 ; gain = 44.863
 Command: synth_design -top design_2_wrapper -part xc7z020clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11048 
+INFO: Helper process launched with PID 11200 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 910.492 ; gain = 237.809
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 909.992 ; gain = 236.703
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_2_wrapper' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.vhd:42]
 INFO: [Synth 8-3491] module 'design_2' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.srcs/sources_1/bd/design_2/synth/design_2.vhd:1077' bound to instance 'design_2_i' of component 'design_2' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.vhd:71]
@@ -1969,43 +1969,45 @@ INFO: [Synth 8-256] done synthesizing module 'shifter' (125#1) [C:/Users/boblu/D
 INFO: [Synth 8-3491] module 'mult' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/mult.vhd:45' bound to instance 'u8_mult' of component 'mult' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/mlite_cpu.vhd:288]
 INFO: [Synth 8-638] synthesizing module 'mult' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/mult.vhd:55]
 	Parameter mult_type bound to: DEFAULT - type: string 
-INFO: [Synth 8-3491] module 'cla' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:4' bound to instance 'CLA_INST' of component 'cla' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/mult.vhd:100]
-INFO: [Synth 8-638] synthesizing module 'cla' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:13]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'cla' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:4' bound to instance 'CLA_INST' of component 'cla' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/mult.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'cla' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:17]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
 INFO: [Synth 8-638] synthesizing module 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:12]
 INFO: [Synth 8-256] done synthesizing module 'full_adder' (126#1) [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:12]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:36]
-INFO: [Synth 8-256] done synthesizing module 'cla' (127#1) [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:13]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/full_adder.vhd:4' bound to instance 'FULL_ADDER_INST' of component 'full_adder' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'cla' (127#1) [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/cla.vhd:17]
 INFO: [Synth 8-256] done synthesizing module 'mult' (128#1) [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/mult.vhd:55]
 INFO: [Synth 8-3491] module 'pipeline' declared at 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/pipeline.vhd:18' bound to instance 'u9_pipeline' of component 'pipeline' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/mlite_cpu.vhd:314]
 INFO: [Synth 8-638] synthesizing module 'pipeline' [C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/rtl/mlite/pipeline.vhd:48]
@@ -3051,7 +3053,7 @@ WARNING: [Synth 8-3331] design design_2_xadc_wiz_0_0_xadc_core_drp has unconnect
 WARNING: [Synth 8-3331] design design_2_xadc_wiz_0_0_xadc_core_drp has unconnected port Bus2IP_Data[10]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1386.887 ; gain = 714.203
+Finished RTL Elaboration : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1388.688 ; gain = 715.398
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -3064,12 +3066,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1386.887 ; gain = 714.203
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 1388.688 ; gain = 715.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1386.887 ; gain = 714.203
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 1388.688 ; gain = 715.398
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1386.887 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1388.688 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 59 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -3121,7 +3123,7 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_2_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1652.785 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1655.008 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 54 instances were transformed.
   FDR => FDRE: 31 instances
@@ -3129,16 +3131,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   MUXCY_L => MUXCY: 4 instances
   SRL16 => SRL16E: 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.382 . Memory (MB): peak = 1652.785 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.469 . Memory (MB): peak = 1655.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1652.785 ; gain = 980.102
+Finished Constraint Validation : Time (s): cpu = 00:01:15 ; elapsed = 00:01:23 . Memory (MB): peak = 1655.008 ; gain = 981.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1652.785 ; gain = 980.102
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:15 ; elapsed = 00:01:23 . Memory (MB): peak = 1655.008 ; gain = 981.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -3168,7 +3170,7 @@ Applied set_property DONT_TOUCH = true for design_2_i/axi_smc/inst/s00_nodes/s00
 Applied set_property DONT_TOUCH = true for design_2_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_2_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1652.785 ; gain = 980.102
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 1655.008 ; gain = 981.719
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'arb_sm_cs_reg' in module 'sng_port_arb'
 INFO: [Synth 8-5544] ROM "wrap_burst_total_cmb" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -3304,7 +3306,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'design_2_xadc_wiz_0_0_slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:25 ; elapsed = 00:01:30 . Memory (MB): peak = 1652.785 ; gain = 980.102
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:35 ; elapsed = 00:01:46 . Memory (MB): peak = 1655.008 ; gain = 981.719
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3314,7 +3316,7 @@ Report RTL Partitions:
 |1     |design_2_axi_smc_0 |           1|     34935|
 |2     |design_2__GB1      |           1|      4825|
 |3     |design_2__GB2      |           1|      9315|
-|4     |design_2_cpu_0_0   |           1|     20251|
+|4     |design_2_cpu_0_0   |           1|     20321|
 +------+-------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -3344,7 +3346,7 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit       Adders := 2     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
-	   2 Input      1 Bit         XORs := 257   
+	   2 Input      1 Bit         XORs := 258   
 	   3 Input      1 Bit         XORs := 64    
 +---Registers : 
 	             2178 Bit    Registers := 6     
@@ -3395,7 +3397,7 @@ Detailed RTL Component Info :
 	   2 Input     39 Bit        Muxes := 1     
 	   2 Input     36 Bit        Muxes := 2     
 	   2 Input     33 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 101   
+	   2 Input     32 Bit        Muxes := 102   
 	   7 Input     32 Bit        Muxes := 2     
 	   4 Input     32 Bit        Muxes := 8     
 	   5 Input     32 Bit        Muxes := 2     
@@ -4504,6 +4506,12 @@ Module full_adder
 Detailed RTL Component Info : 
 +---XORs : 
 	   3 Input      1 Bit         XORs := 1     
+Module cla 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
 Module mult 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -5567,7 +5575,7 @@ INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:03 ; elapsed = 00:03:10 . Memory (MB): peak = 1652.785 ; gain = 980.102
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:51 ; elapsed = 00:04:13 . Memory (MB): peak = 1655.008 ; gain = 981.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -5610,19 +5618,19 @@ Report RTL Partitions:
 |1     |design_2_axi_smc_0 |           1|      8315|
 |2     |design_2__GB1      |           1|      3830|
 |3     |design_2__GB2      |           1|      3429|
-|4     |design_2_cpu_0_0   |           1|     11284|
+|4     |design_2_cpu_0_0   |           1|     11334|
 +------+-------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:12 ; elapsed = 00:03:20 . Memory (MB): peak = 1652.785 ; gain = 980.102
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:01 ; elapsed = 00:04:24 . Memory (MB): peak = 1655.008 ; gain = 981.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:14 ; elapsed = 00:03:22 . Memory (MB): peak = 1652.785 ; gain = 980.102
+Finished Timing Optimization : Time (s): cpu = 00:04:03 ; elapsed = 00:04:26 . Memory (MB): peak = 1655.008 ; gain = 981.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -5663,7 +5671,7 @@ Report RTL Partitions:
 |1     |design_2_axi_smc_0 |           1|      8315|
 |2     |design_2__GB1      |           1|      3830|
 |3     |design_2__GB2      |           1|      3429|
-|4     |design_2_cpu_0_0   |           1|     11284|
+|4     |design_2_cpu_0_0   |           1|     11334|
 +------+-------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -5671,7 +5679,7 @@ Start Technology Mapping
 INFO: [Synth 8-7053] The timing for the instance design_2_i/bram_0/U0/bram_buff_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance design_2_i/bram_0/U0/bram_buff_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:23 ; elapsed = 00:03:31 . Memory (MB): peak = 1652.785 ; gain = 980.102
+Finished Technology Mapping : Time (s): cpu = 00:04:13 ; elapsed = 00:04:37 . Memory (MB): peak = 1655.008 ; gain = 981.719
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -5701,13 +5709,13 @@ INFO: [Synth 8-5365] Flop inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:29 ; elapsed = 00:03:37 . Memory (MB): peak = 1652.785 ; gain = 980.102
+Finished IO Insertion : Time (s): cpu = 00:04:20 ; elapsed = 00:04:44 . Memory (MB): peak = 1655.008 ; gain = 981.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:29 ; elapsed = 00:03:37 . Memory (MB): peak = 1652.785 ; gain = 980.102
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:20 ; elapsed = 00:04:44 . Memory (MB): peak = 1655.008 ; gain = 981.719
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -5726,25 +5734,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:31 ; elapsed = 00:03:39 . Memory (MB): peak = 1652.785 ; gain = 980.102
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:22 ; elapsed = 00:04:47 . Memory (MB): peak = 1655.008 ; gain = 981.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:31 ; elapsed = 00:03:39 . Memory (MB): peak = 1652.785 ; gain = 980.102
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:22 ; elapsed = 00:04:47 . Memory (MB): peak = 1655.008 ; gain = 981.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:32 ; elapsed = 00:03:39 . Memory (MB): peak = 1652.785 ; gain = 980.102
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:23 ; elapsed = 00:04:47 . Memory (MB): peak = 1655.008 ; gain = 981.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:32 ; elapsed = 00:03:39 . Memory (MB): peak = 1652.785 ; gain = 980.102
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:23 ; elapsed = 00:04:47 . Memory (MB): peak = 1655.008 ; gain = 981.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -5784,10 +5792,10 @@ Report Cell Usage:
 |3     |CARRY4     |    62|
 |4     |LUT1       |   230|
 |5     |LUT2       |  1432|
-|6     |LUT3       |  1079|
-|7     |LUT4       |   925|
-|8     |LUT5       |  1005|
-|9     |LUT6       |  2771|
+|6     |LUT3       |  1063|
+|7     |LUT4       |   955|
+|8     |LUT5       |   980|
+|9     |LUT6       |  2797|
 |10    |MUXCY_L    |     3|
 |11    |MUXF7      |    65|
 |12    |PS7        |     1|
@@ -5813,8 +5821,8 @@ Report Instance Areas:
 +------+----------------------------------------------------------------------------------------------------+---------------------------------------------------------------+------+
 |      |Instance                                                                                            |Module                                                         |Cells |
 +------+----------------------------------------------------------------------------------------------------+---------------------------------------------------------------+------+
-|1     |top                                                                                                 |                                                               | 12734|
-|2     |  design_2_i                                                                                        |design_2                                                       | 12732|
+|1     |top                                                                                                 |                                                               | 12749|
+|2     |  design_2_i                                                                                        |design_2                                                       | 12747|
 |3     |    axi_smc                                                                                         |design_2_axi_smc_0                                             |  3748|
 |4     |      inst                                                                                          |bd_ebcc                                                        |  3748|
 |5     |        clk_map                                                                                     |clk_map_imp_1WDPOJN                                            |    41|
@@ -6090,16 +6098,16 @@ Report Instance Areas:
 |275   |                    \gen_wr.inst_wr_addra_p1                                                        |sc_util_v1_0_4_counter__parameterized0                         |    31|
 |276   |              inst_si_handler                                                                       |sc_node_v1_0_10_si_handler__parameterized3                     |     3|
 |277   |                inst_arb_stall_late                                                                 |sc_util_v1_0_4_pipeline                                        |     3|
-|278   |    cpu_0                                                                                           |design_2_cpu_0_0                                               |  4490|
-|279   |      U0                                                                                            |cpu                                                            |  4490|
+|278   |    cpu_0                                                                                           |design_2_cpu_0_0                                               |  4505|
+|279   |      U0                                                                                            |cpu                                                            |  4505|
 |280   |        cpu_axi_rd_cntrl_inst                                                                       |cpu_axi_rd_cntrl                                               |   109|
 |281   |        cpu_axi_wr_cntrl_inst                                                                       |cpu_axi_wr_cntrl                                               |    99|
 |282   |        \gen_cache.cache_cntrl_inst                                                                 |cache_cntrl                                                    |  1558|
-|283   |        mlite_cpu_inst                                                                              |mlite_cpu                                                      |  2112|
+|283   |        mlite_cpu_inst                                                                              |mlite_cpu                                                      |  2127|
 |284   |          u1_pc_next                                                                                |pc_next                                                        |    71|
 |285   |          u2_mem_ctrl                                                                               |mem_ctrl                                                       |   802|
 |286   |          u4_reg_bank                                                                               |reg_bank                                                       |    81|
-|287   |          u8_mult                                                                                   |mult                                                           |   333|
+|287   |          u8_mult                                                                                   |mult                                                           |   348|
 |288   |          u9_pipeline                                                                               |pipeline                                                       |   760|
 |289   |    proc_sys_reset_0                                                                                |design_2_proc_sys_reset_0_0                                    |    66|
 |290   |      U0                                                                                            |proc_sys_reset__parameterized1                                 |    66|
@@ -6192,18 +6200,18 @@ Report Instance Areas:
 |377   |        uart_core_inst                                                                              |uart_core                                                      |    64|
 +------+----------------------------------------------------------------------------------------------------+---------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:32 ; elapsed = 00:03:40 . Memory (MB): peak = 1652.785 ; gain = 980.102
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:23 ; elapsed = 00:04:48 . Memory (MB): peak = 1655.008 ; gain = 981.719
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:30 ; elapsed = 00:03:14 . Memory (MB): peak = 1652.785 ; gain = 714.203
-Synthesis Optimization Complete : Time (s): cpu = 00:03:32 ; elapsed = 00:03:40 . Memory (MB): peak = 1652.785 ; gain = 980.102
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:15 ; elapsed = 00:04:17 . Memory (MB): peak = 1655.008 ; gain = 715.398
+Synthesis Optimization Complete : Time (s): cpu = 00:04:23 ; elapsed = 00:04:48 . Memory (MB): peak = 1655.008 ; gain = 981.719
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.589 . Memory (MB): peak = 1652.785 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.674 . Memory (MB): peak = 1655.008 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 458 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1652.785 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1655.008 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 322 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 1 instance 
@@ -6217,10 +6225,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 1015 Infos, 227 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:42 ; elapsed = 00:03:51 . Memory (MB): peak = 1652.785 ; gain = 1300.930
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1652.785 ; gain = 0.000
+synth_design: Time (s): cpu = 00:04:35 ; elapsed = 00:05:01 . Memory (MB): peak = 1655.008 ; gain = 1304.230
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1655.008 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.runs/synth_1/design_2_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_2_wrapper_utilization_synth.rpt -pb design_2_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed May 27 15:42:25 2020...
+INFO: [Common 17-206] Exiting Vivado at Thu May 28 17:02:49 2020...

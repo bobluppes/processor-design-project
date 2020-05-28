@@ -384,3 +384,45 @@ Reason: Failed to execute command 'platform config -updatehw {/home/pdp/PDP/fpga
 10:14:08 INFO  : Successfully done query RDI_DATADIR 
 10:14:29 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
 10:15:22 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+12:16:19 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+12:16:25 INFO  : Registering command handlers for Vitis TCF services
+12:16:26 INFO  : XSCT server has started successfully.
+12:16:26 INFO  : Successfully done setting XSCT server connection channel  
+12:16:29 INFO  : plnx-install-location is set to ''
+12:16:29 INFO  : Successfully done setting workspace for the tool. 
+12:16:29 INFO  : Successfully done query RDI_DATADIR 
+12:16:59 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+14:52:43 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+14:52:47 INFO  : XSCT server has started successfully.
+14:52:47 INFO  : plnx-install-location is set to ''
+14:52:47 INFO  : Successfully done setting XSCT server connection channel  
+14:52:47 INFO  : Successfully done setting workspace for the tool. 
+14:52:47 INFO  : Registering command handlers for Vitis TCF services
+14:52:47 INFO  : Successfully done query RDI_DATADIR 
+14:53:14 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
+14:53:47 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+15:09:11 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+15:09:16 INFO  : Registering command handlers for Vitis TCF services
+15:09:16 INFO  : XSCT server has started successfully.
+15:09:16 INFO  : plnx-install-location is set to ''
+15:09:16 INFO  : Successfully done setting XSCT server connection channel  
+15:09:17 INFO  : Successfully done setting workspace for the tool. 
+15:09:17 INFO  : Successfully done query RDI_DATADIR 
+17:25:14 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+17:25:20 INFO  : Registering command handlers for Vitis TCF services
+17:25:21 INFO  : XSCT server has started successfully.
+17:25:21 INFO  : plnx-install-location is set to ''
+17:25:21 INFO  : Successfully done setting XSCT server connection channel  
+17:25:21 INFO  : Successfully done query RDI_DATADIR 
+17:25:21 INFO  : Successfully done setting workspace for the tool. 
+17:26:05 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
+17:27:29 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+17:34:23 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+17:34:28 INFO  : Registering command handlers for Vitis TCF services
+17:34:29 INFO  : XSCT server has started successfully.
+17:34:29 INFO  : Successfully done setting XSCT server connection channel  
+17:34:29 INFO  : plnx-install-location is set to ''
+17:34:29 INFO  : Successfully done query RDI_DATADIR 
+17:34:29 INFO  : Successfully done setting workspace for the tool. 
+17:35:03 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
+17:35:27 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
