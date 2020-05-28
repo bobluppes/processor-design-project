@@ -374,7 +374,7 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_k3yVUIQ1EeqMic6eXLJmIQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="appARMcpu_main.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;appARMcpu_main.c&quot; partName=&quot;appARMcpu_main.c&quot; title=&quot;appARMcpu_main.c&quot; tooltip=&quot;appARMcpu/src/appARMcpu_main.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/appARMcpu/src/appARMcpu_main.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1189&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;appARMcpu_main.c&quot; partName=&quot;appARMcpu_main.c&quot; title=&quot;appARMcpu_main.c&quot; tooltip=&quot;appARMcpu/src/appARMcpu_main.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/appARMcpu/src/appARMcpu_main.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;209&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
           <tags>removeOnHide</tags>
@@ -423,67 +423,73 @@
       </menus>
       <menus xsi:type="menu:PopupMenu" xmi:id="_J1bdUI1sEeqF-7gnP2iFoA" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
         <tags>menuContribution:popup</tags>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_QXKE8I1sEeqF-7gnP2iFoA" elementId="group.new" visible="false">
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_cjECMKAlEeqApMzrLxF7LA" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
+        <tags>menuContribution:popup</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_MM1JcKC7Eeq3xsQDvANwKQ" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
+        <tags>menuContribution:popup</tags>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_WvlWgKC7Eeq3xsQDvANwKQ" elementId="group.new" visible="false">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_QXKsAI1sEeqF-7gnP2iFoA" elementId="group.open">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_Wvl9kKC7Eeq3xsQDvANwKQ" elementId="group.open">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_QXKsAY1sEeqF-7gnP2iFoA" elementId="group.openWith" visible="false">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_Wvl9kaC7Eeq3xsQDvANwKQ" elementId="group.openWith" visible="false">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_QXKsAo1sEeqF-7gnP2iFoA" elementId="group.edit">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_Wvl9kqC7Eeq3xsQDvANwKQ" elementId="group.edit">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_QXKsA41sEeqF-7gnP2iFoA" elementId="org.eclipse.ui.PasteAction">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_Wvl9k6C7Eeq3xsQDvANwKQ" elementId="org.eclipse.ui.PasteAction">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_QXKsBI1sEeqF-7gnP2iFoA" elementId="org.eclipse.ui.DeleteResourceAction">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_Wvl9lKC7Eeq3xsQDvANwKQ" elementId="org.eclipse.ui.DeleteResourceAction">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_QXKsBY1sEeqF-7gnP2iFoA" elementId="org.eclipse.ui.RefreshAction">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_Wvl9laC7Eeq3xsQDvANwKQ" elementId="org.eclipse.ui.RefreshAction">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_QXKsBo1sEeqF-7gnP2iFoA" elementId="group.port">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_Wvl9lqC7Eeq3xsQDvANwKQ" elementId="group.port">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_QXKsB41sEeqF-7gnP2iFoA">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_Wvl9l6C7Eeq3xsQDvANwKQ">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_QXKsCI1sEeqF-7gnP2iFoA" elementId="group.reorganize" visible="false">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_Wvl9mKC7Eeq3xsQDvANwKQ" elementId="group.reorganize" visible="false">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_QXKsCY1sEeqF-7gnP2iFoA" elementId="group.build">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_Wvl9maC7Eeq3xsQDvANwKQ" elementId="group.build">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_QXKsCo1sEeqF-7gnP2iFoA" elementId="org.eclipse.ui.BuildAction">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_Wvl9mqC7Eeq3xsQDvANwKQ" elementId="org.eclipse.ui.BuildAction">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_QXKsC41sEeqF-7gnP2iFoA" elementId="org.eclipse.ui.RebuildAllAction">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_Wvl9m6C7Eeq3xsQDvANwKQ" elementId="org.eclipse.ui.RebuildAllAction">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_QXKsDY1sEeqF-7gnP2iFoA" elementId="end-buildGroup" visible="false">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_Wvl9naC7Eeq3xsQDvANwKQ" elementId="end-buildGroup" visible="false">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_QXKsDo1sEeqF-7gnP2iFoA" elementId="group.search">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_Wvl9nqC7Eeq3xsQDvANwKQ" elementId="group.search">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_QXKsD41sEeqF-7gnP2iFoA" elementId="additions">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_Wvl9n6C7Eeq3xsQDvANwKQ" elementId="additions">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_QXKsEI1sEeqF-7gnP2iFoA" elementId="group.launch">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_WvmkoKC7Eeq3xsQDvANwKQ" elementId="group.launch">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_QXLTEI1sEeqF-7gnP2iFoA">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_WvmkoaC7Eeq3xsQDvANwKQ">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_QXLTEY1sEeqF-7gnP2iFoA">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_WvmkoqC7Eeq3xsQDvANwKQ">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:MenuSeparator" xmi:id="_QXLTEo1sEeqF-7gnP2iFoA" elementId="group.properties">
+        <children xsi:type="menu:MenuSeparator" xmi:id="_Wvmko6C7Eeq3xsQDvANwKQ" elementId="group.properties">
           <tags>Opaque</tags>
         </children>
-        <children xsi:type="menu:DirectMenuItem" xmi:id="_QXLTE41sEeqF-7gnP2iFoA">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_WvmkpKC7Eeq3xsQDvANwKQ">
           <tags>Opaque</tags>
         </children>
       </menus>
@@ -980,6 +986,34 @@
   <handlers xmi:id="_IeRdJ41sEeqF-7gnP2iFoA" elementId="com.xilinx.sdx.reports.timeline.editor.handler.previousMarker" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.PreviousMarkerHandler" command="_IeRdJo1sEeqF-7gnP2iFoA"/>
   <handlers xmi:id="_IeRdKY1sEeqF-7gnP2iFoA" elementId="com.xilinx.sdx.reports.timeline.editor.handler.nextMarker" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.NextMarkerHandler" command="_IeRdKI1sEeqF-7gnP2iFoA"/>
   <handlers xmi:id="_IeRdK41sEeqF-7gnP2iFoA" elementId="com.xilinx.sdx.reports.timeline.editor.handler.floatingRuler" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.FloatingRulerHandler" command="_IeRdKo1sEeqF-7gnP2iFoA"/>
+  <handlers xmi:id="_YVE-0aAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.handler.expandAll" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.ExpandSectionHandler" command="_YVE-0KAlEeqApMzrLxF7LA"/>
+  <handlers xmi:id="_YVE-06AlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.handler.zoomIn" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.ZoomInHandler" command="_YVE-0qAlEeqApMzrLxF7LA"/>
+  <handlers xmi:id="_YVE-1aAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.handler.zoomOut" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.ZoomOutHandler" command="_YVE-1KAlEeqApMzrLxF7LA"/>
+  <handlers xmi:id="_YVE-16AlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.handler.zoomFit" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.ZoomFitHandler" command="_YVE-1qAlEeqApMzrLxF7LA"/>
+  <handlers xmi:id="_YVE-2aAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.handler.goToCursor" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.GoToCursorHandler" command="_YVE-2KAlEeqApMzrLxF7LA"/>
+  <handlers xmi:id="_YVFl4aAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.handler.goToTimeZero" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.GoToTimeZeroHandler" command="_YVFl4KAlEeqApMzrLxF7LA"/>
+  <handlers xmi:id="_YVFl46AlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.handler.goToLastTime" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.GoToLastTimeHandler" command="_YVFl4qAlEeqApMzrLxF7LA"/>
+  <handlers xmi:id="_YVFl5aAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.handler.previousTransition" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.PreviousTransitionHandler" command="_YVFl5KAlEeqApMzrLxF7LA"/>
+  <handlers xmi:id="_YVFl56AlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.handler.nextTransition" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.NextTransitionHandler" command="_YVFl5qAlEeqApMzrLxF7LA"/>
+  <handlers xmi:id="_YVFl6aAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.handler.addMarker" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.AddMarkerHandler" command="_YVFl6KAlEeqApMzrLxF7LA"/>
+  <handlers xmi:id="_YVFl66AlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.handler.deleteMarker" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.DeleteMarkerHandler" command="_YVFl6qAlEeqApMzrLxF7LA"/>
+  <handlers xmi:id="_YVFl7aAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.handler.previousMarker" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.PreviousMarkerHandler" command="_YVFl7KAlEeqApMzrLxF7LA"/>
+  <handlers xmi:id="_YVFl76AlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.handler.nextMarker" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.NextMarkerHandler" command="_YVFl7qAlEeqApMzrLxF7LA"/>
+  <handlers xmi:id="_YVG0AaAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.handler.floatingRuler" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.FloatingRulerHandler" command="_YVG0AKAlEeqApMzrLxF7LA"/>
+  <handlers xmi:id="_Kk1Q4KC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.handler.expandAll" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.ExpandSectionHandler" command="_Kk0p0KC7Eeq3xsQDvANwKQ"/>
+  <handlers xmi:id="_Kk1Q4qC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.handler.zoomIn" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.ZoomInHandler" command="_Kk1Q4aC7Eeq3xsQDvANwKQ"/>
+  <handlers xmi:id="_Kk1Q5KC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.handler.zoomOut" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.ZoomOutHandler" command="_Kk1Q46C7Eeq3xsQDvANwKQ"/>
+  <handlers xmi:id="_Kk1Q5qC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.handler.zoomFit" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.ZoomFitHandler" command="_Kk1Q5aC7Eeq3xsQDvANwKQ"/>
+  <handlers xmi:id="_Kk138aC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.handler.goToCursor" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.GoToCursorHandler" command="_Kk138KC7Eeq3xsQDvANwKQ"/>
+  <handlers xmi:id="_Kk1386C7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.handler.goToTimeZero" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.GoToTimeZeroHandler" command="_Kk138qC7Eeq3xsQDvANwKQ"/>
+  <handlers xmi:id="_Kk139aC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.handler.goToLastTime" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.GoToLastTimeHandler" command="_Kk139KC7Eeq3xsQDvANwKQ"/>
+  <handlers xmi:id="_Kk1396C7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.handler.previousTransition" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.PreviousTransitionHandler" command="_Kk139qC7Eeq3xsQDvANwKQ"/>
+  <handlers xmi:id="_Kk13-aC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.handler.nextTransition" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.NextTransitionHandler" command="_Kk13-KC7Eeq3xsQDvANwKQ"/>
+  <handlers xmi:id="_Kk13-6C7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.handler.addMarker" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.AddMarkerHandler" command="_Kk13-qC7Eeq3xsQDvANwKQ"/>
+  <handlers xmi:id="_Kk2fAaC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.handler.deleteMarker" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.DeleteMarkerHandler" command="_Kk2fAKC7Eeq3xsQDvANwKQ"/>
+  <handlers xmi:id="_Kk4UMKC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.handler.previousMarker" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.PreviousMarkerHandler" command="_Kk3GEKC7Eeq3xsQDvANwKQ"/>
+  <handlers xmi:id="_Kk4UMqC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.handler.nextMarker" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.NextMarkerHandler" command="_Kk4UMaC7Eeq3xsQDvANwKQ"/>
+  <handlers xmi:id="_Kk4UNKC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.handler.floatingRuler" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.handler.FloatingRulerHandler" command="_Kk4UM6C7Eeq3xsQDvANwKQ"/>
   <bindingTables xmi:id="_A6sb54Q1EeqMic6eXLJmIQ" contributorURI="platform:/plugin/org.eclipse.ui.workbench" bindingContext="_A6sb6IQ1EeqMic6eXLJmIQ">
     <bindings xmi:id="_A8SXWYQ1EeqMic6eXLJmIQ" keySequence="SHIFT+INSERT" command="_A7V8IIQ1EeqMic6eXLJmIQ"/>
     <bindings xmi:id="_A8S-bIQ1EeqMic6eXLJmIQ" keySequence="ALT+PAGE_UP" command="_A7bbwYQ1EeqMic6eXLJmIQ"/>
@@ -3843,6 +3877,34 @@
   <commands xmi:id="_IeRdJo1sEeqF-7gnP2iFoA" elementId="com.xilinx.sdx.reports.timeline.editor.command.previousMarker" commandName="Previous Marker" description="Previous Marker" category="_Ib-XEI1sEeqF-7gnP2iFoA"/>
   <commands xmi:id="_IeRdKI1sEeqF-7gnP2iFoA" elementId="com.xilinx.sdx.reports.timeline.editor.command.nextMarker" commandName="Next Marker" description="Next Marker" category="_Ib-XEI1sEeqF-7gnP2iFoA"/>
   <commands xmi:id="_IeRdKo1sEeqF-7gnP2iFoA" elementId="com.xilinx.sdx.reports.timeline.editor.command.floatingRuler" commandName="Floating Ruler" description="Floating Ruler" category="_Ib-XEI1sEeqF-7gnP2iFoA"/>
+  <commands xmi:id="_YVE-0KAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.command.expandAll" commandName="Expand Section" description="Expand Section" category="_YOmjYaAlEeqApMzrLxF7LA"/>
+  <commands xmi:id="_YVE-0qAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.command.zoomIn" commandName="Zoom In" description="Zoom In" category="_YOmjYaAlEeqApMzrLxF7LA"/>
+  <commands xmi:id="_YVE-1KAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.command.zoomOut" commandName="Zoom Out" description="Zoom Out" category="_YOmjYaAlEeqApMzrLxF7LA"/>
+  <commands xmi:id="_YVE-1qAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.command.zoomFit" commandName="Zoom Fit" description="Zoom Fit" category="_YOmjYaAlEeqApMzrLxF7LA"/>
+  <commands xmi:id="_YVE-2KAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.command.goToCursor" commandName="Go To Cursor" description="Go To Cursor" category="_YOmjYaAlEeqApMzrLxF7LA"/>
+  <commands xmi:id="_YVFl4KAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.command.goToTimeZero" commandName="Go To Time 0" description="Go To Time 0" category="_YOmjYaAlEeqApMzrLxF7LA"/>
+  <commands xmi:id="_YVFl4qAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.command.goToLastTime" commandName="Go To Last Time" description="Go To Last Time" category="_YOmjYaAlEeqApMzrLxF7LA"/>
+  <commands xmi:id="_YVFl5KAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.command.previousTransition" commandName="Previous Transition" description="Previous Transition" category="_YOmjYaAlEeqApMzrLxF7LA"/>
+  <commands xmi:id="_YVFl5qAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.command.nextTransition" commandName="Next Transition" description="Next Transition" category="_YOmjYaAlEeqApMzrLxF7LA"/>
+  <commands xmi:id="_YVFl6KAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.command.addMarker" commandName="Add Marker" description="Add Marker" category="_YOmjYaAlEeqApMzrLxF7LA"/>
+  <commands xmi:id="_YVFl6qAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.command.deleteMarker" commandName="Delete Marker" description="Delete Marker" category="_YOmjYaAlEeqApMzrLxF7LA"/>
+  <commands xmi:id="_YVFl7KAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.command.previousMarker" commandName="Previous Marker" description="Previous Marker" category="_YOmjYaAlEeqApMzrLxF7LA"/>
+  <commands xmi:id="_YVFl7qAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.command.nextMarker" commandName="Next Marker" description="Next Marker" category="_YOmjYaAlEeqApMzrLxF7LA"/>
+  <commands xmi:id="_YVG0AKAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.command.floatingRuler" commandName="Floating Ruler" description="Floating Ruler" category="_YOmjYaAlEeqApMzrLxF7LA"/>
+  <commands xmi:id="_Kk0p0KC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.command.expandAll" commandName="Expand Section" description="Expand Section" category="_KiwNQaC7Eeq3xsQDvANwKQ"/>
+  <commands xmi:id="_Kk1Q4aC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.command.zoomIn" commandName="Zoom In" description="Zoom In" category="_KiwNQaC7Eeq3xsQDvANwKQ"/>
+  <commands xmi:id="_Kk1Q46C7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.command.zoomOut" commandName="Zoom Out" description="Zoom Out" category="_KiwNQaC7Eeq3xsQDvANwKQ"/>
+  <commands xmi:id="_Kk1Q5aC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.command.zoomFit" commandName="Zoom Fit" description="Zoom Fit" category="_KiwNQaC7Eeq3xsQDvANwKQ"/>
+  <commands xmi:id="_Kk138KC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.command.goToCursor" commandName="Go To Cursor" description="Go To Cursor" category="_KiwNQaC7Eeq3xsQDvANwKQ"/>
+  <commands xmi:id="_Kk138qC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.command.goToTimeZero" commandName="Go To Time 0" description="Go To Time 0" category="_KiwNQaC7Eeq3xsQDvANwKQ"/>
+  <commands xmi:id="_Kk139KC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.command.goToLastTime" commandName="Go To Last Time" description="Go To Last Time" category="_KiwNQaC7Eeq3xsQDvANwKQ"/>
+  <commands xmi:id="_Kk139qC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.command.previousTransition" commandName="Previous Transition" description="Previous Transition" category="_KiwNQaC7Eeq3xsQDvANwKQ"/>
+  <commands xmi:id="_Kk13-KC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.command.nextTransition" commandName="Next Transition" description="Next Transition" category="_KiwNQaC7Eeq3xsQDvANwKQ"/>
+  <commands xmi:id="_Kk13-qC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.command.addMarker" commandName="Add Marker" description="Add Marker" category="_KiwNQaC7Eeq3xsQDvANwKQ"/>
+  <commands xmi:id="_Kk2fAKC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.command.deleteMarker" commandName="Delete Marker" description="Delete Marker" category="_KiwNQaC7Eeq3xsQDvANwKQ"/>
+  <commands xmi:id="_Kk3GEKC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.command.previousMarker" commandName="Previous Marker" description="Previous Marker" category="_KiwNQaC7Eeq3xsQDvANwKQ"/>
+  <commands xmi:id="_Kk4UMaC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.command.nextMarker" commandName="Next Marker" description="Next Marker" category="_KiwNQaC7Eeq3xsQDvANwKQ"/>
+  <commands xmi:id="_Kk4UM6C7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.command.floatingRuler" commandName="Floating Ruler" description="Floating Ruler" category="_KiwNQaC7Eeq3xsQDvANwKQ"/>
   <addons xmi:id="_A6sb7IQ1EeqMic6eXLJmIQ" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_A6sb7YQ1EeqMic6eXLJmIQ" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_A6sb7oQ1EeqMic6eXLJmIQ" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -3878,6 +3940,10 @@
   <addons xmi:id="_BeHpYI1GEeqyBeS-Dw4oqQ" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <addons xmi:id="_Ib-XEY1sEeqF-7gnP2iFoA" elementId="com.xilinx.sdx.reports.timeline.editor.toolbar.addon" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.TimelineEditorToolbarAddon"/>
   <addons xmi:id="_IfMqMI1sEeqF-7gnP2iFoA" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
+  <addons xmi:id="_YOmjYqAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.toolbar.addon" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.TimelineEditorToolbarAddon"/>
+  <addons xmi:id="_YYI54KAlEeqApMzrLxF7LA" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
+  <addons xmi:id="_KiwNQqC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.toolbar.addon" contributionURI="bundleclass://com.xilinx.sdx.reports.timeline/com.xilinx.sdx.reports.viewer.toolbar.TimelineEditorToolbarAddon"/>
+  <addons xmi:id="_Klle0KC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <categories xmi:id="_A7SRwIQ1EeqMic6eXLJmIQ" elementId="org.eclipse.ui.category.edit" name="Edit"/>
   <categories xmi:id="_A7SRwYQ1EeqMic6eXLJmIQ" elementId="org.eclipse.ui.category.textEditor" name="Text Editing" description="Text Editing Commands"/>
   <categories xmi:id="_A7S40IQ1EeqMic6eXLJmIQ" elementId="org.eclipse.cdt.debug.ui.category.registerGrouping" name="Register Grouping commands" description="Set of commands for Register Grouping"/>
@@ -3939,4 +4005,6 @@
   <categories xmi:id="_FSS0sY09Eeqo-7dO0O4_AA" elementId="com.xilinx.sdx.reports.timeline.editor.category" name="Vitis Timeline Editor Commands" description="All Vitis Timeline Editor Commands"/>
   <categories xmi:id="_BapeoY1GEeqyBeS-Dw4oqQ" elementId="com.xilinx.sdx.reports.timeline.editor.category" name="Vitis Timeline Editor Commands" description="All Vitis Timeline Editor Commands"/>
   <categories xmi:id="_Ib-XEI1sEeqF-7gnP2iFoA" elementId="com.xilinx.sdx.reports.timeline.editor.category" name="Vitis Timeline Editor Commands" description="All Vitis Timeline Editor Commands"/>
+  <categories xmi:id="_YOmjYaAlEeqApMzrLxF7LA" elementId="com.xilinx.sdx.reports.timeline.editor.category" name="Vitis Timeline Editor Commands" description="All Vitis Timeline Editor Commands"/>
+  <categories xmi:id="_KiwNQaC7Eeq3xsQDvANwKQ" elementId="com.xilinx.sdx.reports.timeline.editor.category" name="Vitis Timeline Editor Commands" description="All Vitis Timeline Editor Commands"/>
 </application:Application>

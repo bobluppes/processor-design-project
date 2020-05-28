@@ -55,3 +55,8 @@ timestamp=[2020-05-03 15:58:18], mode=PLATFORM_GENERATION, duration=0:00:02.330,
 timestamp=[2020-05-03 20:30:24], mode=WORKBENCH_START, duration=0:00:09.474, duration_ms=9474, data={}
 timestamp=[2020-05-03 20:30:25], mode=WORKBENCH_UI_INIT, duration=0:00:00.983, duration_ms=983, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,appARMcpu,appARMcpu_system,design_2_wrapper}
 timestamp=[2020-05-03 20:31:14], mode=PLATFORM_GENERATION, duration=0:00:02.414, duration_ms=2414, data={name=design_2_wrapper}
+timestamp=[2020-05-27 16:22:06], mode=WORKBENCH_START, duration=0:00:29.433, duration_ms=29433, data={}
+timestamp=[2020-05-27 16:22:09], mode=WORKBENCH_UI_INIT, duration=0:00:02.466, duration_ms=2466, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,appARMcpu,appARMcpu_system,design_2_wrapper}
+timestamp=[2020-05-28 10:14:01], mode=WORKBENCH_START, duration=0:00:10.823, duration_ms=10823, data={}
+timestamp=[2020-05-28 10:14:03], mode=WORKBENCH_UI_INIT, duration=0:00:01.213, duration_ms=1213, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,appARMcpu,appARMcpu_system,design_2_wrapper}
+timestamp=[2020-05-28 10:15:22], mode=PLATFORM_GENERATION, duration=0:00:03.690, duration_ms=3690, data={name=design_2_wrapper}

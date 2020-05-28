@@ -41,7 +41,6 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use IEEE.std_logic_arith.all;
 use work.mlite_pack.all;
-use work.cla.all;
 
 entity mult is
    generic(mult_type  : string := "DEFAULT");
@@ -72,6 +71,14 @@ architecture logic of mult is
    signal a_neg       : std_logic_vector(31 downto 0);
    signal b_neg       : std_logic_vector(31 downto 0);
    signal sum         : std_logic_vector(32 downto 0);
+
+   component cla is
+      port (
+         i_add1  : in std_logic_vector(31 downto 0);
+         i_add2  : in std_logic_vector(31 downto 0);
+         o_result   : out std_logic_vector(32 downto 0)
+      );
+   end component cla;
    
 begin
  
@@ -88,7 +95,14 @@ begin
    a_neg <= bv_negate(a);
    b_neg <= bv_negate(b);
    -- sum <= bv_adder(upper_reg, aa_reg, mode_reg);
-   sum <= cla_adder(upper_reg, aa_reg, mode_reg);
+   -- sum <= cla_adder(upper_reg, aa_reg, mode_reg);
+
+   CLA_INST: cla
+      port map (
+         i_add1 => upper_reg,
+         i_add2 => aa_reg,
+         o_result => sum
+      );
     
    --multiplication/division unit
    mult_proc: process(clk, reset_in, a, b, mult_func,

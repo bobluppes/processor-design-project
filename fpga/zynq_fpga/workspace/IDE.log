@@ -368,3 +368,19 @@ Reason: Failed to execute command 'platform config -updatehw {/home/pdp/PDP/fpga
 20:30:27 INFO  : Successfully done setting workspace for the tool. 
 20:30:48 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
 20:31:14 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+16:21:59 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+16:22:10 INFO  : Registering command handlers for Vitis TCF services
+16:22:13 INFO  : XSCT server has started successfully.
+16:22:25 INFO  : plnx-install-location is set to ''
+16:22:25 INFO  : Successfully done setting XSCT server connection channel  
+16:22:25 INFO  : Successfully done query RDI_DATADIR 
+16:22:25 INFO  : Successfully done setting workspace for the tool. 
+10:14:00 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+10:14:04 INFO  : Registering command handlers for Vitis TCF services
+10:14:06 INFO  : XSCT server has started successfully.
+10:14:06 INFO  : Successfully done setting XSCT server connection channel  
+10:14:08 INFO  : plnx-install-location is set to ''
+10:14:08 INFO  : Successfully done setting workspace for the tool. 
+10:14:08 INFO  : Successfully done query RDI_DATADIR 
+10:14:29 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
+10:15:22 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...

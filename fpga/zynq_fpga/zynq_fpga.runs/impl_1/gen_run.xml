@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1589706379">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1590586693">
   <File Type="BITSTR-BMM" Name="design_2_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="design_2_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="design_2_wrapper_timing_summary_init.rpt"/>
@@ -121,6 +121,12 @@
     <File Path="$PPRDIR/../../rtl/platform/cpu_axi_wr_cntrl.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/mlite/full_adder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../../rtl/platform/mem_cntrl.vhd">
@@ -323,8 +329,8 @@
       <Option Id="Directive">0</Option>
     </Step>
     <Step Id="route_design">
-      <Option Id="Directive">0</Option>
       <Option Id="MoreOptsStr"><![CDATA[-tns_cleanup]]></Option>
+      <Option Id="Directive">0</Option>
     </Step>
     <Step Id="post_route_phys_opt_design" EnableStepBool="1">
       <Option Id="Directive">0</Option>

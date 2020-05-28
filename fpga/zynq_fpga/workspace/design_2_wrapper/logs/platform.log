@@ -10406,3 +10406,327 @@ TRACE::2020-05-03.20:31:14::SCWMssOS::Checking the sw design at  C:/Users/boblu/
 TRACE::2020-05-03.20:31:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
 
 TRACE::2020-05-03.20:31:14::SCWMssOS::Sw design exists and opened at  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:14:13::SCWPlatform::Trying to open the hw design at C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:13::SCWPlatform::DSA given C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:13::SCWPlatform::DSA absoulate path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:16::SCWPlatform::DSA directory C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw
+TRACE::2020-05-28.10:14:16::SCWPlatform:: Platform Path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-05-28.10:14:16::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-05-28.10:14:19::SCWPlatform::Opened new HwDB with name design_2_wrapper
+TRACE::2020-05-28.10:14:19::SCWReader::Active system found as  design_2_wrapper
+TRACE::2020-05-28.10:14:19::SCWReader::Handling sysconfig design_2_wrapper
+TRACE::2020-05-28.10:14:19::SCWDomain::checking for install qemu data   : 
+TRACE::2020-05-28.10:14:19::SCWDomain:: Using the QEMU Data from install at  : E:/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2020-05-28.10:14:19::SCWDomain:: Using the QEMU args  from install at  : E:/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-05-28.10:14:19::SCWPlatform::Trying to open the hw design at C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:19::SCWPlatform::DSA given C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:19::SCWPlatform::DSA absoulate path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:19::SCWPlatform::DSA directory C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw
+TRACE::2020-05-28.10:14:19::SCWPlatform:: Platform Path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-05-28.10:14:19::SCWPlatform::Trying to set the existing hwdb with name design_2_wrapper
+TRACE::2020-05-28.10:14:19::SCWPlatform::Opened existing hwdb design_2_wrapper
+TRACE::2020-05-28.10:14:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-05-28.10:14:19::SCWPlatform::Trying to open the hw design at C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:19::SCWPlatform::DSA given C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:19::SCWPlatform::DSA absoulate path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:19::SCWPlatform::DSA directory C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw
+TRACE::2020-05-28.10:14:19::SCWPlatform:: Platform Path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-05-28.10:14:19::SCWPlatform::Trying to set the existing hwdb with name design_2_wrapper
+TRACE::2020-05-28.10:14:19::SCWPlatform::Opened existing hwdb design_2_wrapper
+TRACE::2020-05-28.10:14:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-05-28.10:14:19::SCWPlatform::Trying to open the hw design at C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:19::SCWPlatform::DSA given C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:19::SCWPlatform::DSA absoulate path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:19::SCWPlatform::DSA directory C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw
+TRACE::2020-05-28.10:14:19::SCWPlatform:: Platform Path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-05-28.10:14:19::SCWPlatform::Trying to set the existing hwdb with name design_2_wrapper
+TRACE::2020-05-28.10:14:19::SCWPlatform::Opened existing hwdb design_2_wrapper
+TRACE::2020-05-28.10:14:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-05-28.10:14:19::SCWMssOS::Checking the sw design at  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:14:19::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2020-05-28.10:14:19::SCWMssOS::No sw design opened at  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:14:19::SCWMssOS::mss exists loading the mss file  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:14:19::SCWMssOS::Opened the sw design from mss  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:14:19::SCWMssOS::Adding the swdes entry C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2020-05-28.10:14:19::SCWMssOS::updating the scw layer about changes
+TRACE::2020-05-28.10:14:20::SCWMssOS::Opened the sw design.  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:14:20::SCWPlatform::Trying to open the hw design at C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:20::SCWPlatform::DSA given C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:20::SCWPlatform::DSA absoulate path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:20::SCWPlatform::DSA directory C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw
+TRACE::2020-05-28.10:14:20::SCWPlatform:: Platform Path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:20::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-05-28.10:14:20::SCWPlatform::Trying to set the existing hwdb with name design_2_wrapper
+TRACE::2020-05-28.10:14:20::SCWPlatform::Opened existing hwdb design_2_wrapper
+TRACE::2020-05-28.10:14:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-05-28.10:14:20::SCWMssOS::Checking the sw design at  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:14:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-05-28.10:14:20::SCWMssOS::Sw design exists and opened at  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:14:20::SCWMssOS:: library already available in sw design:  xilffs:4.2
+TRACE::2020-05-28.10:14:20::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2020-05-28.10:14:20::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2020-05-28.10:14:20::SCWPlatform::Trying to open the hw design at C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:20::SCWPlatform::DSA given C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:20::SCWPlatform::DSA absoulate path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:20::SCWPlatform::DSA directory C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw
+TRACE::2020-05-28.10:14:20::SCWPlatform:: Platform Path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:20::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-05-28.10:14:20::SCWPlatform::Trying to set the existing hwdb with name design_2_wrapper
+TRACE::2020-05-28.10:14:20::SCWPlatform::Opened existing hwdb design_2_wrapper
+TRACE::2020-05-28.10:14:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-05-28.10:14:20::SCWMssOS::Checking the sw design at  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:14:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-05-28.10:14:20::SCWMssOS::Sw design exists and opened at  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:14:20::SCWReader::No isolation master present  
+TRACE::2020-05-28.10:14:24::SCWPlatform::DSA given C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/tempdsa/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:24::SCWPlatform::DSA absoulate path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/tempdsa/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:24::SCWPlatform:: Platform location is C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/tempdsa
+TRACE::2020-05-28.10:14:24::SCWPlatform:: Platform Path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/tempdsa/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:24::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-05-28.10:14:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-05-28.10:14:26::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2020-05-28.10:14:26::SCWPlatform::Trying to open the hw design at C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:26::SCWPlatform::DSA given C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:26::SCWPlatform::DSA absoulate path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:26::SCWPlatform::DSA directory C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw
+TRACE::2020-05-28.10:14:26::SCWPlatform:: Platform Path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:26::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-05-28.10:14:26::SCWPlatform::Trying to set the existing hwdb with name design_2_wrapper
+TRACE::2020-05-28.10:14:26::SCWPlatform::Opened existing hwdb design_2_wrapper
+TRACE::2020-05-28.10:14:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-05-28.10:14:26::SCWPlatform::Trying to open the hw design at C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:26::SCWPlatform::DSA given C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:26::SCWPlatform::DSA absoulate path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:26::SCWPlatform::DSA directory C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw
+TRACE::2020-05-28.10:14:26::SCWPlatform:: Platform Path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:26::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-05-28.10:14:26::SCWPlatform::Trying to set the existing hwdb with name design_2_wrapper
+TRACE::2020-05-28.10:14:26::SCWPlatform::Opened existing hwdb design_2_wrapper
+TRACE::2020-05-28.10:14:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-05-28.10:14:26::SCWMssOS::Checking the sw design at  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:14:26::SCWMssOS::DEBUG:  swdes dump  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-05-28.10:14:26::SCWMssOS::Sw design exists and opened at  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:14:26::SCWPlatform::Trying to open the hw design at C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/tempdsa/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:26::SCWPlatform::DSA given C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/tempdsa/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:26::SCWPlatform::DSA absoulate path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/tempdsa/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:26::SCWPlatform::DSA directory C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/tempdsa
+TRACE::2020-05-28.10:14:26::SCWPlatform:: Platform Path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/tempdsa/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:26::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-05-28.10:14:26::SCWPlatform::update - Opened existing hwdb design_2_wrapper_0
+TRACE::2020-05-28.10:14:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-05-28.10:14:26::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2020-05-28.10:14:26::SCWPlatform::Trying to open the hw design at C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:26::SCWPlatform::DSA given C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:26::SCWPlatform::DSA absoulate path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:26::SCWPlatform::DSA directory C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw
+TRACE::2020-05-28.10:14:26::SCWPlatform:: Platform Path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:26::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-05-28.10:14:26::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-05-28.10:14:29::SCWPlatform::Opened new HwDB with name design_2_wrapper_1
+TRACE::2020-05-28.10:14:29::SCWPlatform::Trying to open the hw design at C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:29::SCWPlatform::DSA given C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:29::SCWPlatform::DSA absoulate path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:29::SCWPlatform::DSA directory C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw
+TRACE::2020-05-28.10:14:29::SCWPlatform:: Platform Path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:14:29::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-05-28.10:14:29::SCWPlatform::Trying to set the existing hwdb with name design_2_wrapper_1
+TRACE::2020-05-28.10:14:29::SCWPlatform::Opened existing hwdb design_2_wrapper_1
+TRACE::2020-05-28.10:14:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-05-28.10:14:29::SCWMssOS::Checking the sw design at  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:14:29::SCWMssOS::DEBUG:  swdes dump  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-05-28.10:14:29::SCWMssOS::Sw design exists and opened at  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:14:29::SCWWriter::formatted JSON is {
+	"platformName":	"design_2_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_2_wrapper",
+	"platHandOff":	"C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/design_2_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_2_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_2_wrapper",
+	"systems":	[{
+			"systemName":	"design_2_wrapper",
+			"systemDesc":	"design_2_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_2_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"/tools/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"/tools/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"e4631ddf9318c7f271b408e9d6adb837",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2020-05-28.10:15:21::SCWPlatform::Started generating the artifacts platform design_2_wrapper
+TRACE::2020-05-28.10:15:21::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-05-28.10:15:21::SCWPlatform::Started generating the artifacts for system configuration design_2_wrapper
+LOG::2020-05-28.10:15:21::SCWSystem::Checking the domain standalone_domain
+LOG::2020-05-28.10:15:21::SCWSystem::Not a boot domain 
+LOG::2020-05-28.10:15:21::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2020-05-28.10:15:21::SCWDomain::Generating domain artifcats
+TRACE::2020-05-28.10:15:21::SCWMssOS::Generating standalone artifcats
+TRACE::2020-05-28.10:15:21::SCWMssOS::Copying the qemu file from  /tools/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/sw/design_2_wrapper/qemu/
+TRACE::2020-05-28.10:15:21::SCWMssOS::Copying the qemu file from  /tools/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/sw/design_2_wrapper/standalone_domain/qemu/
+TRACE::2020-05-28.10:15:21::SCWMssOS:: Copying the user libraries. 
+TRACE::2020-05-28.10:15:21::SCWPlatform::Trying to open the hw design at C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:15:21::SCWPlatform::DSA given C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:15:21::SCWPlatform::DSA absoulate path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:15:21::SCWPlatform::DSA directory C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw
+TRACE::2020-05-28.10:15:21::SCWPlatform:: Platform Path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:15:21::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-05-28.10:15:21::SCWPlatform::Trying to set the existing hwdb with name design_2_wrapper_1
+TRACE::2020-05-28.10:15:21::SCWPlatform::Opened existing hwdb design_2_wrapper_1
+TRACE::2020-05-28.10:15:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-05-28.10:15:21::SCWMssOS::Checking the sw design at  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:15:21::SCWMssOS::DEBUG:  swdes dump  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-05-28.10:15:21::SCWMssOS::Sw design exists and opened at  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:15:21::SCWMssOS::Completed writing the mss file at C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2020-05-28.10:15:21::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:15:21::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-05-28.10:15:21::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2020-05-28.10:15:21::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2020-05-28.10:15:21::SCWMssOS::skipping the bsp build ... 
+TRACE::2020-05-28.10:15:21::SCWMssOS::Copying to export directory.
+TRACE::2020-05-28.10:15:22::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2020-05-28.10:15:22::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2020-05-28.10:15:22::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2020-05-28.10:15:22::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2020-05-28.10:15:22::SCWSystem::Completed Processing the sysconfig design_2_wrapper
+LOG::2020-05-28.10:15:22::SCWPlatform::Completed generating the artifacts for system configuration design_2_wrapper
+TRACE::2020-05-28.10:15:22::SCWPlatform::Started preparing the platform 
+TRACE::2020-05-28.10:15:22::SCWSystem::Writing the bif file for system config design_2_wrapper
+TRACE::2020-05-28.10:15:22::SCWSystem::dir created 
+TRACE::2020-05-28.10:15:22::SCWSystem::Writing the bif 
+TRACE::2020-05-28.10:15:22::SCWPlatform::Started writing the spfm file 
+TRACE::2020-05-28.10:15:22::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-05-28.10:15:22::SCWPlatform::Completed generating the platform
+TRACE::2020-05-28.10:15:22::SCWPlatform::Trying to open the hw design at C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:15:22::SCWPlatform::DSA given C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:15:22::SCWPlatform::DSA absoulate path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:15:22::SCWPlatform::DSA directory C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw
+TRACE::2020-05-28.10:15:22::SCWPlatform:: Platform Path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:15:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-05-28.10:15:22::SCWPlatform::Trying to set the existing hwdb with name design_2_wrapper_1
+TRACE::2020-05-28.10:15:22::SCWPlatform::Opened existing hwdb design_2_wrapper_1
+TRACE::2020-05-28.10:15:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-05-28.10:15:22::SCWMssOS::Checking the sw design at  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:15:22::SCWMssOS::DEBUG:  swdes dump  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-05-28.10:15:22::SCWMssOS::Sw design exists and opened at  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:15:22::SCWWriter::formatted JSON is {
+	"platformName":	"design_2_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_2_wrapper",
+	"platHandOff":	"C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/design_2_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_2_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_2_wrapper",
+	"systems":	[{
+			"systemName":	"design_2_wrapper",
+			"systemDesc":	"design_2_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_2_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"/tools/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"/tools/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"e4631ddf9318c7f271b408e9d6adb837",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-05-28.10:15:22::SCWPlatform::updated the xpfm file.
+TRACE::2020-05-28.10:15:22::SCWPlatform::Trying to open the hw design at C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:15:22::SCWPlatform::DSA given C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:15:22::SCWPlatform::DSA absoulate path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:15:22::SCWPlatform::DSA directory C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw
+TRACE::2020-05-28.10:15:22::SCWPlatform:: Platform Path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/hw/design_2_wrapper.xsa
+TRACE::2020-05-28.10:15:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2020-05-28.10:15:22::SCWPlatform::Trying to set the existing hwdb with name design_2_wrapper_1
+TRACE::2020-05-28.10:15:22::SCWPlatform::Opened existing hwdb design_2_wrapper_1
+TRACE::2020-05-28.10:15:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-05-28.10:15:22::SCWMssOS::Checking the sw design at  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-05-28.10:15:22::SCWMssOS::DEBUG:  swdes dump  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-05-28.10:15:22::SCWMssOS::Sw design exists and opened at  C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss

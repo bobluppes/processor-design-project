@@ -108,6 +108,10 @@ package mlite_pack is
    function bv_inc(a : in std_logic_vector
                   ) return std_logic_vector;
 
+   -- function cla_adder(a    : in std_logic_vector;
+   --                    b    : in std_logic_vector;
+   --                    do_add: in std_logic) return std_logic_vector;
+
    -- For Altera
    COMPONENT lpm_ram_dp
       generic (
@@ -560,6 +564,40 @@ begin
    return result;
 end; --function
 
+-- function cla_adder(a    : in std_logic_vector;
+--                       b    : in std_logic_vector;
+--                       do_add: in std_logic) return std_logic_vector is
+--    variable bb    : std_logic_vector(31 downto 0);
+
+--    variable w_G   : std_logic_vector(31 downto 0); -- Generate
+--    variable w_P   : std_logic_vector(31 downto 0); -- Propagate
+--    variable w_C   : std_logic_vector(32 downto 0); -- Carry
+
+--    variable w_SUM : std_logic_vector(31 downto 0);
+--    variable result   : std_logic_vector(32 downto 0);
+-- begin
+
+--    if do_add = '1' then
+--       bb <= b;
+--    else
+--       bb <= (not b) + 1;
+--    end if;
+
+--    for ii in 0 to 31 loop
+--       w_SUM(ii) <= a(ii) xor bb(ii);
+--       w_C(ii) <= a(ii) and bb(ii);
+
+--       w_G <= a(ii) and bb(ii);
+--       w_P <= a(ii) or bb(ii);
+--       w_C(ii+1) <= w_G(ii) or (w_P(ii) and w_C(ii));
+--    end loop;
+
+--    w_C(0) <= '0';
+--    result <= w_C(32) & w_SUM;
+
+-- end;
+
 end; --package body
+
 
 
