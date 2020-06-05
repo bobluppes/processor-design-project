@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.xpr">
+<Project Version="7" Minor="44" Path="D:/PDP_baseline/PDP/fpga/zynq_fpga/zynq_fpga.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="a10ebfb4ceb244dbba40990ce916fc1f"/>
@@ -97,6 +97,14 @@
       <File Path="$PPRDIR/../../rtl/platform/cpu_axi_wr_cntrl.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/mlite/fastmult.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/mlite/fastmult.vhd"/>
+          <Attr Name="ImportTime" Val="1591289929"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../../rtl/platform/mem_cntrl.vhd">
@@ -282,6 +290,10 @@
       <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="fastmult"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopArchitecture" Val="arch"/>
+        <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/mlite/fastmult.vhd"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>

@@ -52,6 +52,6 @@
 # #########################################################
 
 
-create_clock -period 17.500 -name aclk [get_ports aclk]
+create_clock -period 25 -name aclk [get_ports aclk]
 
 

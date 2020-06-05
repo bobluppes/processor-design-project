@@ -40,7 +40,7 @@ main-build: appARMcpu.elf secondary-outputs
 appARMcpu.elf: $(OBJS) ../src/lscript.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: ARM v7 gcc linker'
-	arm-none-eabi-gcc -LC:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/sw/design_2_wrapper/standalone_domain/bsplib/lib -L"C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\design_2_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\lib" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/sw/design_2_wrapper/standalone_domain/bsplib/lib -o "appARMcpu.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -LD:/PDP_baseline/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/sw/design_2_wrapper/standalone_domain/bsplib/lib -L"D:\PDP_baseline\PDP\fpga\zynq_fpga\workspace\design_2_wrapper\ps7_cortexa9_0\standalone_domain\bsp\ps7_cortexa9_0\lib" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/PDP_baseline/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/sw/design_2_wrapper/standalone_domain/bsplib/lib -o "appARMcpu.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

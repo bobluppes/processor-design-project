@@ -5,7 +5,7 @@ package uart_pack is
 
     constant default_uart_fifo_depth      : integer := 8;
     constant default_uart_baud            : positive := 115200;
-    constant default_uart_clock_frequency : positive := 57100000;
+    constant default_uart_clock_frequency : positive := 50000000;
 
     component uart is
         generic (

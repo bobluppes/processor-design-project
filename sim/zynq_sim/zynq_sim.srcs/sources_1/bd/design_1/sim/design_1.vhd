@@ -1,8 +1,8 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
---Date        : Wed Apr 22 22:45:56 2020
---Host        : pdp3050 running 64-bit Ubuntu 18.04.4 LTS
+--Tool Version: Vivado v.2019.2.1 (win64) Build 2729669 Thu Dec  5 04:49:17 MST 2019
+--Date        : Fri Jun  5 12:28:42 2020
+--Host        : DESKTOP-71DUELB running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
 --Purpose     : IP block netlist
@@ -264,28 +264,6 @@ architecture STRUCTURE of design_1 is
     m_axi_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   end component design_1_axi_full2lite_conver_0_0;
-  component design_1_bram_0_0 is
-  port (
-    bram_rst_a : in STD_LOGIC;
-    bram_clk_a : in STD_LOGIC;
-    bram_en_a : in STD_LOGIC;
-    bram_we_a : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    bram_addr_a : in STD_LOGIC_VECTOR ( 12 downto 0 );
-    bram_wrdata_a : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    bram_rddata_a : out STD_LOGIC_VECTOR ( 31 downto 0 )
-  );
-  end component design_1_bram_0_0;
-  component design_1_bram_1_0 is
-  port (
-    bram_rst_a : in STD_LOGIC;
-    bram_clk_a : in STD_LOGIC;
-    bram_en_a : in STD_LOGIC;
-    bram_we_a : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    bram_addr_a : in STD_LOGIC_VECTOR ( 12 downto 0 );
-    bram_wrdata_a : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    bram_rddata_a : out STD_LOGIC_VECTOR ( 31 downto 0 )
-  );
-  end component design_1_bram_1_0;
   component design_1_axi_bram_ctrl_0_1 is
   port (
     s_axi_aclk : in STD_LOGIC;
@@ -390,6 +368,56 @@ architecture STRUCTURE of design_1 is
     locked : out STD_LOGIC
   );
   end component design_1_clk_wiz_0_0;
+  component design_1_uart_0_0 is
+  port (
+    aclk : in STD_LOGIC;
+    aresetn : in STD_LOGIC;
+    axi_awaddr : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    axi_awvalid : in STD_LOGIC;
+    axi_awready : out STD_LOGIC;
+    axi_wvalid : in STD_LOGIC;
+    axi_wready : out STD_LOGIC;
+    axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    axi_bvalid : out STD_LOGIC;
+    axi_bready : in STD_LOGIC;
+    axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    axi_araddr : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    axi_arvalid : in STD_LOGIC;
+    axi_arready : out STD_LOGIC;
+    axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    axi_rvalid : out STD_LOGIC;
+    axi_rready : in STD_LOGIC;
+    axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    tx : out STD_LOGIC;
+    uart_tx_cpu_pause : out STD_LOGIC;
+    clk_debug : out STD_LOGIC
+  );
+  end component design_1_uart_0_0;
+  component design_1_bram_0_0 is
+  port (
+    bram_rst_a : in STD_LOGIC;
+    bram_clk_a : in STD_LOGIC;
+    bram_en_a : in STD_LOGIC;
+    bram_we_a : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    bram_addr_a : in STD_LOGIC_VECTOR ( 12 downto 0 );
+    bram_wrdata_a : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    bram_rddata_a : out STD_LOGIC_VECTOR ( 31 downto 0 )
+  );
+  end component design_1_bram_0_0;
+  component design_1_bram_1_0 is
+  port (
+    bram_rst_a : in STD_LOGIC;
+    bram_clk_a : in STD_LOGIC;
+    bram_en_a : in STD_LOGIC;
+    bram_we_a : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    bram_addr_a : in STD_LOGIC_VECTOR ( 12 downto 0 );
+    bram_wrdata_a : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    bram_rddata_a : out STD_LOGIC_VECTOR ( 31 downto 0 )
+  );
+  end component design_1_bram_1_0;
   component design_1_cpu_0_0 is
   port (
     aclk : in STD_LOGIC;
@@ -436,34 +464,6 @@ architecture STRUCTURE of design_1 is
     uart_tx_cpu_pause : in STD_LOGIC
   );
   end component design_1_cpu_0_0;
-  component design_1_uart_0_0 is
-  port (
-    aclk : in STD_LOGIC;
-    aresetn : in STD_LOGIC;
-    axi_awaddr : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    axi_awvalid : in STD_LOGIC;
-    axi_awready : out STD_LOGIC;
-    axi_wvalid : in STD_LOGIC;
-    axi_wready : out STD_LOGIC;
-    axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    axi_bvalid : out STD_LOGIC;
-    axi_bready : in STD_LOGIC;
-    axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    axi_araddr : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    axi_arvalid : in STD_LOGIC;
-    axi_arready : out STD_LOGIC;
-    axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    axi_rvalid : out STD_LOGIC;
-    axi_rready : in STD_LOGIC;
-    axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    tx : out STD_LOGIC;
-    uart_tx_cpu_pause : out STD_LOGIC;
-    clk_debug : out STD_LOGIC
-  );
-  end component design_1_uart_0_0;
   signal axi_bram_ctrl_0_bram_addr_a : STD_LOGIC_VECTOR ( 12 downto 0 );
   signal axi_bram_ctrl_0_bram_clk_a : STD_LOGIC;
   signal axi_bram_ctrl_0_bram_en_a : STD_LOGIC;

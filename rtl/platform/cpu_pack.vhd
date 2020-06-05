@@ -11,10 +11,10 @@ package cpu_pack is
     constant default_alu_type             : string  := "DEFAULT";   -- AREA_OPTIMIZED
 
     -- default cache params
-    constant default_cache_way_width      : integer := 0;
+    constant default_cache_way_width      : integer := 1;
     constant default_cache_index_width    : integer := 9;
-    constant default_cache_offset_width   : integer := 2;
-    constant default_cache_address_width  : integer := 21;
+    constant default_cache_offset_width   : integer := 4;
+    constant default_cache_address_width  : integer := 25;
     constant default_cache_replace_policy : string  := "RR";
     constant default_cache_enable         : string  := "True";  -- False
     

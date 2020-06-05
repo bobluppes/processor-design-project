@@ -14,11 +14,11 @@ vmap proc_sys_reset_v5_0_13 activehdl/proc_sys_reset_v5_0_13
 vmap axi_bram_ctrl_v4_1_2 activehdl/axi_bram_ctrl_v4_1_2
 
 vlog -work xpm  -sv2k12 "+incdir+../../../../zynq_sim.srcs/sources_1/bd/design_1/ipshared/4fba" \
-"/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-"/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+"D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -93 \
-"/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
+"D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../zynq_sim.srcs/sources_1/bd/design_1/ipshared/4fba" \
 "../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \

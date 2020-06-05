@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga" key="scw_hwspec_file_selection"/>
+	<item value="D:\PDP_baseline\PDP\fpga\zynq_fpga" key="scw_hwspec_file_selection"/>
 	<item value="/home/pdp/PDP/fpga/zynq_fpga" key="scw_hwspec"/>
 </section>

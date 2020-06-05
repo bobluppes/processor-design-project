@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="appARMcpu" location="/home/pdp/PDP/fpga/zynq_fpga/workspace/appARMcpu" platform="/home/pdp/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/export/design_2_wrapper/design_2_wrapper.xpfm" platformUID="" systemProject="appARMcpu_system" sysConfig="design_2_wrapper" runtime="cpp" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" dimmRepoPath="" mssSignature="ab01604cb058a3b04da0b360456eeedd">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1477218628" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.2144608954" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

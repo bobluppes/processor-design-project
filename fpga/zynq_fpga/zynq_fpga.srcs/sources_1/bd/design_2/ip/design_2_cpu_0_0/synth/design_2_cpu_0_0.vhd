@@ -165,7 +165,7 @@ ARCHITECTURE design_2_cpu_0_0_arch OF design_2_cpu_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_2_cpu_0_0_arch : ARCHITECTURE IS "design_2_cpu_0_0,cpu,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_2_cpu_0_0_arch: ARCHITECTURE IS "design_2_cpu_0_0,cpu,{x_ipProduct=Vivado 2019.2.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=cpu,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,shifter_type=DEFAULT,alu_type=DEFAULT,mult_type=DEFAULT,cache_enable=True,cache_way_width=0,cache_index_width=9,cache_offset_width=1,cache_address_width=21,cache_replace_policy=RR}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_2_cpu_0_0_arch: ARCHITECTURE IS "design_2_cpu_0_0,cpu,{x_ipProduct=Vivado 2019.2.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=cpu,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,shifter_type=DEFAULT,alu_type=DEFAULT,mult_type=DEFAULT,cache_enable=True,cache_way_width=1,cache_index_width=9,cache_offset_width=4,cache_address_width=25,cache_replace_policy=RR}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_2_cpu_0_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -208,12 +208,12 @@ ARCHITECTURE design_2_cpu_0_0_arch OF design_2_cpu_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF axi_awsize: SIGNAL IS "xilinx.com:interface:aximm:1.0 axi AWSIZE";
   ATTRIBUTE X_INTERFACE_INFO OF axi_awlen: SIGNAL IS "xilinx.com:interface:aximm:1.0 axi AWLEN";
   ATTRIBUTE X_INTERFACE_INFO OF axi_awaddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 axi AWADDR";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF axi_awid: SIGNAL IS "XIL_INTERFACENAME axi, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 57142857, ID_WIDTH 1, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 256, PHASE 0.000, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, " & 
+  ATTRIBUTE X_INTERFACE_PARAMETER OF axi_awid: SIGNAL IS "XIL_INTERFACENAME axi, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 50000000, ID_WIDTH 1, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 256, PHASE 0.000, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, " & 
 "NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF axi_awid: SIGNAL IS "xilinx.com:interface:aximm:1.0 axi AWID";
   ATTRIBUTE X_INTERFACE_PARAMETER OF aresetn: SIGNAL IS "XIL_INTERFACENAME aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF aresetn: SIGNAL IS "xilinx.com:signal:reset:1.0 aresetn RST";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF aclk: SIGNAL IS "XIL_INTERFACENAME aclk, ASSOCIATED_BUSIF axi, ASSOCIATED_RESET aresetn, FREQ_HZ 57142857, PHASE 0.000, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF aclk: SIGNAL IS "XIL_INTERFACENAME aclk, ASSOCIATED_BUSIF axi, ASSOCIATED_RESET aresetn, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 aclk CLK";
 BEGIN
   U0 : cpu
@@ -222,10 +222,10 @@ BEGIN
       alu_type => "DEFAULT",
       mult_type => "DEFAULT",
       cache_enable => "True",
-      cache_way_width => 0,
+      cache_way_width => 1,
       cache_index_width => 9,
-      cache_offset_width => 1,
-      cache_address_width => 21,
+      cache_offset_width => 4,
+      cache_address_width => 25,
       cache_replace_policy => "RR"
     )
     PORT MAP (

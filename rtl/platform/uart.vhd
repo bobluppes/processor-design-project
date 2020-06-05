@@ -12,7 +12,7 @@ entity uart is
         axi_address_width : integer := 16;
         axi_data_width    : integer := 32;
         baud              : positive := 115200;
-        clock_frequency   : positive := 50000000
+        clock_frequency   : positive := 40000000
     );
     port (
         aclk              : in  std_logic;

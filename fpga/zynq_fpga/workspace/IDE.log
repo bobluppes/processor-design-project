@@ -246,125 +246,31 @@ Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors
 22:36:32 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
 22:37:11 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
 22:37:11 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
-15:22:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc Computer Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
-15:22:04 ERROR : (XSDB Server)invalid command name "%"
-    while executing
-"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
-    (file "C:\Users\boblu\Documents\TuD\MSc" line 1)
-15:22:04 ERROR : (XSDB Server)
-
-15:22:07 ERROR : Workspace location C:\Users\boblu\Documents\TuD\MSc Computer Engineering\PDP\fpga\zynq_fpga\workspace contains spaces. Please switch to a workspace without spaces in its path.
-15:22:09 INFO  : Registering command handlers for Vitis TCF services
-15:25:02 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
-15:25:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc Computer Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
-15:25:03 ERROR : (XSDB Server)invalid command name "%"
-    while executing
-"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
-    (file "C:\Users\boblu\Documents\TuD\MSc" line 1)
-
-15:28:02 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
-15:28:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc Computer Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
-15:28:02 ERROR : Failed to read platform from project 'design_2_wrapper'.
-Reason: Failed to execute command 'platform read {C:/Users/boblu/Documents/TuD/MSc Computer Engineering/PDP/fpga/zynq_fpga/workspace/design_2_wrapper/platform.spr}'. Click on details for more information.
-15:28:04 ERROR : (XSDB Server)invalid command name "%"
-    while executing
-"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
-    (file "C:\Users\boblu\Documents\TuD\MSc" line 1)
-
-15:31:02 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
-15:31:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc Computer Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
-15:31:02 ERROR : Failed to call init_repo
-Reason: xsct server communication channel is not established.
-15:31:02 ERROR : Exception raised in executing the command =Failed to call init_repo
-Reason: xsct server communication channel is not established. 
-15:31:04 ERROR : (XSDB Server)invalid command name "%"
-    while executing
-"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
-    (file "C:\Users\boblu\Documents\TuD\MSc" line 1)
-
-15:34:02 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
-15:34:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc Computer Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
-15:34:02 ERROR : Failed to enable logging of info messages in xsct server.
-15:34:04 ERROR : (XSDB Server)invalid command name "%"
-    while executing
-"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
-    (file "C:\Users\boblu\Documents\TuD\MSc" line 1)
-
-15:37:02 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
-15:37:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc Computer Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
-15:37:02 ERROR : xsct server communication channel is not established.
-15:37:04 ERROR : (XSDB Server)invalid command name "%"
-    while executing
-"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
-    (file "C:\Users\boblu\Documents\TuD\MSc" line 1)
-
-15:40:02 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
-15:40:02 ERROR : Failed to query RDI_DATADIR
-Reason: xsct server communication channel is not established.
-15:40:02 ERROR : Exception raised in executing the command =Failed to query RDI_DATADIR
-Reason: xsct server communication channel is not established. 
-15:46:58 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
-15:47:03 INFO  : Registering command handlers for Vitis TCF services
-15:47:03 INFO  : XSCT server has started successfully.
-15:47:03 INFO  : Successfully done setting XSCT server connection channel  
-15:47:10 INFO  : plnx-install-location is set to ''
-15:47:10 INFO  : Successfully done setting workspace for the tool. 
-15:47:10 INFO  : Successfully done query RDI_DATADIR 
-16:01:08 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
-16:01:12 INFO  : XSCT server has started successfully.
-16:01:12 INFO  : plnx-install-location is set to ''
-16:01:12 INFO  : Successfully done setting XSCT server connection channel  
-16:01:12 INFO  : Successfully done setting workspace for the tool. 
-16:01:13 INFO  : Registering command handlers for Vitis TCF services
-16:01:13 INFO  : Successfully done query RDI_DATADIR 
-16:01:45 ERROR : Failed to update hardware specification for project 'design_2_wrapper'.
-Reason: Failed to execute command 'platform config -updatehw {/home/pdp/PDP/fpga/zynq_fpga/design_2_wrapper.xsa}'. Click on details for more information.
-16:02:48 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
-16:02:52 INFO  : XSCT server has started successfully.
-16:02:52 INFO  : plnx-install-location is set to ''
-16:02:52 INFO  : Successfully done setting XSCT server connection channel  
-16:02:52 INFO  : Successfully done setting workspace for the tool. 
-16:02:52 INFO  : Registering command handlers for Vitis TCF services
-16:02:53 INFO  : Successfully done query RDI_DATADIR 
-16:03:08 ERROR : Failed to update hardware specification for project 'design_2_wrapper'.
-Reason: Failed to execute command 'platform config -updatehw {/home/pdp/PDP/fpga/zynq_fpga/design_2_wrapper.xsa}'. Click on details for more information.
-16:05:09 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
-16:07:01 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
-16:07:04 INFO  : Updating application flags with new BSP settings...
-16:07:05 INFO  : Successfully updated application flags for project appARMcpu.
-14:19:25 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
-14:19:35 INFO  : XSCT server has started successfully.
-14:19:35 INFO  : Successfully done setting XSCT server connection channel  
-14:19:35 INFO  : plnx-install-location is set to ''
-14:19:35 INFO  : Successfully done setting workspace for the tool. 
-14:19:36 INFO  : Registering command handlers for Vitis TCF services
-14:19:41 INFO  : Successfully done query RDI_DATADIR 
-14:20:34 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
-14:20:53 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
-14:53:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
-14:53:39 INFO  : Registering command handlers for Vitis TCF services
-14:53:39 INFO  : XSCT server has started successfully.
-14:53:39 INFO  : Successfully done setting XSCT server connection channel  
-14:53:39 INFO  : plnx-install-location is set to ''
-14:53:39 INFO  : Successfully done query RDI_DATADIR 
-14:53:39 INFO  : Successfully done setting workspace for the tool. 
-14:54:02 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
-14:54:18 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
-15:57:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
-15:57:38 INFO  : Registering command handlers for Vitis TCF services
-15:57:39 INFO  : XSCT server has started successfully.
-15:57:39 INFO  : plnx-install-location is set to ''
-15:57:39 INFO  : Successfully done setting XSCT server connection channel  
-15:57:39 INFO  : Successfully done setting workspace for the tool. 
-15:57:39 INFO  : Successfully done query RDI_DATADIR 
-15:58:08 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
-15:58:18 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
-20:30:22 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
-20:30:26 INFO  : Registering command handlers for Vitis TCF services
-20:30:27 INFO  : XSCT server has started successfully.
-20:30:27 INFO  : Successfully done setting XSCT server connection channel  
-20:30:27 INFO  : plnx-install-location is set to ''
-20:30:27 INFO  : Successfully done query RDI_DATADIR 
-20:30:27 INFO  : Successfully done setting workspace for the tool. 
-20:30:48 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
-20:31:14 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+13:26:04 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\PDP_baseline\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+13:26:11 INFO  : XSCT server has started successfully.
+13:26:11 INFO  : Successfully done setting XSCT server connection channel  
+13:26:11 INFO  : plnx-install-location is set to ''
+13:26:11 INFO  : Successfully done setting workspace for the tool. 
+13:26:11 INFO  : Registering command handlers for Vitis TCF services
+13:26:15 INFO  : Successfully done query RDI_DATADIR 
+13:26:49 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
+13:26:54 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+13:26:54 ERROR : Failed to get platform details for the project 'appARMcpu'. Cannot sync application flags.
+13:28:17 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
+13:28:52 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+13:28:54 INFO  : Updating application flags with new BSP settings...
+13:28:55 INFO  : Successfully updated application flags for project appARMcpu.
+13:29:04 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+13:29:21 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
+13:29:27 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+13:50:49 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
+13:50:55 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+14:06:03 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\PDP_baseline\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+14:06:05 INFO  : XSCT server has started successfully.
+14:06:05 INFO  : plnx-install-location is set to ''
+14:06:05 INFO  : Successfully done setting XSCT server connection channel  
+14:06:05 INFO  : Successfully done setting workspace for the tool. 
+14:06:06 INFO  : Registering command handlers for Vitis TCF services
+14:06:06 INFO  : Successfully done query RDI_DATADIR 
+14:06:34 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
+14:06:42 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...

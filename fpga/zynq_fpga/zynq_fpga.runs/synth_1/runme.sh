@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=E:/Vitis/2019.2/bin;E:/Vivado/2019.2/ids_lite/ISE/bin/nt64;E:/Vivado/2019.2/ids_lite/ISE/lib/nt64:E:/Vivado/2019.2/bin
+  PATH=D:/Xilinx/Vitis/2019.2/bin;D:/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2019.2/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2019.2/bin
 else
-  PATH=E:/Vitis/2019.2/bin;E:/Vivado/2019.2/ids_lite/ISE/bin/nt64;E:/Vivado/2019.2/ids_lite/ISE/lib/nt64:E:/Vivado/2019.2/bin:$PATH
+  PATH=D:/Xilinx/Vitis/2019.2/bin;D:/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2019.2/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2019.2/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.runs/synth_1'
+HD_PWD='D:/PDP_baseline/PDP/fpga/zynq_fpga/zynq_fpga.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

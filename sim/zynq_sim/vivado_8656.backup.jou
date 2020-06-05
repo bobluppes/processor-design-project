@@ -1,0 +1,86 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:49:17 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Wed Jun  3 14:00:29 2020
+# Process ID: 8656
+# Current directory: D:/PDP_baseline/PDP/sim/zynq_sim
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9852 D:\PDP_baseline\PDP\sim\zynq_sim\zynq_sim.xpr
+# Log file: D:/PDP_baseline/PDP/sim/zynq_sim/vivado.log
+# Journal file: D:/PDP_baseline/PDP/sim/zynq_sim\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source testbench_vivado_1.tcl
+run 36 ms
+close_sim
+update_module_reference design_1_cpu_0_0
+generate_target Simulation [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files/sim_scripts -ip_user_files_dir D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files -ipstatic_source_dir D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/modelsim} {questa=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/questa} {riviera=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/riviera} {activehdl=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source testbench_vivado_1.tcl
+run 10 ms
+close_sim
+update_module_reference design_1_cpu_0_0
+generate_target Simulation [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files/sim_scripts -ip_user_files_dir D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files -ipstatic_source_dir D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/modelsim} {questa=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/questa} {riviera=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/riviera} {activehdl=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source testbench_vivado_1.tcl
+run 10 ms
+close_sim
+update_module_reference design_1_cpu_0_0
+generate_target Simulation [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files/sim_scripts -ip_user_files_dir D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files -ipstatic_source_dir D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/modelsim} {questa=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/questa} {riviera=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/riviera} {activehdl=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source testbench_vivado_1.tcl
+run 10 ms
+close_sim
+update_module_reference design_1_cpu_0_0
+generate_target Simulation [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files/sim_scripts -ip_user_files_dir D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files -ipstatic_source_dir D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/modelsim} {questa=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/questa} {riviera=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/riviera} {activehdl=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source testbench_vivado_1.tcl
+run 10 ms
+close_sim
+update_module_reference design_1_cpu_0_0
+generate_target Simulation [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files/sim_scripts -ip_user_files_dir D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files -ipstatic_source_dir D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/modelsim} {questa=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/questa} {riviera=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/riviera} {activehdl=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source testbench_vivado_1.tcl
+run 10 ms
+close_sim
+update_module_reference design_1_cpu_0_0
+generate_target Simulation [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files/sim_scripts -ip_user_files_dir D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files -ipstatic_source_dir D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/modelsim} {questa=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/questa} {riviera=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/riviera} {activehdl=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source testbench_vivado_1.tcl
+run 10 ms
+close_sim
+update_module_reference design_1_cpu_0_0
+generate_target Simulation [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files/sim_scripts -ip_user_files_dir D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files -ipstatic_source_dir D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/modelsim} {questa=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/questa} {riviera=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/riviera} {activehdl=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source testbench_vivado_1.tcl
+run 10 ms
+close_sim
+update_module_reference design_1_cpu_0_0
+generate_target Simulation [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files/sim_scripts -ip_user_files_dir D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files -ipstatic_source_dir D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/modelsim} {questa=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/questa} {riviera=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/riviera} {activehdl=D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source testbench_vivado_1.tcl
+run 10 ms
+close_sim
+update_module_reference {design_1_bram_0_0 design_1_bram_1_0}
+update_module_reference design_1_bram_1_0
+update_compile_order -fileset sources_1
+update_module_reference {design_1_bram_0_0 design_1_bram_1_0}

@@ -239,7 +239,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>5b4bca10</spirit:value>
+            <spirit:value>4d275280</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -643,7 +643,7 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>clock_frequency</spirit:name>
         <spirit:displayName>Clock Frequency</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.clock_frequency" spirit:minimum="0">50000000</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.clock_frequency" spirit:minimum="0">40000000</spirit:value>
       </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
@@ -660,7 +660,7 @@
       <spirit:file>
         <spirit:name>xgui/uart_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_e202d115</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_b78b9fdd</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -695,7 +695,7 @@
     <spirit:parameter>
       <spirit:name>clock_frequency</spirit:name>
       <spirit:displayName>Clock Frequency</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.clock_frequency" spirit:minimum="0" spirit:rangeType="long">50000000</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.clock_frequency" spirit:minimum="0" spirit:rangeType="long">40000000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -717,7 +717,7 @@
         <xilinx:designToolContext>IPI</xilinx:designToolContext>
       </xilinx:designToolContexts>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2020-04-22T09:07:21Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2020-06-05T13:29:35Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2.1</xilinx:xilinxVersion>

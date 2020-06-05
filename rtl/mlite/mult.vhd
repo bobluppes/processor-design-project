@@ -39,7 +39,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
-use IEEE.std_logic_arith.all;
+use IEEE.NUMERIC_STD.ALL;
 use work.mlite_pack.all;
 
 entity mult is
@@ -53,6 +53,14 @@ entity mult is
 end; --entity mult
 
 architecture logic of mult is
+
+    
+component fastmult is    
+   port(a       : in  std_logic_vector(31 downto 0);
+        b       : in  std_logic_vector(31 downto 0);        
+        res     : out std_logic_vector(63 downto 0)
+    );
+end component; --fastmult
 
    constant MODE_MULT : std_logic := '1';
    constant MODE_DIV  : std_logic := '0';
@@ -72,6 +80,10 @@ architecture logic of mult is
    signal b_neg       : std_logic_vector(31 downto 0);
    signal sum         : std_logic_vector(32 downto 0);
    
+    signal a_mult, b_mult : std_logic_vector(31 downto 0);
+    signal temp, mult_out, mult_out_neg        : std_logic_vector(63 downto 0);
+    signal sign_mult : std_logic;
+   
 begin
  
    -- Result
@@ -87,7 +99,13 @@ begin
    a_neg <= bv_negate(a);
    b_neg <= bv_negate(b);
    sum <= bv_adder(upper_reg, aa_reg, mode_reg);
-    
+   
+   fastadder_inst : fastmult port map(a=>a_mult, b=>b_mult,res=>mult_out);
+   
+   mult_out_neg <= bv_negate(mult_out);   
+
+   temp <= mult_out when sign_mult='0' else mult_out_neg;   
+      
    --multiplication/division unit
    mult_proc: process(clk, reset_in, a, b, mult_func,
       a_neg, b_neg, sum, sign_reg, mode_reg, negate_reg_LO, 
@@ -121,20 +139,46 @@ begin
                aa_reg <= a;
                bb_reg <= b;
                upper_reg <= ZERO;
-               count_reg <= "100000";
+               count_reg <= "000001"; -- Adjusted to 1 because result will be done in 1 cycle.
                negate_reg_LO <= '0';
                negate_reg_HI <= '0';
                sign_reg <= '0';
                sign2_reg <= '0';
+               
+                a_mult <= a;
+                b_mult <= b;
+                sign_mult <= '0';
             when MULT_SIGNED_MULT =>
                mode_reg <= MODE_MULT;
                if b(31) = '0' then
                   aa_reg <= a;
-                  bb_reg <= b;
-               else
+                  bb_reg <= b;           
+               else 
                   aa_reg <= a_neg;
                   bb_reg <= b_neg;
+                end if;
+                
+                -- Checks whether the end-result is negative or not. If one of the operands is negative,
+                -- then make the negative operands positive, carry out normal multiplication and adjust 
+                -- sign later on.
+                if (a(31) = '1' and b(31) = '0') then
+                    a_mult <= a_neg;
+                    b_mult <= b;
+                end if;
+                if (b(31) = '1' and a(31) = '0') then
+                    a_mult <= a;
+                    b_mult <= b_neg;
+                end if;
+                if (b(31) = '1' and a(31) = '1') then
+                    a_mult <= a_neg;
+                    b_mult <= b_neg;    
+                end if;
+                if (b(31) = '0' and a(31) = '0') then
+                    a_mult <= a;
+                    b_mult <= b;
                end if;
+               sign_mult <= a(31) xor b(31);
+                              
                if a /= ZERO then
                   sign_reg <= a(31) xor b(31);
                else
@@ -142,9 +186,9 @@ begin
                end if;
                sign2_reg <= '0';
                upper_reg <= ZERO;
-               count_reg <= "100000";
+               count_reg <= "000001"; -- Asjusted to 1 because result will be done in 1 cycle.
                negate_reg_LO <= '0';
-               negate_reg_HI <= '0';
+               negate_reg_HI <= '0';                            
             when MULT_DIVIDE =>
                mode_reg <= MODE_DIV;
                aa_reg <= b(0) & ZERO(30 downto 0);
@@ -194,6 +238,8 @@ begin
                         lower_reg <= upper_reg(0) & lower_reg(31 downto 1);
                         bb_reg <= '0' & bb_reg(31 downto 1);
                      end if;
+                     upper_reg <= temp(63 downto 32);
+                     lower_reg <= temp(31 downto 0);
                   else   
                      -- Division
                      if sum(32) = '0' and aa_reg /= ZERO and 

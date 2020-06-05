@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_vivado_1_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="axi_full2lite_converter_pack" />
+            <top_module name="boot_pack_zynq" />
+            <top_module name="boot_pack_zynq_sim" />
+            <top_module name="cpu_pack" />
+            <top_module name="crossbar_pack" />
+            <top_module name="crossbar_wrap_pack" />
+            <top_module name="glbl" />
+            <top_module name="main_pack_opcodes" />
+            <top_module name="mlite_pack" />
+            <top_module name="testbench_vivado_1" />
+            <top_module name="uart_pack" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="5320220417fs"></ZoomStartTime>
+      <ZoomEndTime time="5323024418fs"></ZoomEndTime>
+      <Cursor1Time time="5322557084fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="144"></NameColumnWidth>
+      <ValueColumnWidth column_width="125"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/testbench_vivado_1/raw_nreset" type="logic">
+      <obj_property name="ElementShortName">raw_nreset</obj_property>
+      <obj_property name="ObjectShortName">raw_nreset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_vivado_1/uart_tx" type="logic">
+      <obj_property name="ElementShortName">uart_tx</obj_property>
+      <obj_property name="ObjectShortName">uart_tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_vivado_1/design_1_wrapper_inst/design_1_i/cpu_0/U0/mlite_cpu_inst/u8_mult/mode_reg" type="logic">
+      <obj_property name="ElementShortName">mode_reg</obj_property>
+      <obj_property name="ObjectShortName">mode_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_vivado_1/design_1_wrapper_inst/design_1_i/cpu_0/U0/mlite_cpu_inst/u8_mult/count_reg" type="array">
+      <obj_property name="ElementShortName">count_reg[5:0]</obj_property>
+      <obj_property name="ObjectShortName">count_reg[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_vivado_1/design_1_wrapper_inst/design_1_i/cpu_0/U0/mlite_cpu_inst/u8_mult/a" type="array">
+      <obj_property name="ElementShortName">a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_vivado_1/design_1_wrapper_inst/design_1_i/cpu_0/U0/mlite_cpu_inst/u8_mult/b" type="array">
+      <obj_property name="ElementShortName">b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_vivado_1/design_1_wrapper_inst/design_1_i/cpu_0/U0/mlite_cpu_inst/u8_mult/aa_reg" type="array">
+      <obj_property name="ElementShortName">aa_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">aa_reg[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_vivado_1/design_1_wrapper_inst/design_1_i/cpu_0/U0/mlite_cpu_inst/u8_mult/bb_reg" type="array">
+      <obj_property name="ElementShortName">bb_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bb_reg[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_vivado_1/design_1_wrapper_inst/design_1_i/cpu_0/U0/mlite_cpu_inst/u8_mult/c_mult" type="array">
+      <obj_property name="ElementShortName">c_mult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">c_mult[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_vivado_1/design_1_wrapper_inst/design_1_i/cpu_0/U0/mlite_cpu_inst/u8_mult/upper_reg" type="array">
+      <obj_property name="ElementShortName">upper_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">upper_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_vivado_1/design_1_wrapper_inst/design_1_i/cpu_0/U0/mlite_cpu_inst/u8_mult/lower_reg" type="array">
+      <obj_property name="ElementShortName">lower_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lower_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_vivado_1/design_1_wrapper_inst/design_1_i/cpu_0/U0/mlite_cpu_inst/u8_mult/mult_func" type="array">
+      <obj_property name="ElementShortName">mult_func[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_func[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_vivado_1/design_1_wrapper_inst/design_1_i/cpu_0/U0/mlite_cpu_inst/u8_mult/pause_out" type="logic">
+      <obj_property name="ElementShortName">pause_out</obj_property>
+      <obj_property name="ObjectShortName">pause_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_vivado_1/design_1_wrapper_inst/design_1_i/cpu_0/U0/mlite_cpu_inst/u8_mult/temp" type="array">
+      <obj_property name="ElementShortName">temp[63:0]</obj_property>
+      <obj_property name="ObjectShortName">temp[63:0]</obj_property>
+   </wvobject>
+</wave_config>

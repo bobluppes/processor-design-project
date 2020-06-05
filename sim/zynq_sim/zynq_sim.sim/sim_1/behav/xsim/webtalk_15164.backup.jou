@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:49:17 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Thu Jun  4 14:56:45 2020
+# Process ID: 15164
+# Current directory: D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.sim/sim_1/behav/xsim/xsim.dir/testbench_vivado_1_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.sim/sim_1/behav/xsim/xsim.dir/testbench_vivado_1_behav/webtalk/xsim_webtalk.tcl -notrace

@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 use work.boot_pack_zynq.all;
 use work.boot_pack_zynq_sim.all;
 use work.main_pack_opcodes.all;
---use work.main_pack_pi.all;
+--use work.main_pack_opcodes.all;
 
 entity bram is
     generic (

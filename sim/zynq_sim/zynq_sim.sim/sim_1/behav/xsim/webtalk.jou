@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Webtalk v2019.2.1 (64-bit)
-# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# SW Build 2729669 on Thu Dec  5 04:49:17 MST 2019
 # IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
-# Start of session at: Wed Apr 22 22:47:40 2020
-# Process ID: 28128
-# Current directory: /home/pdp/PDP/sim/zynq_sim/zynq_sim.sim/sim_1/behav/xsim
-# Command line: wbtcv -mode batch -source /home/pdp/PDP/sim/zynq_sim/zynq_sim.sim/sim_1/behav/xsim/xsim.dir/testbench_vivado_1_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: /home/pdp/PDP/sim/zynq_sim/zynq_sim.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: /home/pdp/PDP/sim/zynq_sim/zynq_sim.sim/sim_1/behav/xsim/webtalk.jou
+# Start of session at: Thu Jun  4 15:37:33 2020
+# Process ID: 13100
+# Current directory: D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.sim/sim_1/behav/xsim/xsim.dir/testbench_vivado_1_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source /home/pdp/PDP/sim/zynq_sim/zynq_sim.sim/sim_1/behav/xsim/xsim.dir/testbench_vivado_1_behav/webtalk/xsim_webtalk.tcl -notrace
+source D:/PDP_baseline/PDP/sim/zynq_sim/zynq_sim.sim/sim_1/behav/xsim/xsim.dir/testbench_vivado_1_behav/webtalk/xsim_webtalk.tcl -notrace

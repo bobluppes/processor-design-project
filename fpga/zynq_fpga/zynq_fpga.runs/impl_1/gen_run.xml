@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1589372864">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1591363824">
   <File Type="BITSTR-BMM" Name="design_2_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="design_2_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="design_2_wrapper_timing_summary_init.rpt"/>
@@ -115,6 +115,14 @@
     <File Path="$PPRDIR/../../rtl/platform/cpu_axi_wr_cntrl.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mlite/fastmult.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/mlite/fastmult.vhd"/>
+        <Attr Name="ImportTime" Val="1591289929"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../../rtl/platform/mem_cntrl.vhd">

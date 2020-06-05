@@ -1,9 +1,9 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.507442",
-   "Default View_TopLeft":"-144,-140",
+   "Default View_ScaleFactor":"0.84375",
+   "Default View_TopLeft":"-139,-179",
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 TLS
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
 preplace port clk_100MHz -pg 1 -lvl 0 -x -10 -y 300 -defaultsOSRD
 preplace port tx -pg 1 -lvl 7 -x 2010 -y 580 -defaultsOSRD
@@ -11,42 +11,42 @@ preplace port reset_rtl -pg 1 -lvl 0 -x -10 -y 220 -defaultsOSRD
 preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 400 -y 240 -defaultsOSRD
 preplace inst crossbar_wrap_0 -pg 1 -lvl 4 -x 1030 -y 370 -defaultsOSRD
 preplace inst axi_full2lite_conver_0 -pg 1 -lvl 5 -x 1370 -y 580 -defaultsOSRD
-preplace inst bram_0 -pg 1 -lvl 6 -x 1790 -y 370 -defaultsOSRD
-preplace inst bram_1 -pg 1 -lvl 6 -x 1790 -y 130 -defaultsOSRD
 preplace inst axi_bram_ctrl_0 -pg 1 -lvl 5 -x 1370 -y 370 -defaultsOSRD
 preplace inst axi_bram_ctrl_1 -pg 1 -lvl 5 -x 1370 -y 130 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 110 -y 290 -defaultsOSRD
-preplace inst cpu_0 -pg 1 -lvl 3 -x 730 -y 350 -defaultsOSRD
 preplace inst uart_0 -pg 1 -lvl 6 -x 1790 -y 600 -defaultsOSRD
+preplace inst bram_0 -pg 1 -lvl 6 -x 1790 -y 370 -defaultsOSRD
+preplace inst bram_1 -pg 1 -lvl 6 -x 1790 -y 130 -defaultsOSRD
+preplace inst cpu_0 -pg 1 -lvl 3 -x 730 -y 350 -defaultsOSRD
 preplace netloc clk_100MHz_1 1 0 1 NJ 300
-preplace netloc clk_wiz_0_clk_out1 1 1 5 210 140 590 270 880 270 1190 660 1550J
-preplace netloc clk_wiz_0_locked 1 1 1 220 280n
-preplace netloc uart_0_uart_tx_cpu_pause 1 2 5 590 500 NJ 500 NJ 500 NJ 500 1990
+preplace netloc clk_wiz_0_clk_out1 1 1 5 200 140 580 270 870 270 1180 660 1540J
+preplace netloc clk_wiz_0_locked 1 1 1 210 280n
+preplace netloc uart_0_uart_tx_cpu_pause 1 2 5 580 500 NJ 500 NJ 500 NJ 500 1970
 preplace netloc uart_0_tx 1 6 1 N 580
-preplace netloc proc_sys_reset_0_interconnect_aresetn 1 2 2 N 260 870J
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 4 580 450 NJ 450 1200 670 1580J
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 2 2 N 260 860J
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 4 570 450 NJ 450 1190 670 1570J
 preplace netloc ext_reset_in_0_1 1 0 2 10 220 NJ
-preplace netloc axi_bram_ctrl_0_bram_addr_a 1 5 1 1570 320n
+preplace netloc axi_bram_ctrl_0_bram_addr_a 1 5 1 1560 320n
 preplace netloc axi_bram_ctrl_0_bram_clk_a 1 5 1 N 340
-preplace netloc axi_bram_ctrl_0_bram_wrdata_a 1 5 1 1550 360n
-preplace netloc bram_0_bram_rddata_a 1 5 2 1540 480 1990
-preplace netloc axi_bram_ctrl_0_bram_en_a 1 5 1 1560 360n
-preplace netloc axi_bram_ctrl_0_bram_rst_a 1 5 1 1580 320n
-preplace netloc axi_bram_ctrl_0_bram_we_a 1 5 1 1590 380n
-preplace netloc axi_bram_ctrl_1_bram_addr_a 1 5 1 1570 80n
+preplace netloc axi_bram_ctrl_0_bram_wrdata_a 1 5 1 1540 360n
+preplace netloc bram_0_bram_rddata_a 1 5 2 1530 480 1970
+preplace netloc axi_bram_ctrl_0_bram_en_a 1 5 1 1550 360n
+preplace netloc axi_bram_ctrl_0_bram_rst_a 1 5 1 1570 320n
+preplace netloc axi_bram_ctrl_0_bram_we_a 1 5 1 1580 380n
+preplace netloc axi_bram_ctrl_1_bram_addr_a 1 5 1 1560 80n
 preplace netloc axi_bram_ctrl_1_bram_clk_a 1 5 1 N 100
-preplace netloc axi_bram_ctrl_1_bram_wrdata_a 1 5 1 1540 120n
-preplace netloc bram_1_bram_rddata_a 1 5 2 1550 20 1990
-preplace netloc axi_bram_ctrl_1_bram_rst_a 1 5 1 1580 80n
-preplace netloc axi_bram_ctrl_1_bram_we_a 1 5 1 1590 140n
-preplace netloc axi_bram_ctrl_1_bram_en_a 1 5 1 1560 120n
-preplace netloc crossbar_wrap_0_ram_m_axi 1 4 1 1180 110n
+preplace netloc axi_bram_ctrl_1_bram_wrdata_a 1 5 1 1530 120n
+preplace netloc bram_1_bram_rddata_a 1 5 2 1540 20 1970
+preplace netloc axi_bram_ctrl_1_bram_rst_a 1 5 1 1570 80n
+preplace netloc axi_bram_ctrl_1_bram_we_a 1 5 1 1580 140n
+preplace netloc axi_bram_ctrl_1_bram_en_a 1 5 1 1550 120n
+preplace netloc crossbar_wrap_0_uart_m_axi 1 4 1 1170 390n
 preplace netloc crossbar_wrap_0_bram_m_axi 1 4 1 N 350
-preplace netloc axi_full2lite_conver_0_m_axi 1 5 1 N 580
-preplace netloc crossbar_wrap_0_uart_m_axi 1 4 1 1180 390n
 preplace netloc cpu_0_axi 1 3 1 N 350
+preplace netloc axi_full2lite_conver_0_m_axi 1 5 1 N 580
+preplace netloc crossbar_wrap_0_ram_m_axi 1 4 1 1170 110n
 levelinfo -pg 1 -10 110 400 730 1030 1370 1790 2010
-pagesize -pg 1 -db -bbox -sgen -150 0 2080 680
+pagesize -pg 1 -db -bbox -sgen -140 0 2070 680
 "
 }
 {

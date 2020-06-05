@@ -1,7 +1,7 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 031034dadac84d16b9a98eedefd0beab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L axi_bram_ctrl_v4_1_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_vivado_1_behav xil_defaultlib.testbench_vivado_1 xil_defaultlib.glbl -log elaborate.log 
-Using 8 slave threads.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 031034dadac84d16b9a98eedefd0beab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L axi_bram_ctrl_v4_1_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_vivado_1_behav xil_defaultlib.testbench_vivado_1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
@@ -79,6 +79,7 @@ Compiling architecture ram_block of entity xil_defaultlib.reg_bank [\reg_bank(me
 Compiling architecture logic of entity xil_defaultlib.bus_mux [bus_mux_default]
 Compiling architecture logic of entity xil_defaultlib.alu [\alu(1,7)\]
 Compiling architecture logic of entity xil_defaultlib.shifter [\shifter(1,7)\]
+Compiling architecture arch of entity xil_defaultlib.fastmult [fastmult_default]
 Compiling architecture logic of entity xil_defaultlib.mult [\mult(1,7)\]
 Compiling architecture logic of entity xil_defaultlib.pipeline [pipeline_default]
 Compiling architecture logic of entity xil_defaultlib.mlite_cpu [\mlite_cpu(memory_type="DUAL_POR...]
