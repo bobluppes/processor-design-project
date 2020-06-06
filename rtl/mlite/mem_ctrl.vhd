@@ -74,68 +74,6 @@ begin
    case mem_source is
    when MEM_READ32 =>
       data_read_var := data_r;
-
-   when MEM_READ16 | MEM_READ16S =>
-      if address_in(1) = ENDIAN_MODE(1) then
-         data_read_var(15 downto 0) := data_r(31 downto 16);
-      else
-         data_read_var(15 downto 0) := data_r(15 downto 0);
-      end if;
-      if mem_source = MEM_READ16 or data_read_var(15) = '0' then
-         data_read_var(31 downto 16) := ZERO(31 downto 16);
-      else
-         data_read_var(31 downto 16) := ONES(31 downto 16);
-      end if;
-
-   when MEM_READ8 | MEM_READ8S =>
-      bits := address_in(1 downto 0) xor ENDIAN_MODE;
-      case bits is
-      when "00" => data_read_var(7 downto 0) := data_r(31 downto 24);
-      when "01" => data_read_var(7 downto 0) := data_r(23 downto 16);
-      when "10" => data_read_var(7 downto 0) := data_r(15 downto 8);
-      when others => data_read_var(7 downto 0) := data_r(7 downto 0);
-      end case;
-      if mem_source = MEM_READ8 or data_read_var(7) = '0' then
-         data_read_var(31 downto 8) := ZERO(31 downto 8);
-      else
-         data_read_var(31 downto 8) := ONES(31 downto 8);
-      end if;
-
-   when MEM_WRITE32 =>
-      data_write_var := data_write;
-      byte_we_var := "1111";
-
-   when MEM_WRITE16 =>
-      data_write_var := data_write(15 downto 0) & data_write(15 downto 0);
-      if address_in(1) = ENDIAN_MODE(1) then
-         byte_we_var := "1100";
-      else
-         byte_we_var := "0011";
-      end if;
-
-   when MEM_WRITE8 =>
-      data_write_var := data_write(7 downto 0) & data_write(7 downto 0) &
-                  data_write(7 downto 0) & data_write(7 downto 0);
-      bits := address_in(1 downto 0) xor ENDIAN_MODE;
-      case bits is
-      when "00" =>
-         byte_we_var := "1000"; 
-      when "01" => 
-         byte_we_var := "0100"; 
-      when "10" =>
-         byte_we_var := "0010"; 
-      when others =>
-         byte_we_var := "0001"; 
-      end case;
-
-   when others =>
-   end case;
-
-   if mem_source = MEM_FETCH then --opcode fetch
-      address_var := address_pc;
-      opcode_next := data_r;
-      mem_state_next := STATE_ADDR;
-   else
       if mem_state_reg = STATE_ADDR then
          if pause_in = '0' then
             address_var := address_in(31 downto 2);
@@ -156,7 +94,167 @@ begin
             byte_we_var := "0000";
          end if;
       end if;
-   end if;
+
+   when MEM_READ16 | MEM_READ16S =>
+      if address_in(1) = ENDIAN_MODE(1) then
+         data_read_var(15 downto 0) := data_r(31 downto 16);
+      else
+         data_read_var(15 downto 0) := data_r(15 downto 0);
+      end if;
+      if mem_source = MEM_READ16 or data_read_var(15) = '0' then
+         data_read_var(31 downto 16) := ZERO(31 downto 16);
+      else
+         data_read_var(31 downto 16) := ONES(31 downto 16);
+      end if;
+      if mem_state_reg = STATE_ADDR then
+         if pause_in = '0' then
+            address_var := address_in(31 downto 2);
+            mem_state_next := STATE_ACCESS;
+            pause_var := '1';
+         else
+            address_var := address_pc;
+            byte_we_var := "0000";
+         end if;
+      else  --STATE_ACCESS
+         if pause_in = '0' then
+            address_var := address_pc;
+            opcode_next := next_opcode_reg;
+            mem_state_next := STATE_ADDR;
+            byte_we_var := "0000";
+         else
+            address_var := address_in(31 downto 2);
+            byte_we_var := "0000";
+         end if;
+      end if;
+
+   when MEM_READ8 | MEM_READ8S =>
+      bits := address_in(1 downto 0) xor ENDIAN_MODE;
+      case bits is
+      when "00" => data_read_var(7 downto 0) := data_r(31 downto 24);
+      when "01" => data_read_var(7 downto 0) := data_r(23 downto 16);
+      when "10" => data_read_var(7 downto 0) := data_r(15 downto 8);
+      when others => data_read_var(7 downto 0) := data_r(7 downto 0);
+      end case;
+      if mem_source = MEM_READ8 or data_read_var(7) = '0' then
+         data_read_var(31 downto 8) := ZERO(31 downto 8);
+      else
+         data_read_var(31 downto 8) := ONES(31 downto 8);
+      end if;
+      if mem_state_reg = STATE_ADDR then
+         if pause_in = '0' then
+            address_var := address_in(31 downto 2);
+            mem_state_next := STATE_ACCESS;
+            pause_var := '1';
+         else
+            address_var := address_pc;
+            byte_we_var := "0000";
+         end if;
+      else  --STATE_ACCESS
+         if pause_in = '0' then
+            address_var := address_pc;
+            opcode_next := next_opcode_reg;
+            mem_state_next := STATE_ADDR;
+            byte_we_var := "0000";
+         else
+            address_var := address_in(31 downto 2);
+            byte_we_var := "0000";
+         end if;
+      end if;
+
+   when MEM_WRITE32 =>
+      data_write_var := data_write;
+      byte_we_var := "1111";
+      if mem_state_reg = STATE_ADDR then
+         if pause_in = '0' then
+            address_var := address_in(31 downto 2);
+            mem_state_next := STATE_ACCESS;
+            pause_var := '1';
+         else
+            address_var := address_pc;
+            byte_we_var := "0000";
+         end if;
+      else  --STATE_ACCESS
+         if pause_in = '0' then
+            address_var := address_pc;
+            opcode_next := next_opcode_reg;
+            mem_state_next := STATE_ADDR;
+            byte_we_var := "0000";
+         else
+            address_var := address_in(31 downto 2);
+            byte_we_var := "0000";
+         end if;
+      end if;
+
+   when MEM_WRITE16 =>
+      data_write_var := data_write(15 downto 0) & data_write(15 downto 0);
+      if address_in(1) = ENDIAN_MODE(1) then
+         byte_we_var := "1100";
+      else
+         byte_we_var := "0011";
+      end if;
+      if mem_state_reg = STATE_ADDR then
+         if pause_in = '0' then
+            address_var := address_in(31 downto 2);
+            mem_state_next := STATE_ACCESS;
+            pause_var := '1';
+         else
+            address_var := address_pc;
+            byte_we_var := "0000";
+         end if;
+      else  --STATE_ACCESS
+         if pause_in = '0' then
+            address_var := address_pc;
+            opcode_next := next_opcode_reg;
+            mem_state_next := STATE_ADDR;
+            byte_we_var := "0000";
+         else
+            address_var := address_in(31 downto 2);
+            byte_we_var := "0000";
+         end if;
+      end if;
+
+   when MEM_WRITE8 =>
+      data_write_var := data_write(7 downto 0) & data_write(7 downto 0) &
+                  data_write(7 downto 0) & data_write(7 downto 0);
+      bits := address_in(1 downto 0) xor ENDIAN_MODE;
+      case bits is
+      when "00" =>
+         byte_we_var := "1000"; 
+      when "01" => 
+         byte_we_var := "0100"; 
+      when "10" =>
+         byte_we_var := "0010"; 
+      when others =>
+         byte_we_var := "0001"; 
+      end case;
+      if mem_state_reg = STATE_ADDR then
+         if pause_in = '0' then
+            address_var := address_in(31 downto 2);
+            mem_state_next := STATE_ACCESS;
+            pause_var := '1';
+         else
+            address_var := address_pc;
+            byte_we_var := "0000";
+         end if;
+      else  --STATE_ACCESS
+         if pause_in = '0' then
+            address_var := address_pc;
+            opcode_next := next_opcode_reg;
+            mem_state_next := STATE_ADDR;
+            byte_we_var := "0000";
+         else
+            address_var := address_in(31 downto 2);
+            byte_we_var := "0000";
+         end if;
+      end if;
+
+   when MEM_FETCH =>
+      address_var := address_pc;
+      opcode_next := data_r;
+      mem_state_next := STATE_ADDR;
+
+   when others =>
+   end case;
 
    if nullify_op = '1' and pause_in = '0' then
       opcode_next := ZERO;  --NOP after beql

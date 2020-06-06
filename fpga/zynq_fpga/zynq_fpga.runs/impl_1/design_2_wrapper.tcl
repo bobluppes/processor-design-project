@@ -61,139 +61,25 @@ proc step_failed { step } {
 }
 
 
-start_step init_design
-set ACTIVE_STEP init_design
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
 set rc [catch {
-  create_msg_db init_design.pb
+  create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 1
-  create_project -in_memory -part xc7z020clg400-1
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
+  open_checkpoint design_2_wrapper_postroute_physopt.dcp
   set_property webtalk.parent_dir C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.cache/wt [current_project]
-  set_property parent.project_path C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.xpr [current_project]
-  set_property ip_output_repo C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.cache/ip [current_project]
-  set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.runs/synth_1/design_2_wrapper.dcp
-  set_msg_config -source 4 -id {BD 41-1661} -limit 0
-  set_param project.isImplRun true
-  add_files C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.srcs/sources_1/bd/design_2/design_2.bd
-  set_param project.isImplRun false
-  read_xdc C:/Users/boblu/Documents/TuD/MSc_Computer_Engineering/PDP/fpga/zynq_fpga/zynq_fpga.srcs/constrs_1/new/constraints.xdc
-  set_param project.isImplRun true
-  link_design -top design_2_wrapper -part xc7z020clg400-1
-  set_param project.isImplRun false
-  write_hwdef -force -file design_2_wrapper.hwdef
-  close_msg_db -file init_design.pb
+  catch { write_mem_info -force design_2_wrapper.mmi }
+  write_bitstream -force design_2_wrapper.bit 
+  catch {write_debug_probes -quiet -force design_2_wrapper}
+  catch {file copy -force design_2_wrapper.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
 } RESULT]
 if {$rc} {
-  step_failed init_design
+  step_failed write_bitstream
   return -code error $RESULT
 } else {
-  end_step init_design
-  unset ACTIVE_STEP 
-}
-
-start_step opt_design
-set ACTIVE_STEP opt_design
-set rc [catch {
-  create_msg_db opt_design.pb
-  opt_design -directive Explore
-  write_checkpoint -force design_2_wrapper_opt.dcp
-  create_report "impl_1_opt_report_drc_0" "report_drc -file design_2_wrapper_drc_opted.rpt -pb design_2_wrapper_drc_opted.pb -rpx design_2_wrapper_drc_opted.rpx"
-  close_msg_db -file opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed opt_design
-  return -code error $RESULT
-} else {
-  end_step opt_design
-  unset ACTIVE_STEP 
-}
-
-start_step place_design
-set ACTIVE_STEP place_design
-set rc [catch {
-  create_msg_db place_design.pb
-  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
-    implement_debug_core 
-  } 
-  place_design -directive Explore
-  write_checkpoint -force design_2_wrapper_placed.dcp
-  create_report "impl_1_place_report_io_0" "report_io -file design_2_wrapper_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file design_2_wrapper_utilization_placed.rpt -pb design_2_wrapper_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file design_2_wrapper_control_sets_placed.rpt"
-  close_msg_db -file place_design.pb
-} RESULT]
-if {$rc} {
-  step_failed place_design
-  return -code error $RESULT
-} else {
-  end_step place_design
-  unset ACTIVE_STEP 
-}
-
-start_step phys_opt_design
-set ACTIVE_STEP phys_opt_design
-set rc [catch {
-  create_msg_db phys_opt_design.pb
-  phys_opt_design -directive Explore
-  write_checkpoint -force design_2_wrapper_physopt.dcp
-  close_msg_db -file phys_opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed phys_opt_design
-  return -code error $RESULT
-} else {
-  end_step phys_opt_design
-  unset ACTIVE_STEP 
-}
-
-  set_msg_config -source 4 -id {Route 35-39} -severity "critical warning" -new_severity warning
-start_step route_design
-set ACTIVE_STEP route_design
-set rc [catch {
-  create_msg_db route_design.pb
-  route_design -directive Explore -tns_cleanup
-  write_checkpoint -force design_2_wrapper_routed.dcp
-  create_report "impl_1_route_report_drc_0" "report_drc -file design_2_wrapper_drc_routed.rpt -pb design_2_wrapper_drc_routed.pb -rpx design_2_wrapper_drc_routed.rpx"
-  create_report "impl_1_route_report_methodology_0" "report_methodology -file design_2_wrapper_methodology_drc_routed.rpt -pb design_2_wrapper_methodology_drc_routed.pb -rpx design_2_wrapper_methodology_drc_routed.rpx"
-  create_report "impl_1_route_report_power_0" "report_power -file design_2_wrapper_power_routed.rpt -pb design_2_wrapper_power_summary_routed.pb -rpx design_2_wrapper_power_routed.rpx"
-  create_report "impl_1_route_report_route_status_0" "report_route_status -file design_2_wrapper_route_status.rpt -pb design_2_wrapper_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file design_2_wrapper_timing_summary_routed.rpt -pb design_2_wrapper_timing_summary_routed.pb -rpx design_2_wrapper_timing_summary_routed.rpx"
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file design_2_wrapper_incremental_reuse_routed.rpt"
-  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file design_2_wrapper_clock_utilization_routed.rpt"
-  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file design_2_wrapper_bus_skew_routed.rpt -pb design_2_wrapper_bus_skew_routed.pb -rpx design_2_wrapper_bus_skew_routed.rpx"
-  close_msg_db -file route_design.pb
-} RESULT]
-if {$rc} {
-  write_checkpoint -force design_2_wrapper_routed_error.dcp
-  step_failed route_design
-  return -code error $RESULT
-} else {
-  end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step post_route_phys_opt_design
-set ACTIVE_STEP post_route_phys_opt_design
-set rc [catch {
-  set tool_flow [get_property -quiet TOOL_FLOW [current_project -quiet]]
-  if {$tool_flow eq {SDx}} {send_msg_id {101-1} {status} {Starting optional post-route physical design optimization.} }
-  create_msg_db post_route_phys_opt_design.pb
-  phys_opt_design -directive Explore
-  write_checkpoint -force design_2_wrapper_postroute_physopt.dcp
-  create_report "impl_1_post_route_phys_opt_report_timing_summary_0" "report_timing_summary -max_paths 10 -warn_on_violation -file design_2_wrapper_timing_summary_postroute_physopted.rpt -pb design_2_wrapper_timing_summary_postroute_physopted.pb -rpx design_2_wrapper_timing_summary_postroute_physopted.rpx"
-  create_report "impl_1_post_route_phys_opt_report_bus_skew_0" "report_bus_skew -warn_on_violation -file design_2_wrapper_bus_skew_postroute_physopted.rpt -pb design_2_wrapper_bus_skew_postroute_physopted.pb -rpx design_2_wrapper_bus_skew_postroute_physopted.rpx"
-  close_msg_db -file post_route_phys_opt_design.pb
-  set tool_flow [get_property TOOL_FLOW [current_project]]
-  if {$tool_flow eq {SDx}} {send_msg_id {101-1} {status} {Finished optional post-route physical design optimization.} }
-} RESULT]
-if {$rc} {
-  step_failed post_route_phys_opt_design
-  return -code error $RESULT
-} else {
-  end_step post_route_phys_opt_design
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

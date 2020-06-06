@@ -368,3 +368,22 @@ Reason: Failed to execute command 'platform config -updatehw {/home/pdp/PDP/fpga
 20:30:27 INFO  : Successfully done setting workspace for the tool. 
 20:30:48 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
 20:31:14 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+15:29:41 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+15:29:49 INFO  : XSCT server has started successfully.
+15:29:49 INFO  : plnx-install-location is set to ''
+15:29:49 INFO  : Successfully done setting XSCT server connection channel  
+15:29:49 INFO  : Successfully done setting workspace for the tool. 
+15:29:56 INFO  : Registering command handlers for Vitis TCF services
+15:30:04 INFO  : Successfully done query RDI_DATADIR 
+15:30:31 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
+15:31:15 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+16:59:20 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\boblu\Documents\TuD\MSc_Computer_Engineering\PDP\fpga\zynq_fpga\workspace\temp_xsdb_launch_script.tcl
+16:59:29 INFO  : Registering command handlers for Vitis TCF services
+16:59:32 INFO  : XSCT server has started successfully.
+16:59:32 INFO  : Successfully done setting XSCT server connection channel  
+16:59:32 INFO  : plnx-install-location is set to ''
+16:59:41 INFO  : Successfully done setting workspace for the tool. 
+16:59:41 INFO  : Successfully done query RDI_DATADIR 
+17:00:34 INFO  : Hardware specification for platform project 'design_2_wrapper' is updated.
+17:00:47 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
+17:02:17 INFO  : Checking for BSP changes to sync application flags for project 'appARMcpu'...
